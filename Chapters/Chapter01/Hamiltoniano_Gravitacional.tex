@@ -1,0 +1,83 @@
+%---------------------------------------------------------------------------
+% HAMILTONIANO GRAVITACIONAL
+%---------------------------------------------------------------------------
+
+\subsection{Hamiltoniano Gravitacional}
+
+En el formalismo (3+1) el sistema es descrito por $h_{ab}$y por cómo ésta cambia a lo largo del \emph{flujo de tiempo}, es decir, del campo vectorial $t^{\alpha} = N n^{\alpha} + N^{\alpha}$. Las variables fundamentales son pues, la métrica $h_{ab}$ y su \emph{momento canónicamente conjugado} $p^{ab}$,
+%
+\begin{equation}
+p^{ab} = \frac{\partial \mathcal{L}_{G}}{\partial \dot{h}_{ab}}.
+\end{equation}
+%
+Aquí, $16 \pi \mathcal{L}_{G} = (^{(3)}R + K^{ab} K_{ab} - K^{2}) N \sqrt{h}$, y $\dot{h}_{ab}$ es el cambio de la métrica a través del flujo de tiempo, esto es,
+%
+\begin{equation}
+\dot{h}_{ab} = \pounds_{t} h_{ab}.
+\end{equation}
+
+Recordando que $h_{ab} = g_{\alpha \beta} e^{\alpha}_{a} e^{\beta}_{b}$, se calcula la derivada de Lie de la métrica $g_{\mu \nu}$ a lo largo del campo vectorial $t$, después se proyecta en la hipersuperficie $\Sigma_{t}$ y se obtiene que
+%
+\begin{equation}
+\label{eq:doth}
+\dot{h}_{ab} = 2 N K_{ab} + D_{b} N_{a} + D_{a} N_{b},
+\end{equation}
+%
+donde $D_{a}$ es la derivada covariente en $\Sigma_{t}$ combatible con $h_{ab}$.
+%\begin{equation}
+%\dot{h}_{ab} = \pounds_{t} (g_{\alpha \beta} e^{\alpha}_{a} e^{\beta}_{b}) = (\pounds_{t} g_{\alpha %\beta}) e^{\alpha}_{a} e^{\beta}_{b},
+%\end{equation}
+%
+%\begin{align}
+%\pounds_{t} g_{\alpha \beta} & = \nabla_{\beta} t_{\alpha} + \nabla_{\alpha} t_{\beta} \nonumber \\
+%& = \nabla_{\beta} (N n_{\alpha} + N_{\alpha}) + \nabla_{\alpha} (N n_{\beta} + N_{\beta}) \nonumber \\
+%& = n_{\alpha} \partial_{\beta} N + n_{\beta} \partial_{\alpha} N + N (\nabla_{\beta} n_{\alpha} + \nabla_{\alpha} n_{\beta}) + \nabla_{\beta} N_{\alpha} + \nabla_{\alpha} N_{\beta}.
+%\end{align}
+%
+Luego se despeja la curvatura extrínseca de \eqref{eq:doth}, para poder ver la dependencia en $\dot{h}_{ab}$ del funcional de acción gravitacional, entonces,
+%
+\begin{equation}
+\label{eq:Kab(doth)}
+K_{ab} = \frac{1}{2 N} \left( \dot{h}_{ab} - D_{b} N_{a} - D_{a} N_{b} \right).
+\end{equation}
+
+De la ecuación anterior, \eqref{eq:Kab(doth)}, nótese que solamente la parte de volumen de la densidad Lagrangiana de gravedad depende de $\dot{h}_{ab}$ (ver \eqref{eq:LagSg}), así que para facilitar las cosas, se analizará sólo esa parte, entonces
+%
+\begin{align}
+\label{eq:pabADM}
+(16 \pi) p^{ab} & = \frac{\partial K_{mn}}{\partial \dot{h}_{ab}} \frac{\partial}{\partial K_{mn}} \left( 16 \pi \mathcal{L}_{G} \right) \nonumber \\
+& = \frac{\partial K_{mn}}{\partial \dot{h}_{ab}} \frac{\partial}{\partial K_{mn}} \left( [^{(3)}R + (h^{ac} h^{bd} - h^{ab} h^{cd}) K_{ab} K_{cd}] N \sqrt{h} \right) \nonumber \\
+& = \sqrt{h} (K^{ab} - K h^{ab}).
+\end{align}
+
+Haciendo la transformación de Legendre $\mathcal{H}_{G} = p^{ab} \dot{h}_{ab} - \mathcal{L}_{G}$, la parte de volumen de la densidad Hamiltoniana es
+%
+\begin{align}
+16 \pi \mathcal{H}_{G} & = \sqrt{h} (K^{ab} - K h^{ab}) (2 N K_{ab} + D_{b} N_{a} + D_{a} N_{b}) \nonumber \\
+& \quad - (^{(3)}R + K^{ab} K_{ab} - K^{2}) N \sqrt{h} \nonumber \\
+& = (K^{ab} K_{ab} - K^{2} - ^{(3)}R) N \sqrt{h} + 2 (K^{ab} - K h^{ab}) D_{b} N_{a} \sqrt{h} \nonumber \\
+& = (K^{ab} K_{ab} - K^{2} - ^{(3)}R) N \sqrt{h} + 2 D_{b} [(K^{ab} - K h^{ab}) N_{a}] \sqrt{h} \nonumber \\
+& \quad - 2 D_{b} (K^{ab} - K h^{ab}) N_{a} \sqrt{h}.
+\end{align}
+
+El Hamiltoniano gravitacional lo obtenemos integrando $\mathcal{H}_{G}$ sobre $\Sigma_{t}$ y sumando los términos de frontera,
+%
+\begin{align}
+\label{eq:HG}
+16 \pi H_{G} & = \int_{\Sigma_{t}} 16 \pi \mathcal{H}_{G} \, d^{3} y - 2 \oint_{S_{t}} (k - k_{0}) N \sqrt{\sigma} \, d^{2} \theta \nonumber \\
+& = \int_{\Sigma_{t}} \left[ N (K^{ab} K_{ab} - K^{2} - ^{(3)}R) - 2 N_{a} D_{b} (K^{ab} - K h^{ab}) \right] \sqrt{h} \, d^{3} y \nonumber \\
+& \quad + 2 \oint_{S_{t}} (K^{ab} - K h^{ab}) N_{a} d S_{b} - 2 \oint_{S_{t}} (k - k_{0}) N \sqrt{\sigma} d^{2} \theta \nonumber \\
+& = \int_{\Sigma_{t}} \left[ N (K^{ab} K_{ab} - K^{2} - ^{(3)}R) - 2 N_{a} D_{b} (K^{ab} - K h^{ab}) \right] \sqrt{h} \, d^{3} y \nonumber \\
+& \quad - 2 \oint_{S_{t}} \left[ (k - k_{0}) N - (K^{ab} - K h^{ab}) N_{a} r_{b} \right] \sqrt{\sigma} d^{2} \theta,
+\end{align}
+%
+donde $d S_{b} = r_{b} \sqrt{\sigma} d^{2} \theta$.
+
+En el Hamiltoniano, ecuación \eqref{eq:HG}, $K^{ab}$ representa a las funciones $h^{ab}$ y $p^{ab}$, explícitamente
+%
+\begin{equation}
+\label{eq:Kph}
+\sqrt{h} K^{ab} = 16 \pi ( p^{ab} - \frac{1}{2} p h^{ab}).
+\end{equation}
+%
+con $p:= h_{ab} p^{ab}$.

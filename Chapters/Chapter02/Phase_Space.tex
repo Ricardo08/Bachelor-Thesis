@@ -1,0 +1,128 @@
+\section{Espacio fase}
+
+Comencemos considerando un campo de cotriadas $e^{I}_{a}$ ($I=1,2,3$ y $a=1,2,3$) sobre la variedad  tridimensional $\Sigma_{t}$ (sección \ref{subsec:3+1}). La métrica $h_{ab}$ en $\Sigma_{t}$ como\footnotemark
+\footnotetext{Dado que aquí el espacio interno es $\mathbb{R}^{3}$, la métrica interna es $\delta_{IJ}$.}
+%
+\begin{equation}
+\label{eq:3metrictriad}
+h_{ab} = \delta_{IJ} e^{I}_{a} e^{J}_{b}.
+\end{equation}
+%
+Donde se observa que \eqref{eq:3metrictriad} es invariante bajo transformaciones de $\mathrm{SO}(3)$, ya que $\delta_{IJ} e'^{I}_{a} e'^{J}_{b} = \delta_{IJ} e^{I}_{a} e^{J}_{b}$ donde $e'^{I}_{a} = O^{I}_{J} e^{J}_{a}$ y $O^{I}_{J}$ es un elemento de matriz de $\mathrm{SO}(3)$. Las triadas y cotriadas \emph{densitizadas}, $E^{a}_{I}$ y $E^{I}_{a}$, son (respectivamente):
+%
+\begin{equation*}
+E^{a}_{I} = \sqrt{h} e^{a}_{I} \quad \mathrm{y} \quad E^{I}_{a} = e^{I}_{a}/\sqrt{h}.
+\end{equation*}
+%
+Expresando el determinante de $h$ como $|\det(E)|$, la variable canónica $h_{ab}$ de la formulación ADM queda como
+%
+\begin{equation}
+\label{eq:habEE}
+h_{ab} = |\det(E)| \delta_{IJ} E^{I}_{a} E^{J}_{b}
+\end{equation}
+%
+y su inverso
+%
+\begin{equation}
+h^{ab} = |\det(E)|^{-1} \delta^{IJ} E^{a}_{I} E^{b}_{J}.
+\end{equation}
+
+Ahora, para reescribir el momento canónicamente conjugado $p^{ab}$ de la formulación ADM \eqref{eq:pabADM} en términos de las triadas, se debe considerar la curvatura extrínseca $K_{ab}$ de $\Sigma_{t}$. Sea la una 1-forma $K_{aI}$ en $\Sigma_{t}$ tal que
+%
+\begin{equation}
+K_{ab} = K_{aI} e^{I}_{b},
+\end{equation}
+%
+con lo que se sigue que el momento canónicamente conjugado en \eqref{eq:pabADM} se expresa como
+%
+\begin{equation}
+\label{eq:pabEE}
+(16 \pi)p^{ab} = 2 |\det(E)|^{-1} \delta^{IJ} E^{a}_{I} E^{d}_{J} K^{K}_{[d} \delta^{b}_{c]} E^{c}_{K}.
+\end{equation}
+
+Además, como $K_{ab} = K_{ba}$, se tienen tres constricciones:
+%
+\begin{equation}
+\label{eq:Gab0}
+G_{ab} \equiv K_{[ab]} = K_{[aI} e^{I}_{b]} = 0.
+\end{equation}
+%
+Si se contrae $G_{ab}$ con $e^{a}_{I}$ y $e^{b}_{J}$ se llega a que
+%
+\begin{align*}
+G_{ab} e^{a}_{I} e^{b}_{J} & = \frac{1}{2}(K_{aK} e^{K}_{b} - K_{bK} e^{K}_{a}) e^{a}_{I} e^{b}_{J} = \frac{1}{2} (K_{aK} e^{a}_{I} \delta^{K}_{J} - K_{bK} e^{b}_{J} \delta^{K}_{I}) \\
+& = \frac{1}{2} (K_{aJ} e^{a}_{I} - K_{bI} e^{b}_{J}) = K_{a[J} e^{a}_{I]} \\
+& \qquad \qquad \Longrightarrow K_{a[J} e^{a}_{I]} = 0,
+\end{align*}
+%
+es decir, las constricciones \eqref{eq:Gab0} se pueden reescribir como $h^{-1/2} K_{a[J} E^{a}_{I]} = 0$ o de mejor manera
+%
+\begin{equation}
+\label{eq:GJI0}
+G_{JI} \equiv K_{a[J} E^{a}_{I]} = 0.
+\end{equation}
+%
+
+Usando las expresiones \eqref{eq:habEE} y \eqref{eq:pabEE}, las constricciones Hamiltoniana y de difeormorfismos \eqref{eq:constrictions}, quedan como
+%
+\begin{equation}
+\label{eq:CEE}
+\mathcal{C} = \frac{-1}{16 \pi} [|\det(E)|^{-1/2} (K^{I}_{a} K^{J}_{b} - K^{J}_{a} K^{I}_{b}) E^{a}_{I} E^{b}_{J} + |\det(E)|^{1/2} \, ^{(3)}R]
+\end{equation}
+%
+\begin{equation}
+\label{eq:CaEE}
+\mathcal{C}_{a} = -2 D_{b} (K^{J}_{a} E^{b}_{J} - \delta^{b}_{a} K^{J}_{c} E^{c}_{J}),
+\end{equation}
+%
+donde $^{(3)}R$ es considerado como una función de las triadas densitizadas $E^{a}_{I}$.
+
+En la formulación Hamiltoniana ADM, hay seis variables de configuración ($h_{ab}$) y sus seis respectivos momentos canónicos ($p^{ab}$), sujetos a cuatro constricciones, una Hamiltoniana ($\mathcal{C} = 0$) y tres de difeormorfismos ($\mathcal{C}^{a} = 0$); dando un total de dos grados físicos de libertad\footnotemark. Sin embargo, al extender el espacio fase con las nuevas variables $(K^{I}_{a}, E^{b}_{J})$, el número de grados de libertad aumentó de 12 a 18, pero el número de grados físicos de libertad debe seguir siendo el mismo así que se toman en cuenta las tres constricciones $G_{IJ} = 0$ más las cuatro ya mencionadas; conservando los dos grados físicos de libertad.
+\footnotetext{Conteo de grados físicos de libertad:
+\begin{center}
+2(núm. de grados físicos de libertad) = (núm. de variables canónicas) - 2 (núm. de constricciones de primera clase).
+\end{center}}
+
+Lo siguiente por hacer, es revisar la estructura simpléctica del espacio fase extendido $(K^{I}_{a}, E^{b}_{J})$.
+%
+\begin{equation}
+\{E^{a}_{I}(y), K^{J}_{b}(y')\} = \frac{1}{2} \delta^{a}_{b} \delta^{I}_{J} \delta(y-y')
+\end{equation}
+%
+\begin{equation}
+\{E^{a}_{I}(y), E^{b}_{J}(y')\} = \{K^{I}_{a}(y), K^{J}_{b}(y')\} = 0.
+\end{equation}
+%
+Así, siempre que se cumpla la condición $G_{IJ} = 0$, los paréntesis de Poisson de las variables canónicas $(h_{ab}, p^{ab})$ como funciones de $K^{I}_{a}$ y $E^{a}_{J}$ en el espacio fase extendido dan
+%
+\begin{equation}
+\{h_{ab}(y), p^{ab}(y')\} = \delta^{c}_{(a} \delta^{d}_{b)} \delta(y-y')
+\end{equation}
+%
+\begin{equation}
+\{h_{ab}(y), h_{cd}(y')\} = \{p^{ab}(y), p^{cd}(y')\} = 0,
+\end{equation}
+%
+que son los paréntesis de Poisson del espacio fase ADM. Por lo tanto, si la condición $G_{IJ} = 0$ se satisface entonces, las variables canónicas ADM expresadas como funciones de las variables $(K^{I}_{a}, E^{b}_{J})$ del espacio fase extendido generan los mismos paréntesis de Poisson.
+
+Ahora consideremos la constricción \eqref{eq:GJI0} de la forma siguiente
+%
+\begin{equation}
+G(\Lambda) = \int\limits_{\Sigma_{t}} \Lambda^{IJ} K_{aI} E^{a}_{J} d^{3}y,
+\end{equation}
+%
+con $\Lambda^{IJ}$ siendo las componentes de una matriz antisimétrica que genera rotaciones $\mathrm{SO}(3)$. Calculando el paréntesis de Poisson consigo mismo se llega a que
+%
+\begin{equation}
+\{G(\Lambda), G(\Lambda')\} = \frac{1}{2} G([\Lambda, \Lambda']),
+\end{equation}
+%
+que es igual al álgebra de rotaciones espaciales $\mathrm{SO}(3)$. Y dado que las variables canónicas de ADM son invariantes bajo $\mathrm{SO}(3)$, cualquier paréntesis de Poisson entre ellas y $G(\Lambda)$ se anula.
+
+En términos de las nuevas variables, la acción gravitacional es
+%
+\begin{equation}
+S_{G}[K,E] = \frac{1}{16 \pi} \int\limits^{t_{2}}_{t_{1}} dt \int\limits_{\Sigma_{t}} \left[2 \dot{K}^{K}_{a} E^{a}_{K} - (\Lambda^{IJ} G_{IJ} + \mathcal{C}_{a} N^{a} + \mathcal{C} N) \right] d^{3}y
+\end{equation}
+%
+donde las constricciones están dadas por \eqref{eq:GJI0}, \eqref{eq:CEE} y \eqref{eq:CaEE}. Nótese que esta acción es equivalente a la del formalismo 3+1 siempre y cuando se cumpla la constricción $G_{IJ} = 0$.

@@ -1,0 +1,197 @@
+%-------------------------------------------------------------
+% LAGRANGIAN FORMULATION
+%-------------------------------------------------------------
+
+\section{Formulación Lagrangiana}
+\label{sec:FL}
+
+En la formulación Lagrangiana de la Relatividad General, el funcional de acción $S$ está definido como la integral de una densidad lagrangiana sobre una región 4-dimensional $\Omega$, de una variedad diferenciable $\mathcal{M}$ con la topología del espacio-tiempo, delimitada por una hipersuperficie cerrada $\partial \Omega$.  Dicho funcional de acción $S$ está formado por dos partes, la asociada al campo gravitacional $g_{\mu \nu}$, es decir la geometría, denotado por $S_{G}[g]$ y la parte correspondiente a los campos de materia, $S_{M}[\phi; g]$, esto es
+%
+\begin{equation}
+\label{eq:S}
+S[g; \phi] = S_{G}[g] + S_{M}[\phi; g].
+\end{equation}
+
+El campo dinámico es la métrica del espacio-tiempo $g_{\mu \nu}$, cuyas componentes dependen de las coordenadas $x^{\alpha}$ en la región $\Omega$. Así, para obtener las ecuaciones de campo gravitacional vía el Principio de Mínima Acción, se introduce la variación arbitraria $\delta g_{\mu \nu}(x^{\alpha})$ en $\Omega$ con la condición de que dicha variación sea nula en la frontera $\partial \Omega$,
+%
+\begin{equation}
+\label{eq:boundcond}
+\delta g_{\mu \nu} \Big|_{\partial \Omega} = 0.
+\end{equation}
+Esto quiere decir que la métrica inducida\footnotemark $h_{\alpha \beta}$ en la hipersuperficie $\partial \Omega$ se mantiene fija.
+\footnotetext{La forma fundamental de la métrica inducida en $\partial \Omega$ es $h_{\alpha \beta} = g_{\mu \nu} \frac{\partial x^{\mu}}{\partial y^{\alpha}} \frac{\partial x^{\nu}}{\partial y^{\beta}} = g_{\mu \nu} e^{\mu}_{\alpha} e^{\nu}_{\beta}$, donde $e^{\mu}_{\alpha}=\frac{\partial x^{\mu}}{\partial y^{\alpha}}$.} 
+
+El funcional de acción del campo de materia, $S_{M}$, está dada por
+%
+\begin{equation}
+\label{eq:SM}
+S_{M} [\phi; g] = \int_{\Omega} \mathcal{L}(\phi, \partial_{\alpha} \phi; g, \partial_{\alpha} g_{\mu \nu}) \sqrt{-g} \, d^{4} x.
+\end{equation}
+%
+Por otro lado, la parte gravitacional de la acción $S_{G}[g]$, para facilitar los cálculos, se divide en tres términos; a saber,
+%
+\begin{equation}
+\label{eq:SG}
+S_{G}[g] = \frac{1}{16 \pi} (I_{EH}[g] + 2 I_{B}[g] + 2 I_{0}),
+\end{equation}
+%
+el término de Einstein-Hilbert $I_{EH}[g]$, un término de frontera $I_{B}[g]$ y un término no dinámico $I_{0}$, que únicamente influye en el valor numérico de la acción mas no en las ecuaciones de movimiento, donde
+%
+\begin{equation*}
+I_{EH}[g] = \int_{\Omega} R \sqrt{-g} \, d^{4} x, \quad I_{B}[g] = \oint_{\partial \Omega} \varepsilon K \sqrt{|h|} d^{3} y, \quad I_{0}[g] = \oint_{\partial \Omega} \varepsilon K_{0} \sqrt{|h|} d^{3} y \, .
+\end{equation*}
+%
+Aquí, las coordenadas $x^{\mu}$ se utilizarán en $\Omega$ mientras que las coordenadas $y^{\alpha}$ en $\partial \Omega$. $R$ es el escalar de Ricci, $g$ es el determinante de la métrica $g_{AB}$, $h$ es el determinante de la métrica inducida $h_{AB}$ y $\varepsilon \equiv n^{\mu} n_{\mu} = \pm 1$ es el módulo del normal unitario\footnotemark  $n_{\mu}$ a $\partial \Omega$. $K$ es la traza de la curvatura extrínseca $K_{\alpha \beta}$ de $\partial \Omega$ y $K_{0}$ es la traza de la curvatura extrínseca de $\partial \Omega$ encajada en el espacio-tiempo plano.
+\footnotetext{El módulo $\varepsilon$  de $n_{\mu}$ es $+1$ donde $\partial \Omega$ es tipo-tiempo y $-1$ donde es tipo-espacio.}
+
+Al variar la acción $S[g; \phi]$ con respecto a $g_{\mu \nu}$, usando el hecho de que $\delta g = g g^{\mu \nu} \delta g_{\mu \nu}$ y $g^{\mu \nu} \delta g_{\mu \nu} = -g_{\mu \nu} \delta g^{\mu \nu}$, se obtiene, primero para la parte asociada a materia, que
+%
+\begin{align}
+\label{eq:varSML}
+\delta S_{M} & = \int_{\Omega} \delta (\mathcal{L} \sqrt{-g}) \, d^{4} x \nonumber \\
+& = \int_{\Omega} \left( \frac{\partial \mathcal{L}}{\partial g^{\mu \nu}} \delta g^{\mu \nu} \sqrt{-g} + \mathcal{L} \delta \sqrt{-g} \right) \, d^{4} x \nonumber \\
+& = \int_{\Omega} \left( \frac{\partial \mathcal{L}}{\partial g^{\mu \nu}} - \frac{1}{2} \mathcal{L} g_{\mu \nu} \right) \delta g^{\mu \nu} \sqrt{-g} \, d^{4} x \nonumber \\
+& = - \frac{1}{2} \int_{\Omega} T_{\mu \nu} \delta g^{\mu \nu} \sqrt{-g} \, d^{4} x,
+\end{align}
+%
+definiendo el tensor de energía-momento como
+%
+\begin{equation}
+\label{eq:TabL}
+T_{\mu \nu} := \mathcal{L} g_{\mu \nu} - 2 \frac{\partial \mathcal{L}}{\partial g^{\mu \nu}}.
+\end{equation}
+%
+%se puede reescribir \eqref{eq:varSML} y así la variación de la acción correspondiente al campo de materia queda de la siguiente manera,
+%
+%\begin{equation}
+%\label{eq:varSMT}
+%\delta S_{M} = - \frac{1}{2} \int_{\Omega} T_{\mu \nu} \delta g^{\mu \nu} \sqrt{-g} \, d^{4} x.
+%\end{equation}
+%
+Mientras que, para la parte correspondiente a la parte gravitacional $S_{G}[g]$, comenzando con el término de Einstein-Hilbert $I_{EH}$, se tiene que
+%
+\begin{align}
+\label{eq:IEH}
+\delta I_{EH} & = \int_{\Omega} \delta(R \sqrt{-g}) \, d^{4} x \nonumber \\
+%& = \int_{\Omega} \delta(g^{\mu \nu} R_{\mu \nu} \sqrt{-g}) \, d^{4} x \nonumber \\
+& = \int_{\Omega} (\delta g^{\mu \nu}) R_{\mu \nu} \sqrt{-g} \, d^{4} x + \int_{\Omega} g^{\mu \nu} (\delta R_{\mu \nu}) \sqrt{-g} \, d^{4} x + \int_{\Omega} g^{\mu \nu} R_{\mu \nu} (\delta \sqrt{-g}) \, d^{4} x \nonumber \\
+& = \int_{\Omega} R_{\mu \nu} (\delta g^{\mu \nu}) \sqrt{-g} \, d^{4} x + \int_{\Omega} g^{\mu \nu} (\delta R_{\mu \nu}) \sqrt{-g} \, d^{4} x -  \int_{\Omega} \frac{1}{2} R \sqrt{-g} g_{\mu \nu} \delta g^{\mu \nu} \, d^{4} x.
+\end{align}
+
+Ahora bien, considerando un marco de referencia inercial local donde los símbolos de Christoffel sean cero, lo que implica que $\partial_{\sigma} = \nabla_{\sigma}$, entonces,
+%
+\begin{equation}
+\label{eq:varRicci}
+\delta R_{\mu \nu} = \partial_{\lambda} \delta \Gamma^{\lambda}_{\mu \nu} - \partial_{\nu} \delta \Gamma^{\lambda}_{\mu \lambda} = \nabla_{\lambda} \delta \Gamma^{\lambda}_{\mu \nu} - \nabla_{\nu} \delta \Gamma^{\lambda}_{\mu \lambda}.
+\end{equation}
+%
+Tomando en cuenta que $\nabla_{\sigma} g^{\mu \nu} = 0$, al multiplicar \eqref{eq:varRicci} por $g^{\mu \nu}$ se tiene que
+%
+\begin{equation}
+\label{eq:varSRicci}
+g^{\mu \nu} \delta R_{\mu \nu} = g^{\mu \nu} \nabla_{\lambda} \delta \Gamma^{\lambda}_{\mu \nu} - g^{\mu \nu}\nabla_{\nu} \delta \Gamma^{\lambda}_{\mu \lambda}  = \nabla_{\lambda}(g^{\mu \nu} \delta \Gamma^{\lambda}_{\mu \nu} - g^{\mu \lambda} \Gamma^{\nu}_{\mu \nu}),
+\end{equation}
+%
+y definiendo
+%
+\begin{equation}
+\label{eq:v}
+v^{\lambda} := g^{\mu \nu} \delta \Gamma^{\lambda}_{\mu \nu} - g^{\mu \lambda} \delta \Gamma^{\nu}_{\mu \nu},
+\end{equation}
+la expresión \eqref{eq:varSRicci} se reescribe como $g^{\alpha \beta} \delta R_{\alpha \beta} = \nabla_{\lambda} v^{\lambda}$. Aplicando el teorema de Gauss se obtiene
+%
+\begin{equation}
+\label{eq:intDv}
+\int_{\Omega} g^{\mu \nu} \left(  \delta R_{\mu \nu} \right) \sqrt{-g} d^4 x = \int_{\Omega} \nabla_{\mu} v^{\mu} \sqrt{-g} d^4 x = \oint_{\partial \Omega} \varepsilon v^{\mu} n_{\mu} \sqrt{|h|} d^3 y \, .
+\end{equation}
+%
+Recordando la condición de frontera \eqref{eq:boundcond}, la variación de los símbolos de Christoffel en $\partial \Omega$ es
+%
+\begin{equation}
+\label{eq:varGamma}
+\delta \Gamma^{\sigma}_{\mu \nu} = \frac{1}{2} g^{\sigma \lambda} (\partial_{\mu} \delta g_{\nu \lambda} + \partial_{\nu} \delta g_{\lambda \mu} - \partial_{\lambda} \delta g_{\mu \nu}),
+\end{equation}
+%
+entonces sustituyendo \eqref{eq:varGamma} en \eqref{eq:v} se llega a que
+%
+\begin{align}
+\label{eq:vn}
+n^{\lambda} v_{\lambda} \Big|_{\partial \Omega} & = n^{\lambda} g^{\mu \nu} (\partial_{\mu} \delta g_{\lambda \nu} - \partial_{\lambda} \delta g_{\mu \nu}) \nonumber \\
+& = n^{\lambda} (\varepsilon n^{\mu} n^{\nu} + h^{\mu \nu}) (\partial_{\mu} \delta g_{\lambda \nu} - \partial_{\lambda} \delta g_{\mu \nu}) \nonumber \\
+& = n^{\lambda} h^{\mu \nu} (\partial_{\mu} \delta g_{\lambda \nu} - \partial_{\lambda} \delta g_{\mu \nu}).
+\end{align}
+%
+En \eqref{eq:vn} se uso la relación de completez $g^{\mu \nu} = \varepsilon n^{\mu} n^{\nu} + h^{\mu \nu}$. Ahora, por la condición de frontera \eqref{eq:boundcond}, las derivadas tangentes $e^{\alpha}_{\beta} \partial_{\alpha} \delta g_{\mu \nu}$ a $\partial \Omega$ deben anularse, sin embargo las derivadas normales de $\delta g_{\mu \nu}$ en $\partial \Omega$ no necesariamente se anulan, por lo que
+
+\begin{equation}
+\label{eq:vnh}
+n^{\mu} v_{\mu} = - n^{\mu} h^{\alpha \beta} \partial_{\mu} \delta g_{\alpha \beta}.
+\end{equation}
+%
+Reemplazando \eqref{eq:vnh} en \eqref{eq:intDv}, se llega a
+%
+\begin{equation}
+\label{eq:intvnh}
+\int_{\Omega} g^{\mu \nu} (\delta R_{\mu \nu}) \sqrt{-g} d^4 x = - \oint_{\partial \Omega} \varepsilon n^{\mu} h^{\alpha \beta} \partial_{\mu} \delta g_{\alpha \beta} \sqrt{|h|} \, d^{3} y,
+\end{equation}
+%
+y finalmente, sustituyendo \eqref{eq:intvnh} en \eqref{eq:IEH} se obtiene que la variación del término de Einstein-Hilbert $I_{EH}$ está dada por
+%
+\begin{equation}
+\label{eq:varIEH}
+\delta I_{EH} = \int_{\Omega} \left(R_{\mu \nu} - \frac{1}{2} R g_{\mu \nu} \right) \sqrt{-g} \delta g^{\mu \nu} \, d^{4} x - \oint_{\partial \Omega} \varepsilon n^{\mu} h^{\alpha \beta} \partial_{\mu} \delta g_{\alpha \beta} \sqrt{|h|} \, d^{3} y.
+\end{equation}
+
+Ahora se hace la variación de $I_{B}$. Nótese que la única cantidad que varía es la traza de la curvatura extrínseca, i.e. $K$, pues la métrica inducida en $\partial \Omega$ se mantiene fija, es decir, $\delta \sqrt{|h|} = 0$, así que sólo es necesario calcular la variación de $K$ en $\partial \Omega$. Puesto que,
+%
+\begin{align}
+\label{eq:definitionK}
+K & = \nabla_{\mu} n^{\mu} = (\varepsilon n^{\mu} n^{\nu} + h^{\mu \nu}) \nabla_{\mu} n_{\nu} \nonumber \\
+& = h^{\mu \nu} \nabla_{\mu} n_{\nu} = h^{\mu \nu} (\partial_{\mu} n_{\nu} - \Gamma^{\lambda}_{\mu \nu} n_{\lambda}),
+\end{align}
+%
+usando lo que ya se conoce, \eqref{eq:varGamma} y que las derivadas tangentes $e^{\alpha}_{\beta} \partial_{\alpha} \delta g_{\mu \nu}$ se anulan, se llega a que
+%
+\begin{equation}
+\label{eq:varK}
+\delta K = -h^{\mu \nu} \delta \Gamma^{\lambda}_{\mu \nu} n_{\lambda} = \frac{1}{2} n^{\alpha} h^{\mu \nu} \partial_{\alpha} \delta g_{\mu \nu}.
+\end{equation}
+%
+De esta manera se obtiene la variación del término de frontera $\delta I_{B}$,
+%
+\begin{equation}
+\label{eq:varIB}
+2 \delta I_{B} [g] = \oint_{\partial \Omega} \varepsilon n^{\mu} h^{\alpha \beta} \partial_{\mu} \delta g_{\alpha \beta} \sqrt{|h|} \, d^{3} y.
+\end{equation}
+
+El término $I_{0}$ se escribe para tener un funcional de acción bien definido. Considerando un espacio-tiempo asintóticamente plano, no compacto y vacío, sin el término $I_{0}$ el funcional de acción $S$ tendrá un valor numérico
+%
+\begin{equation}
+\label{eq:SGI0}
+S = \frac{1}{8 \pi} \oint_{\partial \Omega} \varepsilon K \sqrt{|h|} \, d^{3} y,
+\end{equation}
+%
+el cual diverge como $I_{0}$ para espacios asintóticamente planos, aún y cuando $\Omega$ esté acotado por dos hipersuperficies espacialoides, entonces $S$ no estaría bien definido. Sin embargo, al escribir el término $I_{0}$, se asegura que el funcional de acción para espacios asintóticamente planos sí esté bien definido.
+
+Dado que $I_{0}$ depende únicamente de la métrica inducida $h_{AB}$, la variación respecto a $g_{\mu \nu}$ es cero, por lo que $I_{0}$ no influye en las ecuaciones de campo al ser un término no dinámico. Como resultado de esto, la variación del funcional de acción correspondiente a la gravedad, $S_{G} [g]$ es la suma de \eqref{eq:varIEH} más \eqref{eq:varIB}, por lo tanto
+%
+\begin{equation}
+\label{eq:varSG}
+\delta S_{G} [g] = \frac{1}{16 \pi} \int_{\Omega} \left( R_{\mu \nu} - \frac{1}{2} R g_{\mu \nu} \right) \sqrt{-g} \delta g^{\mu \nu} \, d^{4} x.
+\end{equation}
+
+Ya que el funcional de acción en Relatividad General está formado por dos partes, $S_{G}$ y $S_{M}$, la variación es la suma $\delta S = \delta S_{G} + \delta S_{M}$ (ecuaciones \eqref{eq:varSML} y \eqref{eq:varSG}), finalmente queda
+%
+\begin{equation}
+\label{eq:varSSGSM}
+\delta S = \int_{\Omega} \left( \frac{1}{16 \pi} (R_{\mu \nu} - \frac{1}{2} R g_{\mu \nu}) - \frac{1}{2} T_{\mu \nu} \right) \delta g^{\mu \nu} \sqrt{-g}.
+\end{equation}
+
+Y dado que la acción es extremizada, i.e. $\delta S = 0$, y $\delta g_{\mu \nu}$ son variaciones arbitrarias excepto por la condición \eqref{eq:boundcond}, las ecuaciones del campo gravitacional son
+%
+\begin{equation}
+\label{eq:Einstein}
+G_{\mu \nu} = 8 \pi T_{\mu \nu},
+\end{equation}
+%
+donde $G_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} R g_{\mu \nu}$ es el tensor de Einstein.

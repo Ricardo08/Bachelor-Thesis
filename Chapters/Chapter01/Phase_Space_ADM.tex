@@ -1,0 +1,32 @@
+\subsection{Espacio Fase}
+
+La formulación Hamiltoniana permite hacer un estudio del espacio fase de la Relatividad General. Habiendo hecho las descomposición 3+1, se tiene que las variables independientes son $N$, $N^{a}$ (éstas dos no dinámicas) y $h_{ab}$ que respectivamente cada una tiene como momento conjugado a
+%
+\begin{align}
+\Pi & = \frac{\partial \mathcal{L}_{G}}{\partial \dot{N}} = 0, \\
+\Pi_{a} & = \frac{\partial \mathcal{L}_{G}}{\partial \dot{N}_{a}} = 0, \\
+p^{ab} & = \frac{\partial \mathcal{L}_{G}}{\partial \dot{h}_{ab}} = \frac{\sqrt{h}}{16 \pi} (K^{ab} - K h^{ab}).
+\end{align}
+%
+De esta manera, el espacio fase coordenado por $(N, N^{a}, h_{ab}, \Pi, \Pi_{a}, p^{ab})$, tiene la siguiente estructura simpléctica,
+%
+\begin{align}
+\{N(t, y), \Pi(t, y')\} & = \delta(y - y'), \\
+\{N^{a}(t, y), \Pi_{b}(t, y')\} & = \delta^{a}_{b} \delta(y - y'), \\
+\{h_{ab}(t, y), p^{cd}(t, y')\} & = \delta^{c}_{(a} \delta^{d}_{b)} \delta(y - y'),
+\end{align}
+%
+y el resto de los paréntesis de Poisson son nulos.
+
+Ahora bien, dado que $S_{G}$ contiene derivadas temporales de $h_{ab}$ por medio de los términos que dependen de la curvatura extrínseca, pero no hay derivadas temporales de $N$ ni de $N^{a}$, implica que el Lagrangiano sea singular y en consecuencia hay constricciones primarias. Las constricciones limitan la evolución del sistema a una región restringida del espacio fase, definen una superficie de constricción y además las constricciones primarias generan transformaciones de norma sobre la superficie de constricción.
+
+De la definición para los momentos conjugados se obtiene que las constricciones primarias son las siguientes,
+%
+\begin{align*}
+\mathcal{C} & = \Pi = 0 \\
+\mathcal{C}_{a} & = \Pi_{a} = 0. \\
+\end{align*}
+%
+Es importante remarcar que $\Pi$ y $\Pi_{a}$ no son cero en todo el espacio fase, únicamente en la superficie de constricción.
+
+Así, la parte de la acción $S_{G}$ que va como $N \mathcal{C} + N^{a} \mathcal{C}_{a}$ es cero y la dinámica es pura norma. Por lo tanto, la descripción del sistema en el espacio fase tiene como variables fundamentales $h_{ab}$ y $p^{ab}$, mientras que la \emph{función de lapso} y el \emph{vector de corrimiento} juegan el papel de multiplicadores de Lagrange.

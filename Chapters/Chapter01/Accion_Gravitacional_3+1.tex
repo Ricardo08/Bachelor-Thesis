@@ -1,0 +1,82 @@
+%---------------------------------------------------------------------------
+% ACCIÓN GRAVITACIONAL EN EL FORMALISMO 3+1
+%---------------------------------------------------------------------------
+
+\subsection{Acción gravitacional en el formalismo (3+1)}
+
+Para construir el Hamiltoniano gravitacional se realizará la descomposición (3+1) del funcional de acción gravitacional $S_{G}$. Por ahora sólo se considerarán los términos $I_{EH}$ e $I_{B}$, más adelante se reincorporará $I_{0}$.
+%
+\begin{equation}
+\label{eq:SGIEHIB}
+S_{G} = \frac{1}{16 \pi} \left( \int_{\Omega} R \sqrt{-g} \, d^{4} x + 2 \oint_{\partial \Omega} \varepsilon K \sqrt{|h|} \, d^{3} y \right).
+\end{equation}
+
+Como en la sección (\ref{subsec:foliacionfrontera}), $\Omega$ tiene por frontera a $\partial \Omega$ que es la unión de dos hipersuperficies espacialoides $\Sigma_{t_{1}}$ y $\Sigma_{t_{2}}$, y la hipersuperficie tipo tiempo $\mathcal{B}$ (figura \ref{fig:OmegaandboundOmega}), esto es,
+%
+\begin{equation}
+\label{eq:domegaU}
+\partial \Omega  = -\Sigma_{t_{1}} \cup \Sigma_{t_{2}} \cup \mathcal{B}.
+\end{equation}
+%
+Con lo que el término de frontera toma la forma,
+%
+\begin{equation}
+\label{eq:IB31}
+2 \oint_{\partial \Omega} \varepsilon K \sqrt{|h|} \, d^{3} y = 2 \int_{\Sigma_{t_1}} K \sqrt{|h|} \, d^{3} y - 2 \int_{\Sigma_{t_2}} K \sqrt{|h|} \, d^{3} y + 2 \int_{\mathcal{B}} \mathcal{K} \sqrt{-\gamma} \, d^{3} z.
+\end{equation}
+
+La región $\Omega$ es foleada por las hipersuperficies espacialoides $\Sigma_{t}$, sobre las cuales el escalar de Ricci está dado por
+%
+\begin{equation}
+\label{eq:Riccionsigma}
+R = ^{(3)}R + K^{ab} K_{ab} - K^{2} - 2 \nabla_{\alpha} (n^{\beta} \nabla_{\beta} n^{\alpha} - n^{\alpha} \nabla_{\beta} n^{\beta}),
+\end{equation}
+%
+donde $^{(3)}R$ es el escalar de Ricci construido a partir de $h_{ab}$. De esta forma, el término de Einstein-Hilbert queda reescrito como
+%
+\begin{equation}
+\int_{\Omega} R \sqrt{-g} \, d^{4} x = \int^{t_{1}}_{t_{2}} dt \left[ \int_{\Sigma_{t}} (^{(3)}R + K^{ab} K_{ab} - K^{2}) N \sqrt{h} \, d^{3} y - 2 \oint_{\partial \Omega} (n^{\beta} \nabla_{\beta} n^{\alpha} - n^{\alpha} \nabla_{\beta} n^{\beta}) \, d \Sigma_{\alpha} \right],
+\end{equation}
+%
+donde se usó la expresión \eqref{eq:elemntvol31}, \eqref{eq:Riccionsigma} y el teorema de Gauss. Como la frontera es la unión de varias hipersuperficies, ecuación \eqref{eq:domegaU}, la integral sobre $\partial \Omega$ se descompone en integrales sobre $\Sigma_{t_{1}}$, $\Sigma_{t_{2}}$ y $\mathcal{B}$. El trato de la integral sobre $\Sigma_{t_{1}}$ y $\Sigma_{t_{2}}$ es el mismo (salvo por un signo global), así que solamente es necesario mostrar uno de estos cálculos,
+%
+\begin{align}
+-2 \int_{\Sigma_{t_{1}}} (n^{\beta} \nabla_{\beta} n^{\alpha} - n^{\alpha} \nabla_{\beta} n^{\beta}) \, d \Sigma_{\alpha} & = -2 \int_{\Sigma_{t_{1}}} (\nabla_{\beta} n^{\beta}) \sqrt{h} \, d^{3} y \nonumber \\
+& = -2 \int_{\Sigma_{t_{1}}} K \sqrt{h} \, d^{3} y.
+\end{align}
+%
+La integral sobre $\Sigma_{t_{2}}$ da el mismo resultado pero con signo contrario. Ambos resultados se cancelan con las integrales sobre $\Sigma_{t_{1}}$ y $\Sigma_{t_{2}}$ de \eqref{eq:IB31}. Por otro lado, la integral sobre $\mathcal{B}$ contribuye con
+%
+\begin{align}
+-2 \int_{\mathcal{B}} (n^{\beta} \nabla_{\beta} n^{\alpha} - n^{\alpha} \nabla_{\beta} n^{\beta}) \, d \Sigma_{\alpha} & = -2 \int_{\mathcal{B}} (n^{\beta} \nabla_{\beta} n^{\alpha}) r_{\alpha} \sqrt{-\gamma} \, d^{3} z \nonumber \\
+& = 2 \int_{\mathcal{B}} n^{\alpha} n^{\beta} \nabla_{\beta} r_{\alpha} \sqrt{-\gamma} \, d^{3} z.
+\end{align}
+
+Juntando los resultados, el funcional de acción gravitacional (aún sin el término $I_{0}$) queda de la siguiente manera
+%
+\begin{equation}
+\label{eq:SGIEHIB}
+S_{G} = \frac{1}{16 \pi} \int^{t_{2}}_{t_{1}} dt \left[ \int_{\Sigma_{t}} (^{(3)}R + K^{ab} K_{ab} - K^{2}) N \sqrt{h} \, d^{3} y + 2 \int_{\mathcal{B}} (\mathcal{K} + n^{\alpha} n^{\beta} \nabla_{\beta} r_{\alpha}) \sqrt{-\gamma} \, d^{3} z\right].
+\end{equation}
+
+Ahora bien, a partir de las relaciones de completez \eqref{eq:Bcompltrelation} y \eqref{eq:complt} se manipula $(\mathcal{K} + n^{\alpha} n^{\beta} \nabla_{\beta} r_{\alpha})$. Primero,
+%
+\begin{equation}
+\mathcal{K} = \gamma^{fg} \mathcal{K}_{fg} = \gamma^{fg} (e^{\alpha}_{f} e^{\beta}_{g} \nabla_{\beta} r_{\alpha}) = (g^{\alpha \beta} - r^{\alpha} r^{\beta}) \nabla_{\beta} r_{\alpha},
+\end{equation}
+%
+que al sumar $n^{\alpha} n^{\beta} \nabla_{\beta} r_{\alpha}$, se obtiene
+%
+\begin{equation}
+\label{eq:manipulationk}
+(g^{\alpha \beta} - r^{\alpha} r^{\beta}) \nabla_{\beta} r_{\alpha} + n^{\alpha} n^{\beta} \nabla_{\beta} r_{\alpha} = \sigma^{vw} e^{\alpha}_{v} e^{\beta}_{w} (\nabla_{\beta} r_{\alpha}) = \sigma^{vw} k_{vw} = k.
+\end{equation}
+
+Sustituyendo (\ref{eq:manipulationk}) en (\ref{eq:SGIEHIB}) y además, tomando en cuenta que $\mathcal{B}$ está foleada por las superficies cerradas $S_{t}$ (así que $\sqrt{-\gamma} d^{3} z = N \sqrt{\sigma} dt d^{2} \theta$), entonces,
+%
+\begin{equation}
+\label{eq:LagSg}
+S_{G} = \frac{1}{16 \pi} \int^{t_{2}}_{t_{1}} dt \left[ \int_{\Sigma_{t}} (^{(3)}R + K^{ab} K_{ab} - K^{2}) N \sqrt{h} \, d^{3} y + 2 \oint_{S_{t}} (k - k_{0}) N \sqrt{\sigma} \, d^{2} \theta \right].
+\end{equation}
+
+Nótese que ahora sí se incluyó $I_{0}$ al escribir el término $k_{0}$ en la integral sobre $S_{t}$. La elección de $k_{0}$ como la curvatura extrínseca de $S_{t}$ encajada en el espacio plano previene que la integral diverja en el límite $S_{t} \rightarrow \infty$, asegurando que $S_{G}$ esté bien definido para cualquier espacio-tiempo asintóticamente plano.
