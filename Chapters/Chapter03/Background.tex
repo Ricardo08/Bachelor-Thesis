@@ -2,6 +2,34 @@
 
 \subsection{Clasificación de Haces Principales simétricos}
 
-Sea un haz principal $\pi: P \longrightarrow \mathcal{M}$ con grupo de estructura compacto $G$ y sea $S < \mathrm{Aut}(P)$ un grupo compacto de simetría actuando en el haz principal $P$, el cual, a través del mapeo de proyección $\pi$, induce una S-acción en la variedad base $\mathcal{M}$. Dado que el grupo de simetría es compacto existe una subvariedad densa y abierta $\mathcal{M}_{(K)} \subset \mathcal{M}$, que localmente está foliada por las órbitas de $S$. Esto es, $\mathcal{M}_{(K)} \cong  \mathcal{M}_{(K)}/S \times S/K$ para un subgrupo compacto $K \subset S$. El espacio base $\mathcal{M}$ se puede descomponer de la siguiente forma, $$\mathcal{M} = \mathcal{\tilde{M} \times S/K},$$ donde $\mathcal{\tilde{M}$ es una variedad conexa, y la acción de $S$ en $\mathcal{M}$ es tal que las órbitas están dadas por $S(m) \cong S/K$ para todo $m \in \mathcal{M}$.
+Sea un haz principal $\pi: P \longrightarrow \mathcal{M}$ con grupo compacto de estructura $G$ y sea $S < \mathrm{Aut}(P)$ un grupo compacto de simetría actuando en el haz principal $P$, el cual, a través del mapeo de proyección $\pi$, induce una S-acción en la base $\mathcal{M}$. Dado que el grupo de simetría es compacto existe una subvariedad densa y abierta $\mathcal{M}_{(K)} \subset \mathcal{M}$, que localmente está foliada por las órbitas de $S$. Esto es, $\mathcal{M}_{(K)} \cong  \mathcal{M}_{(K)}/S \times S/K$ para un subgrupo compacto $K \subset S$. El espacio base $\mathcal{M}$ se puede descomponer de la siguiente forma, $$\mathcal{M} = \mathcal{\tilde{M}} \times S/K,$$ donde $\mathcal{\tilde{M}}$ es una variedad conexa, y la acción de $S$ en $\mathcal{M}$ es tal que las órbitas están dadas por $S(m) \cong S/K$ para todo $m \in \mathcal{M}$.
+
+\begin{thm}
+\label{thm:theorem1}
+A partir de las suposiciones anteriores, el haz principal $\pi: P \longrightarrow \mathcal{M}$, con grupo de estructura $G$, simétrico bajo la acción del grupo $S$, está clasificado por un homomorfismo $\lambda: K \longrightarrow G$ y un haz principal $\tilde{\pi}: \tilde{Q} \longrightarrow \mathcal{\tilde{M}}$ con grupo de estructura $Z$, donde $Z$ es el centralizador del subgrupo $\lambda (K) \subset G$.
+\end{thm}
+
+El haz principal $\tilde{Q}$ es subhaz de $P$ tal que $$\tilde{Q} = \{p \in P|_{\mathcal{\tilde{M}}} : \lambda_{p} = \lambda\},$$ donde el homomorfismo $\lambda_{p}$ es un mapeo asignado a cada punto $p \in \pi^{-1} (m)$ que va del subgrupo de isotropía $K$ al grupo de estructura $G$ definido por $k \cdot p = p \cdot \lambda_{p} (k)$. El homomorfismo $\lambda_{p}: K \longrightarrow G$ obedece la relación $\lambda_{p'} = \mathrm{Ad}_{g^{-1}} \circ \lambda_{p}$ para algún punto $p' = p \cdot g$ en la misma fibra, $$p' \cdot \lambda_{p'}(k) = k \cdot (p \cdot g) = (k \cdot p) \cdot g = (p \cdot \lambda_{p} (k)) \cdot g = p' \cdot \mathrm{Ad}_{g^{-1}} (\lambda_{p} (k)).$$
 
 \subsection{Clasificación de Conexiones invariantes}
+
+Sea $\omega$ una conexión invariante en el haz principal $P$, clasificado por el par $(\lambda, \tilde{Q})$, bajo la acción de $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$. De la restricción, la conexión $\omega$ induce una conexión $\tilde{\omega}$ en el subhaz $\tilde{Q}$ con valores en el álgebra de Lie del grupo de estructura $Z$. Esto es,
+%
+\begin{align*}
+k^{*} (\omega_{p}(v)) = & \omega_{k \cdot p} (k_{*} (v))
+= \omega_{p \cdot \lambda_{p}(k)}  (\lambda_{p}(k)_{*} (v)) \\
+= & \lambda_{p}(k)^{*}  (\omega_{p}(v))
+= \mathrm{Ad}_{\lambda (k)^{-1} *} (\omega_{p}(v)),
+\end{align*}
+%
+pero $\omega$ es invariante bajo la acción de $S$ y dado que $F \subset S$, entonces $\mathrm{Ad}_{\lambda (k)^{-1} *} (\omega_{p}(v)) = \omega_{p}(v)$; para todo $k \in K$ y para un vector $v \in T_{p}P$ tal que $\pi_{*}(v) \in \varrho_{*} (T_{\pi(p)} \mathcal{\tilde{M}})$, donde $\varrho$ es el encaje de $\mathcal{\tilde{M}}$ en $\mathcal{M}$. Lo que muestra efectivamente que $\omega_{p}(v) \in T_{e}Z$ y $\omega$ puede ser restringida a una conexión en el haz $\tilde{Q}$ con grupo de estructura $Z$ \cite{Bojowald2005}.
+
+\begin{thm}[Teorema Generalizado de Wang]
+Sea $\pi: P \longrightarrow \mathcal{M}$ un haz principal $S$-simétrico con grupo de estructura $G$ clasificado por el par $(\lambda, \tilde{Q})$ (teorema \ref{thm:theorem1}) y sea $\omega$ una conexión invariante en $P$ bajo la acción de $S$. Entonces $\omega$ está clasificada por una conexión $\tilde{\omega}$ en $\tilde{Q}$ y un campo escalar $\tilde{\phi}$ sobre $\tilde{Q}$ con valores en el subespacio lineal de $T_{e}G \otimes T_{e}K^{*}_{\perp}$ definido por
+%
+\begin{equation}
+\mathrm{Ad}_{\lambda(k)} \circ \tilde{\phi} (X) = \tilde{\phi} \circ Ad_{k} (X),
+\end{equation}
+%
+para todo $k \in K$ y $X \in $. $T_{e}K_{\perp}$ es el complemento ortogonal de $T_{e}K \subset T_{e}S$ con respecto a la métrica de Cartan-Killing.
+\end{thm}
