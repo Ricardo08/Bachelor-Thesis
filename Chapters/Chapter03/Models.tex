@@ -1,0 +1,40 @@
+\section{Modelos Homogéneos}
+
+Una conexión homogénea $A$, es una uno-forma en el grupo de simetría $S$ que toma valores en el álgebra de Lie $T_{e}G$ del grupo de estructura $G$, el cual para las variables de Ashtekar-Barbero es $G=\mathrm{SU}(2)$. Considérense los modelos de Bianchi clase A, ya que constituyen todos los modelos homogéneos con una acción libre del grupo de simetría $S$ y como $S$ actúa libremente en el espacio base $\mathcal{M}$, entonces $\mathcal{M}$ puede ser identificado con $S$ de manera local.
+
+Ahora, se denota a los tres generadores de $T_{e}S$ como $T_{I}$, $I=1,2,3$, tal que $\left[ T_{I}, T_{J} \right] = C^{K}_{IJ} T_{K}$, donde $C^{K}_{IJ}$ son las constantes de estructura de $T_{e}S$ que satisfacen $C^{K}_{IK} = 0$ (para modelos clase A por definición). La forma de Maurer-Cartan en $S$ está dada por $\theta_{\mathrm{MC}} = \omega^{I} T_{I}$ con $\omega^{I} = \omega^{I}_{a} dx^{a}$ uno-formas invariantes por la izquierda en $S$ que cumplen las ecuaciones de Maurer-Cartan
+%
+\begin{equation}
+d \omega^{I} = -\frac{1}{2} C^{I}_{JK} \omega^{I} \wedge \omega^{J}.
+\end{equation}
+
+Por la acción libre el grupo de isotropía se tiene $K=\{e\}$, lo que implica que todos los homomorfismos $\lambda: K \rightarrow G$ están dados por $1 \longmapsto 1$, y es posible usar el encaje $\iota = \mathrm{id}: S/K \hookrightarrow S$. De este modo, una conexión invariante toma la forma
+%
+\begin{equation}
+A = \tilde{\phi} \circ \theta_{\mathrm{MC}} = \tilde{\phi}^{I}_{J} \tau_{I} \omega^{J} =  \tilde{\phi}^{I}_{J} \omega^{J}_{a} \tau_{I} dx^{a}=A^{I}_{a} \tau_{I} dx^{a},
+\end{equation}
+%
+con $\tau_{I} = i \sigma_{I}/2$ generando $T_{e}\mathrm{SU}(2)$ ($\sigma_{I}$ son las matrices de Pauli). Para $K=\{e\}$ la condición \eqref{eq:HiggsField} está vacía, entonces el campo escalar está dado por $\tilde{\phi}: T_{e}K_{\perp} = T_{e}S \longrightarrow T_{e}\mathrm{SU}(2)$, $T_{I} \longmapsto \tilde{\phi}(T_{I}) =: \tilde{\phi}^{J}_{I} \tau_{J}$. Las componentes del momento canónicamente conjugado a $A^{I}_{a} = \phi^{I}_{K} \omega^{K}_{a}$ son
+%
+\begin{equation}
+E^{a}_{I} = \sqrt{g_{0}} \tilde{p}^{K}_{I} X^{a}_{K},
+\end{equation}
+%
+con $\tilde{p}^{K}_{I}$ canónicamente conjugado a $\tilde{\phi}^{I}_{K}$, $g_{0} = \det(\omega^{K}_{a})^{2}$ es el determinante de la métrica invariante por la izquierda\footnotemark que densitiza a $E^{a}_{I}$, y $X_{I}$ campos vectoriales invariantes por la izquierda tal que $\omega^{I}(X_{J}) = \delta^{I}_{J}$ y con $[X_{I}, X_{J}] = C^{K}_{IJ} X_{K}$.
+\footnotetext{$(g_{0})_{ab} := \sum\limits_{K} \omega^{K}_{a} \omega^{K}_{b}.$}
+
+La estructura simpléctica se calcula de
+%
+\begin{equation}
+\frac{1}{8 \pi \gamma \kappa} \int\limits_{\mathcal{M}} d^{3} x \dot{A}^{I}_{a} E^{a}_{I} = \frac{1}{8 \pi \gamma \kappa} \int\limits_{\mathcal{M}} d^{3} x \sqrt{g_{0}} \dot{\tilde{\phi}}^{I}_{K} \tilde{p}^{J}_{I} \omega^{K} (X_{J}) = \frac{V_{0}}{8 \pi \gamma \kappa} \dot{\tilde{\phi}}^{I}_{K} \tilde{p}^{J}_{I},
+\end{equation}
+%
+y se obtiene
+%
+\begin{equation}
+\{\tilde{\phi}^{I}_{K}, \tilde{p}^{J}_{L} \} = 8 \pi \gamma \kappa V_{0} \delta^{I}_{L} \delta^{J}_{K},
+\end{equation}
+%
+con $\kappa$ la constante gravitacional, $\gamma$ como el parámetro de Immirzi y volumen $V_{0} := \int\limits_{\mathcal{M}} d^{3} x  \sqrt{g_{0}}$. Es conveniente definir $\phi^{I}_{J} := V_{0}^{1/3} \tilde{\phi}^{I}_{J}$ y $p^{I}_{J} := V_{0}^{2/3} \tilde{p}^{I}_{J}$ para hacer la estructura simpléctica independiente de $V_{0}$ y así respetar la independencia de fondo.
+
+%\section{Modelos Isotrópicos}

@@ -9,14 +9,14 @@ Sea un haz principal $\pi: P \longrightarrow \mathcal{M}$ con grupo compacto de 
 A partir de las suposiciones anteriores, el haz principal $\pi: P \longrightarrow \mathcal{M}$, con grupo de estructura $G$, simétrico bajo la acción del grupo $S$, está clasificado por un homomorfismo $\lambda: K \longrightarrow G$ y un haz principal $\tilde{\pi}: \tilde{Q} \longrightarrow \mathcal{\tilde{M}}$ con grupo de estructura $Z$, donde $Z$ es el centralizador del subgrupo $\lambda (K) \subset G$.
 \end{thm}
 
-El haz principal $\tilde{Q}$ es subhaz de $P$ tal que $$\tilde{Q} = \{p \in P|_{\mathcal{\tilde{M}}} : \lambda_{p} = \lambda\},$$ donde el homomorfismo $\lambda_{p}$ es un mapeo asignado a cada punto $p \in \pi^{-1} (m)$ que va del subgrupo de isotropía $K$ al grupo de estructura $G$ definido por $k \cdot p = p \cdot \lambda_{p} (k)$. El homomorfismo $\lambda_{p}: K \longrightarrow G$ obedece la relación $\lambda_{p'} = \mathrm{Ad}_{g^{-1}} \circ \lambda_{p}$ para algún punto $p' = p \cdot g$ en la misma fibra, $$p' \cdot \lambda_{p'}(k) = k \cdot (p \cdot g) = (k \cdot p) \cdot g = (p \cdot \lambda_{p} (k)) \cdot g = p' \cdot \mathrm{Ad}_{g^{-1}} (\lambda_{p} (k)).$$
+El haz principal $\tilde{Q}$ es subhaz de $P$ tal que $$\tilde{Q} = \{p \in P|_{\mathcal{\tilde{M}}} : \lambda_{p} = \lambda\},$$ donde el homomorfismo $\lambda_{p}$ es un mapeo asignado a cada punto $p \in \pi^{-1} (m)$ que va del subgrupo de isotropía $K$ al grupo de estructura $G$ definido por $p \cdot k = p \cdot \lambda_{p} (k)$. Gracias a la conmutatividad de la acción de $K$ con la acción derecha de $G$ en $P$, el homomorfismo $\lambda_{p}: K \longrightarrow G$ obedece la relación $\lambda_{p'} = \mathrm{Ad}_{g^{-1}} \circ \lambda_{p}$ para algún punto $p' = p \cdot g$ en la misma fibra, $$p' \cdot \lambda_{p'}(k) = (p \cdot g) \cdot k = (p \cdot k) \cdot g = (p \cdot \lambda_{p} (k)) \cdot g = p' \cdot \mathrm{Ad}_{g^{-1}} (\lambda_{p} (k)).$$
 
 \subsection{Clasificación de Conexiones invariantes}
 
 Sea $\omega$ una conexión invariante en el haz principal $P$, clasificado por el par $(\lambda, \tilde{Q})$, bajo la acción de $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$. De la restricción, la conexión $\omega$ induce una conexión $\tilde{\omega}$ en el subhaz $\tilde{Q}$ con valores en el álgebra de Lie del grupo de estructura $Z$. Esto es,
 %
 \begin{align*}
-k^{*} (\omega_{p}(v)) = & \omega_{k \cdot p} (k_{*} (v))
+k^{*} (\omega_{p}(v)) = & \omega_{p \cdot k} (k_{*} (v))
 = \omega_{p \cdot \lambda_{p}(k)}  (\lambda_{p}(k)_{*} (v)) \\
 = & \lambda_{p}(k)^{*}  (\omega_{p}(v))
 = \mathrm{Ad}_{\lambda (k)^{-1} *} (\omega_{p}(v)),
@@ -28,6 +28,7 @@ pero $\omega$ es invariante bajo la acción de $S$ y $K \subset S$, entonces $\ma
 Sea $\pi: P \longrightarrow \mathcal{M}$ un haz principal $S$-simétrico con grupo de estructura $G$ clasificado por el par $(\lambda, \tilde{Q})$ (teorema \ref{thm:theorem1}) y sea $\omega$ una conexión invariante en $P$ bajo la acción de $S$. Entonces $\omega$ está clasificada de manera única por una conexión $\tilde{\omega}$ en $\tilde{Q}$ y un campo escalar $\tilde{\phi}$ que va de $T_{e}K_{\perp}$, el complemento ortogonal $T_{e}K \subset T_{e}S$ con respecto a la métrica de Cartan-Killing, a $T_{e}G$. El campo $\phi$ está restringido a la relación
 %
 \begin{equation}
+\label{eq:HiggsField}
 \mathrm{Ad}_{\lambda(k)} \circ \tilde{\phi} (X) = \tilde{\phi} \circ Ad_{k} (X),
 \end{equation}
 %
