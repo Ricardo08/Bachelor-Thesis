@@ -2,19 +2,19 @@
 
 Una conexión homogénea $A$, es una uno-forma en el grupo de simetría $S$ que toma valores en el álgebra de Lie $T_{e}G$ del grupo de estructura $G$, el cual para las variables de Ashtekar-Barbero es $G=\mathrm{SU}(2)$. Considérense los modelos de Bianchi clase A, ya que constituyen todos los modelos homogéneos con una acción libre del grupo de simetría $S$ y como $S$ actúa libremente en el espacio base $\mathcal{M}$, entonces $\mathcal{M}$ puede ser identificado con $S$ de manera local.
 
-Ahora, se denota a los tres generadores de $T_{e}S$ como $T_{I}$, $I=1,2,3$, tal que $\left[ T_{I}, T_{J} \right] = C^{K}_{IJ} T_{K}$, donde $C^{K}_{IJ}$ son las constantes de estructura de $T_{e}S$ que satisfacen $C^{K}_{IK} = 0$ (para modelos clase A por definición). La forma de Maurer-Cartan en $S$ está dada por $\theta_{\mathrm{MC}} = \omega^{I} T_{I}$ con $\omega^{I} = \omega^{I}_{a} dx^{a}$ uno-formas invariantes por la izquierda en $S$ que cumplen las ecuaciones de Maurer-Cartan
+Ahora, se denota a los tres generadores de $T_{e}S$ como $T_{I}$, $I=1,2,3$, tal que $\left[ T_{I}, T_{J} \right] = C^{K}_{IJ} T_{K}$, donde $C^{K}_{IJ}$ son las constantes de estructura de $T_{e}S$ que satisfacen $C^{K}_{IK} = 0$ (para modelos clase A por definición). La forma de Maurer-Cartan en $S$ está dada por $\theta_{\mathrm{MC}} = \omega^{I} \otimes T_{I}$ con $\omega^{I} = \omega^{I}_{a} dx^{a}$ uno-formas invariantes por la izquierda en $S$ que cumplen las ecuaciones de Maurer-Cartan
 %
 \begin{equation}
 d \omega^{I} = -\frac{1}{2} C^{I}_{JK} \omega^{I} \wedge \omega^{J}.
 \end{equation}
 
-Por la acción libre el grupo de isotropía se tiene $K=\{e\}$, lo que implica que todos los homomorfismos $\lambda: K \rightarrow G$ están dados por $1 \longmapsto 1$, y es posible usar el encaje $\iota = \mathrm{id}: S/K \hookrightarrow S$. De este modo, una conexión invariante toma la forma
+Por la acción libre el grupo de isotropía se tiene $J=\{e\}$, lo que implica que todos los homomorfismos $\lambda: J \rightarrow G$ están dados por $1 \longmapsto 1$, y es posible usar el encaje $\iota = \mathrm{id}: S/J \hookrightarrow S$. De este modo, una conexión invariante toma la forma
 %
 \begin{equation}
 A = \tilde{\phi} \circ \theta_{\mathrm{MC}} = \tilde{\phi}^{I}_{J} \tau_{I} \omega^{J} =  \tilde{\phi}^{I}_{J} \omega^{J}_{a} \tau_{I} dx^{a}=A^{I}_{a} \tau_{I} dx^{a},
 \end{equation}
 %
-con $\tau_{I} = i \sigma_{I}/2$ generando $T_{e}\mathrm{SU}(2)$ ($\sigma_{I}$ son las matrices de Pauli). Para $K=\{e\}$ la condición \eqref{eq:HiggsField} está vacía, entonces el campo escalar está dado por $\tilde{\phi}: T_{e}K_{\perp} = T_{e}S \longrightarrow T_{e}\mathrm{SU}(2)$, $T_{I} \longmapsto \tilde{\phi}(T_{I}) =: \tilde{\phi}^{J}_{I} \tau_{J}$. Las componentes del momento canónicamente conjugado a $A^{I}_{a} = \phi^{I}_{K} \omega^{K}_{a}$ son
+con $\tau_{I} = i \sigma_{I}/2$ generando $T_{e}\mathrm{SU}(2)$ ($\sigma_{I}$ son las matrices de Pauli). Para $J=\{e\}$ la condición \eqref{eq:HiggsField} está vacía, entonces el mapeo lineal está dado por $\tilde{\phi}: T_{e}J_{\perp} = T_{e}S \longrightarrow T_{e}\mathrm{SU}(2)$, $T_{I} \longmapsto \tilde{\phi}(T_{I}) =: \tilde{\phi}^{J}_{I} \tau_{J}$. Las componentes del momento canónicamente conjugado a $A^{I}_{a} = \phi^{I}_{K} \omega^{K}_{a}$ son
 %
 \begin{equation}
 E^{a}_{I} = \sqrt{g_{0}} \tilde{p}^{K}_{I} X^{a}_{K},
@@ -37,4 +37,54 @@ y se obtiene
 %
 con $\kappa$ la constante gravitacional, $\gamma$ como el parámetro de Immirzi y volumen $V_{0} := \int\limits_{\mathcal{M}} d^{3} x  \sqrt{g_{0}}$. Es conveniente definir $\phi^{I}_{J} := V_{0}^{1/3} \tilde{\phi}^{I}_{J}$ y $p^{I}_{J} := V_{0}^{2/3} \tilde{p}^{I}_{J}$ para hacer la estructura simpléctica independiente de $V_{0}$ y así respetar la independencia de fondo.
 
-%\section{Modelos Isotrópicos}
+\section{Modelos Isotrópicos}
+
+Al imponer más condiciones de simetría se introducen subgrupos de isotropía no triviales, $J \cong \mathrm{U}(1)$ para modelos simétricos rotacionalmente de manera local (LRS por sus siglas en inglés) y $J \cong \mathrm{SU}(2)$ para modelos de Bianchi tipo I y IX restringidos a métricas isotrópica. Sin embargo, escribiendo al grupo de simetría como un producto semidirecto $S = J \rtimes_{\rho} N$, con el grupo de isotroía $J$ y el subgrupo de traslaciones $N$, se puede utilizar la técnica ya discutida para encontrar la forma de la conexión invariante. La composición en este grupo está definida como $(n_{1}, j_{1})(n_{2}, j_{2}) := (n_{1} \rho(j_{1}) (n_{2}), j_{1} j_{2} )$ que depende del homomorfismo $\rho: J \longrightarrow \mathrm{Aut}(N)$, mientras que el inverso está dado por $(n, j)^{-1} = (\rho(j^{-1}) n^{-1}, j^{-1})$.
+
+Ahora bien, la forma de Maurer-Cartan en $S$ está dada por
+%
+\begin{align*}
+\label{eq:MC-S}
+\theta^{(S)}_{\mathrm{MC}} (n, j) = & (n, j)^{-1} d(n, j) = (\rho(j^{-1}) n^{-1}, j^{-1}) (dn, dj) \\
+= & (\rho(j^{-1}) n^{-1} \rho(j^{-1}) dn, j^{-1} dj) = (\rho(j^{-1}) (n^{-1} dn), j^{-1} dj) \\
+= & \left(\rho(j^{-1}) \theta^{(N)}_{\mathrm{MC}} (n), \theta^{(J)}_{\mathrm{MC}} (j) \right),
+\end{align*}
+%
+aquí $\theta^{(N)}_{\mathrm{MC}}$ y $\theta^{(J)}_{\mathrm{MC}}$ denotan las forma de Maurer-Cartan en $N$ y $J$ respectivamente. El encaje $\iota: S/J = N \hookrightarrow S$, que se escoge es $\iota(n) = (n, 1)$ y así: $\iota^{*} \theta^{(S)}_{\mathrm{MC}} = \theta^{(N)}_{\mathrm{MC}}$. De este modo, la conexión toma la forma
+%
+\begin{equation}
+\label{eq:wN}
+\tilde{\phi} \circ \iota^{*} \theta^{(S)}_{\mathrm{MC}} = \tilde{\phi}^{I}_{J} \omega^{J} \tau_{I},
+\end{equation}
+%
+donde $\omega^{J}$ son uno-formas invarinates en $N$. Nótese que \eqref{eq:wN} tiene la misma forma que el modelo anterior, pero en este caso la condición \eqref{eq:HiggsField} no está vacía, por lo que se obtiene un subconjunto de conexiones isotrópicas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
