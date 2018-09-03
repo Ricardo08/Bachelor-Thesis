@@ -3,7 +3,7 @@ References/**
 Images/**
 
 ## System files
-**.DS_Store
+*.DS_Store
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
