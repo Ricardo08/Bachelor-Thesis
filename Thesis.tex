@@ -54,7 +54,7 @@
 \makeindex
 
 \theoremstyle{definition}
-\newtheorem{mydef}{Definición}[chapter]
+\newtheorem{mydef}{Definici\'{o}n}[chapter]
 \theoremstyle{plain}
 \newtheorem{thm}[mydef]{Teorema}
 \theoremstyle{remark}
@@ -65,7 +65,7 @@
  {\mdseries}{}
  {\newline}{}
 \theoremstyle{break}
-\newtheorem*{dem}{Demostración:}
+\newtheorem*{dem}{Demostraci\'{o}n:}
 
 %---------- Renewed commands --------------------------------
 
@@ -88,21 +88,21 @@
 % INTRODUCTION
 %-------------------------------------------------------------
 
-\chapter*{Introducción}
+\chapter*{Introducci\'{o}n}
 
-La Relatividad General áes la teoría moderna de la gravedad, postulada por Albert Einstein a finales de 1915 \cite{Einstein}. En esta teoría la gravedad no es una fuerza como los es en física Newtoniana, sino la \emph{curvatura} del espacio-tiempo. Citando a John A. Wheeler ``la materia le dice al espacio-tiempo cómo curvarse, y el espacio-tiempo le dice a la materia cómo moverse''. {\color{OliveGreen} hablar un poco más de la relatividad general, contar sobre sus predicciones y sus límites, pero conforme vaya avanzando en la tesis para ser coherente con el contenido de la misma.}
+La Relatividad General \'{a}es la teor\'{i}a moderna de la gravedad, postulada por Albert Einstein a finales de 1915 \cite{Einstein}. En esta teor\'{i}a la gravedad no es una fuerza como los es en f\'{i}sica Newtoniana, sino la \emph{curvatura} del espacio-tiempo. Citando a John A. Wheeler ``la materia le dice al espacio-tiempo c\'{o}mo curvarse, y el espacio-tiempo le dice a la materia c\'{o}mo moverse''. {\color{OliveGreen} hablar un poco m\'{a}s de la relatividad general, contar sobre sus predicciones y sus l\'{i}mites, pero conforme vaya avanzando en la tesis para ser coherente con el contenido de la misma.}
 
-En ésta tesis supondremos que el lector está familiarizado con la teoría de Relatividad General y conceptos básicos de Geometría Diferencial.
+En \'{e}sta tesis supondremos que el lector est\'{a} familiarizado con la teor\'{i}a de Relatividad General y conceptos b\'{a}sicos de Geometr\'{i}a Diferencial.
 
-El propósito de esta tesis es encontrar la forma que toman las variables de Ashtekar para los casos de cosmologías homogeneas e isotrópicas. Para ello, es importante entender las distintas formulaciones de la Relatividad General, principalmente en la formulación de variables de conexión hecha por A. Ashtekar \cite{Ashtekar86, Ashtekar87} así que en el primer capítulo se presentará la formulación Lagrangiana y Hamiltoniana de la Relatividad General (siguiendo de cerca la discusión que se lleva acabo en \cite{Poisson}), y en el segundo veremos la formulación en variables de conexión de la Relatividad General, tomando como principales referencias el libro de Baez \cite{Baez}, el artículo de Barbero \cite{Barbero} y la tesis de J. Vega \cite{Vega}. {\color{OliveGreen}continuar mencionando sobre lo que se hablará/discutirá en cada capítulo}
+El prop\'{o}sito de esta tesis es encontrar la forma que toman las variables de Ashtekar para los casos de cosmolog\'{i}as homogeneas e isotr\'{o}picas. Para ello, es importante entender las distintas formulaciones de la Relatividad General, principalmente en la formulaci\'{o}n de variables de conexi\'{o}n hecha por A. Ashtekar \cite{Ashtekar86, Ashtekar87} as\'{i} que en el primer cap\'{i}tulo se presentar\'{a} la formulaci\'{o}n Lagrangiana y Hamiltoniana de la Relatividad General (siguiendo de cerca la discusi\'{o}n que se lleva acabo en \cite{Poisson}), y en el segundo veremos la formulaci\'{o}n en variables de conexi\'{o}n de la Relatividad General, tomando como principales referencias el libro de Baez \cite{Baez}, el art\'{i}culo de Barbero \cite{Barbero} y la tesis de J. Vega \cite{Vega}. {\color{OliveGreen}continuar mencionando sobre lo que se hablar\'{a}/discutir\'{a} en cada cap\'{i}tulo}
 
-En esta tesis usaremos la convención de signos de Misner, Thorne, y Wheeler con una métrica de signatura $(-,+,+,+)$. Los índices griegos $\alpha$, $\beta...$ serán utilizados para las componentes espacio-temporales, es decir, corren de 0 a 3; los índices latinos $a$, $b$, $c$, $d$ corren de 1 a 3, están asignados para las componentes espaciales; las letras latinas mayúsculas a partir de la mitad del abecedario, $I$, $J$, $K$..., serán usadas para los índices internos mientras que las letras latinas mayúsculas al inicio del abecedario $A$, $B$, $C$..., representan \emph{índices abstractos} (ver \cite{Wald}).
+En esta tesis usaremos la convenci\'{o}n de signos de Misner, Thorne, y Wheeler con una m\'{e}trica de signatura $(-,+,+,+)$. Los \'{i}ndices griegos $\alpha$, $\beta...$ ser\'{a}n utilizados para las componentes espacio-temporales, es decir, corren de 0 a 3; los \'{i}ndices latinos $a$, $b$, $c$, $d$ corren de 1 a 3, est\'{a}n asignados para las componentes espaciales; las letras latinas may\'{u}sculas a partir de la mitad del abecedario, $I$, $J$, $K$..., ser\'{a}n usadas para los \'{i}ndices internos mientras que las letras latinas may\'{u}sculas al inicio del abecedario $A$, $B$, $C$..., representan \emph{\'{i}ndices abstractos} (ver \cite{Wald}).
 
 %-------------------------------------------------------------
 % LAGRANGIAN FORMULATION GENERAL RELATIVITY
 %-------------------------------------------------------------
 
-\chapter{Formulación Lagrangiana y Hamiltoniana de la Relatividad General}
+\chapter{Formulaci\'{o}n Lagrangiana y Hamiltoniana de la Relatividad General}
 \label{chp:RG}
 
 \input{Chapters/Chapter01/Lagrangian_formulation.tex}
@@ -111,7 +111,7 @@ En esta tesis usaremos la convención de signos de Misner, Thorne, y Wheeler con
 % HAMILTONIAN FORMULATION GENERAL RELATIVITY
 %-------------------------------------------------------------
 
-\section{Formulación Hamiltoniana (ADM o 3+1)}
+\section{Formulaci\'{o}n Hamiltoniana (ADM o 3+1)}
 
 \input{Chapters/Chapter01/ADM_Formalism.tex}
 \input{Chapters/Chapter01/Foliacion_Frontera.tex}
@@ -124,7 +124,7 @@ En esta tesis usaremos la convención de signos de Misner, Thorne, y Wheeler con
 % THE NEW VARIABLES
 %-------------------------------------------------------------
 
-\chapter{Relatividad General en Variables de Conexión}
+\chapter{Relatividad General en Variables de Conexi\'{o}n}
 
 \input{Chapters/Chapter02/New_Variables.tex}
 \input{Chapters/Chapter02/Phase_Space.tex}
@@ -134,7 +134,7 @@ En esta tesis usaremos la convención de signos de Misner, Thorne, y Wheeler con
 % ISOTROPIC MODEL
 %-------------------------------------------------------------
 
-\chapter{Variables de Ashtekar para modelos homogéneos y modelos isotrópicos}
+\chapter{Variables de Ashtekar para modelos homog\'{e}neos y modelos isotr\'{o}picos}
 
 \input{Chapters/Chapter03/Background.tex}
 \input{Chapters/Chapter03/Models.tex}
