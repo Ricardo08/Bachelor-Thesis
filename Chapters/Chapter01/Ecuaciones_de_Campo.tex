@@ -4,8 +4,8 @@
 
 \subsection{Ecuaciones del campo gravitacional}
 
-Para obtener las ecuaciones de campo gravitacional en forma Hamiltoniana se hace la variación de la acción\footnotemark $S = S_{G}$, con $S_{G}$ escrita en forma canónica
-\footnotetext{Por el momento estamos considerando que estamos en vacío, i.e. $S_{M} = 0$.}
+Para obtener las ecuaciones de campo gravitacional en forma Hamiltoniana se hace la variaci\'{o}n de la acci\'{o}n\footnotemark $S = S_{G}$, con $S_{G}$ escrita en forma can\'{o}nica
+\footnotetext{Por el momento estamos considerando que estamos en vac\'{i}o, i.e. $S_{M} = 0$.}
 %
 \begin{equation}
 S_{G} = \frac{1}{16 \pi} \int^{t_2}_{t_1} dt \left[ \int_{\Sigma_{t}} p^{ab} \dot{h}_{ab} \, d^{3} y - H_{G} \right],
@@ -18,14 +18,14 @@ respecto a las variables independientes $N$, $N^{a}$, $h_{ab}$, y $p^{ab}$, suje
 \delta N \Big|_{S_{t}} = \delta N^{a} \Big|_{S_{t}} = \delta h_{ab} \Big|_{S_{t}} = 0,
 \end{equation}
 %
-y sin condición sobre $\delta p^{ab}$ de anularse en la frontera $S_{t}$. La variación da
+y sin condici\'{o}n sobre $\delta p^{ab}$ de anularse en la frontera $S_{t}$. La variaci\'{o}n da
 %
 \begin{equation}
 \label{eq:varSG31}
 \delta S_{G} = \frac{1}{16 \pi} \int^{t_1}_{t_2} dt \left[ \int_{\Sigma_{t}} (p^{ab} \delta \dot{h}_{ab} + \dot{h}_{ab} \delta p^{ab}) \, d^{3} y - \delta H_{G} \right].
 \end{equation}
 
-Comenzaremos calculando la variación del Hamiltoniano gravitacional $H_{G}$. Iniciamos con la variación con respecto a las funciones no dinámicas, $N$ y $N^{a}$:
+Comenzaremos calculando la variaci\'{o}n del Hamiltoniano gravitacional $H_{G}$. Iniciamos con la variaci\'{o}n con respecto a las funciones no din\'{a}micas, $N$ y $N^{a}$:
 %
 \begin{equation}
 \label{eq:varHcrNNa}
@@ -38,7 +38,7 @@ donde
 \hat{\mathcal{C}} := (^{(3)}R + K^{2} - K^{ab} K_{ab}) \sqrt{h}, \qquad \hat{\mathcal{C}}_{a} := [D_{b} (K_{a}^{b} - K \delta_{a}^{b})] \sqrt{h}.
 \end{equation}
 
-Para hacer la variación de $H_{G}$ respecto a $p^{ab}$ y $h_{ab}$ hay que expresar el Hamiltoniano en términos de $p^{ab}$ y $h_{ab}$, para ello se usa \eqref{eq:Kph} en \eqref{eq:HG}, de este modo,
+Para hacer la variaci\'{o}n de $H_{G}$ respecto a $p^{ab}$ y $h_{ab}$ hay que expresar el Hamiltoniano en t\'{e}rminos de $p^{ab}$ y $h_{ab}$, para ello se usa \eqref{eq:Kph} en \eqref{eq:HG}, de este modo,
 %
 \begin{align}
 \label{eq:16piHG}
@@ -47,7 +47,7 @@ Para hacer la variación de $H_{G}$ respecto a $p^{ab}$ y $h_{ab}$ hay que expres
 & \quad - 2 \oint_{S_{t}} \left[ N (k - k_{0}) - N_{a} h^{-1/2} \hat{p}^{ab} r_{b} \right] \sqrt{\sigma} \, d^{2} \theta.
 \end{align}
 %
-Aquí se definió $\hat{p}^{ab} = 16 \pi p^{ab}$ ($\hat{p}_{ab} = 16 \pi p_{ab}$). Haciendo la variación con respecto a $\hat{p}^{ab}$, se tiene
+Aqu\'{i} se defini\'{o} $\hat{p}^{ab} = 16 \pi p^{ab}$ ($\hat{p}_{ab} = 16 \pi p_{ab}$). Haciendo la variaci\'{o}n con respecto a $\hat{p}^{ab}$, se tiene
 %
 \begin{align}
 \label{eq:varHcrp}
@@ -57,15 +57,15 @@ Aquí se definió $\hat{p}^{ab} = 16 \pi p^{ab}$ ($\hat{p}_{ab} = 16 \pi p_{ab}$).
 & = \int_{\Sigma_{t}} \mathcal{H}_{ab} \delta \hat{p}^{ab} \, d^{3} y.
 \end{align}
 
-Ahora, se hace la variación de $H_{G}$ con respecto a $h_{ab}$. Lo haremos por partes, primero el término de volumen\footnotemark
-\footnotetext{La integral sobre $S_{t}$ viene de aplicar el teorema de Gauss al término $2 N_{a} h^{1/2} D_{b} (h^{-1/2} \hat{p}^{ab})$ en la ecuación \eqref{eq:16piHG}.}
+Ahora, se hace la variaci\'{o}n de $H_{G}$ con respecto a $h_{ab}$. Lo haremos por partes, primero el t\'{e}rmino de volumen\footnotemark
+\footnotetext{La integral sobre $S_{t}$ viene de aplicar el teorema de Gauss al t\'{e}rmino $2 N_{a} h^{1/2} D_{b} (h^{-1/2} \hat{p}^{ab})$ en la ecuaci\'{o}n \eqref{eq:16piHG}.}
 %
 \begin{align}
 (16 \pi) \delta_{h} H_{\Sigma} & = \int_{\Sigma_{t}} \left[ -N h^{-1} (\hat{p}^{ab} \hat{p}_{ab} - \frac{1}{2} \hat{p}^{2}) \delta_{h} h^{1/2} + N h^{-1/2} \delta_{h} (\hat{p}^{ab} \hat{p}_{ab} - \frac{1}{2} \hat{p}^{2}) \right. \nonumber \\
 & \quad \left. - N \delta_{h} (h^{1/2} \, ^{(3)}R) + 2 \delta_{h} (\hat{p}^{ab} D_{b} N_{a}) \right] \, d^{3} y - 2 \delta_{h} \oint_{S_{t}} N_{a} h^{-1/2} \hat{p}^{ab} r_{b} \sqrt{\sigma} \, d^{2} \theta.
 \end{align}
 %
-Por la condición de frontera \eqref{eq:boundcondh}, la variación de la integral sobre $S_{t}$ se anula. Usando $^{(3)}R = R_{ab} h^{ab}$ y las relaciones $\delta h^{ab} = -h^{ac} h^{db} \delta h_{cd}$ y $\delta_{h} h^{1/2} = \frac{1}{2} h^{1/2} h^{ab} \delta h_{ab}$, es posible mostrar que
+Por la condici\'{o}n de frontera \eqref{eq:boundcondh}, la variaci\'{o}n de la integral sobre $S_{t}$ se anula. Usando $^{(3)}R = R_{ab} h^{ab}$ y las relaciones $\delta h^{ab} = -h^{ac} h^{db} \delta h_{cd}$ y $\delta_{h} h^{1/2} = \frac{1}{2} h^{1/2} h^{ab} \delta h_{ab}$, es posible mostrar que
 %
 \begin{align*}
 \delta_{h} (h^{1/2} \, ^{(3)}R) & = - h^{1/2} (R^{ab} - \frac{1}{2}\, ^{(3)}R h^{ab}) \delta h_{ab} + h^{1/2} D_{c} (h^{ab} \delta \Gamma^{c}\,_{ab} - h^{ac} \delta \Gamma^{b}\,_{ab}) \\
@@ -85,6 +85,7 @@ El resto de las variaciones son:
 Con esto se sigue que
 %
 \begin{align}
+\label{eq:vc}
 (16 \pi) \delta_{h} H_{\Sigma} & = \int_{\Sigma_{t}} \left[-\frac{1}{2} N h^{-1/2} (\hat{p}^{cd} \hat{p}_{cd} - \frac{1}{2} \hat{p}^{2}) h^{ab} + 2 N h^{-1/2} (\hat{p}^{a}_{c} \hat{p}^{bc} - \frac{1}{2} \hat{p} \hat{p}^{ab}) \right. \nonumber \\
 & \quad \left. + N h^{1/2} G^{ab} + 2 \hat{p}^{c (a} D_{c} N^{b)} \right] \delta h_{ab} \, d^{3} y \nonumber \\
 & \quad + \int_{\Sigma_{t}} \left(-N h^{1/2} D_{c} v^{c} + 2 \hat{p}^{b}_{c} N^{d} \delta \Gamma^{c}\,_{bd} \right) \, d^{3} y.
@@ -101,14 +102,21 @@ Ahora bien, conviene analizar la segunda integral por separado. Primero,
 & \quad + \oint_{S_{t}} N h^{ab} (\partial_{c} \delta h_{ab}) r^{c} \sqrt{\sigma} d^{2}.
 \end{align*}
 %
-Para obtener la segunda línea se usó la versión tridimensional de la ecuación \eqref{eq:vnh} mientras que para obtener la tercer línea se recurrió a la expresión \eqref{eq:varGamma}, también en su forma tridimensional, y así tener: $v^{c} = 1/2 (h^{ab} h^{cd} - h^{ac} h^{bd}) [D_{b} (\delta h_{da}) + D_{a} (\delta h_{db}) - D_{d} (\delta h_{ab})]$. Después multiplicando por $\partial_{c} N$ se explota la antisimetría en $a$ y $d$, y entonces,
+Donde se us\'{o} la versi\'{o}n tridimensional de la ecuaci\'{o}n \eqref{eq:vnh} y la siguiente relaci\'{o}n:
+%
+\begin{equation}
+\label{eq:varGamma3D}
+\delta \Gamma^{c}_{ab} = \frac{1}{2} h^{cd} \left[D_{b} (\delta h_{da}) + D_{a} (\delta h_{db}) - D_{d} (\delta h_{ab}) \right],
+\end{equation}
+%
+para tener: $v^{c} = 1/2 (h^{ab} h^{cd} - h^{ac} h^{bd}) [D_{b} (\delta h_{da}) + D_{a} (\delta h_{db}) - D_{d} (\delta h_{ab})]$, y al contraer con $\partial_{c} N$ (aprovechando la antisimetr\'{i}a en $a$ y $d$) obtener el resultado. Para el otro t\'{e}rmino de la segunda integral, tenemos que
 %
 \begin{align*}
 \int_{\Sigma_{t}} 2 \hat{p}^{b}_{c} N^{d} \delta \Gamma^{c}\,_{bd} \, d^{3} y & = \int_{\Sigma_{t}} h^{1/2} \hat{p}^{ab} N^{d} D_{d} (\delta h_{ab}) h^{-1/2} \, d^{3} y \\
 & = - \int_{\Sigma_{t}} D_{d} (h^{-1/2} \hat{p}^{ab} N^{d}) \delta h_{ab} h^{1/2} \, d^{3} y,
 \end{align*}
 %
-donde también se consideró la forma tridimensional de \eqref{eq:varGamma}) y depués al integrar por partes se utilizó la condición \eqref{eq:boundcondh}. Así,
+donde tambi\'{e}n se us\'{o} \eqref{eq:varGamma3D} y depu\'{e}s, al integrar por partes, se utiliz\'{o} el teorema de Gauss y la condici\'{o}n de frontera $\delta h_{ab} \vert_{S_{t}} = 0$. As\'{i},
 %
 \begin{equation}
 \label{eq:varHSigma}
@@ -122,21 +130,21 @@ Donde
 & \quad -h^{1/2} (D^{a} D^{b} N - h^{ab} D_{c} D^{c} N) - h^{1/2} D_{c} (h^{-1/2} \hat{p}^{ab} N^{c}) + 2 \hat{p}^{c(a} D_{c} N^{b)}.
 \end{align*}
 
-Pasando al término de frontera, al hacer la variación con respecto a $h_{ab}$ se obtiene,
+Pasando al t\'{e}rmino de frontera, al hacer la variaci\'{o}n con respecto a $h_{ab}$ se obtiene,
 %
 \begin{equation}
 \label{eq:varHS}
 (16 \pi) \delta_{h} H_{S} = -2 \oint_{S_{t}} N \delta k \sqrt{\sigma} \, d^{2} \theta = - \oint_{S_{t}} N h^{ab} (\partial_{c} \delta h_{ab}) r^{c} \sqrt{- \sigma} \, d^{2} \theta.
 \end{equation}
 
-Haciendo la suma de \eqref{eq:varHSigma} con \eqref{eq:varHS} se llega a que la variación con respecto a $h_{ab}$ de $H_{G}$ es
+Haciendo la suma de \eqref{eq:varHSigma} con \eqref{eq:varHS} se llega a que la variaci\'{o}n con respecto a $h_{ab}$ de $H_{G}$ es
 %
 \begin{equation}
 \label{eq:varHcrh}
 (16 \pi) \delta_{h} H_{G} = \int_{\Sigma_{t}} \hat{\mathcal{P}}^{ab} \delta h_{ab} \, d^{3} y
 \end{equation}
 
-Finalmente juntando los resultados \eqref{eq:varHcrNNa}, \eqref{eq:varHcrp} y \eqref{eq:varHcrh} se obtiene que la variación del Hamiltoniano gravitacional, bajo las condiciones \eqref{eq:boundcondh}, está dada por,
+Finalmente juntando los resultados \eqref{eq:varHcrNNa}, \eqref{eq:varHcrp} y \eqref{eq:varHcrh} se obtiene que la variaci\'{o}n del Hamiltoniano gravitacional, bajo las condiciones \eqref{eq:boundcondh}, est\'{a} dada por,
 %
 \begin{equation}
 \label{eq:varHG}
@@ -145,28 +153,28 @@ Finalmente juntando los resultados \eqref{eq:varHcrNNa}, \eqref{eq:varHcrp} y \e
 %
 con $\mathcal{P}^{ab} := \hat{\mathcal{P}}^{ab} / (16 \pi)$, $\mathcal{C} := \hat{\mathcal{C}} / (16 \pi)$ y $\mathcal{C}^{a} := \hat{\mathcal{C}}^{a} / (16 \pi)$.
 
-Regresando a la variación del funcional de acción gravitacional, ecuación \eqref{eq:varSG31}, integrando por partes se obtiene como resultado
+Regresando a la variaci\'{o}n del funcional de acci\'{o}n gravitacional, ecuaci\'{o}n \eqref{eq:varSG31}, integrando por partes se obtiene como resultado
 %
 \begin{equation}
 \label{varSGHamiltonianform}
 \delta S_{G} = \int^{t_{2}}_{t_{1}} dt \int_{\Sigma_{t}} \left[ (\dot{h}_{ab} - \mathcal{H}_{ab}) \delta p^{ab} - (\dot{p}^{ab} + \mathcal{P}^{ab}) \delta h_{ab} + \mathcal{C} \delta N + 2 \mathcal{C}_{a} \delta N^{a} \right] \, d^{3} y.
 \end{equation}
 %
-Imponiendo que la acción sea estacionaria implica
+Imponiendo que la acci\'{o}n sea estacionaria implica
 %
 \begin{equation}
 \label{eq:fieldequationsHamiltonianform}
 \dot{h}_{ab} = \mathcal{H}_{ab}, \quad \dot{p}^{ab} = - \mathcal{P}^{ab}, \quad \mathcal{C} = 0, \quad \mathcal{C}^{a} = 0.
 \end{equation}
 %
-Estas son las ecuaciones de Einstein (en vacío) en la forma Hamiltoniana. Las primeras dos rigen la evolución de las variables conjugadas $h_{ab}$ y $p^{ab}$; las últimas dos se conocen como \emph{constricciones Hamiltoniana y de difeomorfismos (o momento)} de la Relatividad General, respectivamente. Explícitamente las constricciones son
+Estas son las ecuaciones de Einstein (en vac\'{i}o) en la forma Hamiltoniana. Las primeras dos rigen la evoluci\'{o}n de las variables conjugadas $h_{ab}$ y $p^{ab}$; las \'{u}ltimas dos se conocen como \emph{constricciones Hamiltoniana y de difeomorfismos (o momento)} de la Relatividad General, respectivamente. Expl\'{i}citamente las constricciones son
 %
 \begin{equation}
 \label{eq:constrictions}
 \left(^{(3)}R + K^{2} - K^{ab} K_{ab} \right) \sqrt{h} = 0, \qquad \left[D_{b} (K^{ab} - K h^{ab}) \right] \sqrt{h} = 0.
 \end{equation}
 %
-Entonces, en la formulación Hamiltoniana para encontrar una solución a las ecuaciones de Einstein se hace una foliación del espacio-tiempo escogiendo la \emph{función de lapso} $N$ y el \emph{vector de corrimiento} $N^{a}$, después se escogen los valores iniciales para $h_{ab}$ y $K_{ab}$ de tal manera que satisfagan las constricciones (\ref{eq:constrictions}) y entonces se determina la evolución de los valores iniciales usando las ecuaciones Hamiltonianas $\dot{h}_{ab} = \mathcal{H}_{ab}$ y $\dot{p}^{ab} = - \mathcal{P}^{ab}$, que equivalentemente se pueden escribir como
+Entonces, en la formulaci\'{o}n Hamiltoniana para encontrar una soluci\'{o}n a las ecuaciones de Einstein se hace una foliaci\'{o}n del espacio-tiempo escogiendo la \emph{funci\'{o}n de lapso} $N$ y el \emph{vector de corrimiento} $N^{a}$, despu\'{e}s se escogen los valores iniciales para $h_{ab}$ y $K_{ab}$ de tal manera que satisfagan las constricciones (\ref{eq:constrictions}) y entonces se determina la evoluci\'{o}n de los valores iniciales usando las ecuaciones Hamiltonianas $\dot{h}_{ab} = \mathcal{H}_{ab}$ y $\dot{p}^{ab} = - \mathcal{P}^{ab}$, que equivalentemente se pueden escribir como
 %
 \begin{equation}
 \dot{h}_{ab} = 2 N K_{ab} + \pounds_{N} h_{ab}
