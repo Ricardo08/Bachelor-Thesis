@@ -20,11 +20,16 @@
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{float}
+% Figures and Draws
 \usepackage{tikz,pgf}
  \usetikzlibrary{babel}
  \usetikzlibrary{arrows, positioning, intersections, shapes.arrows}
+% Images
 \usepackage{graphicx}
  \graphicspath{{Images/}}
+% Bibliography
+\usepackage{cite}
+
 \usepackage{pdfpages}
 \usepackage{fancyhdr}
  
@@ -57,6 +62,7 @@
 \newtheorem{mydef}{Definici\'{o}n}[chapter]
 \theoremstyle{plain}
 \newtheorem{thm}[mydef]{Teorema}
+\newtheorem{pro}[mydef]{Proposici\'{o}n}
 \theoremstyle{remark}
 \newtheorem{ex}{Ejemplo}
 \newtheoremstyle{break}
@@ -121,7 +127,7 @@ En esta tesis usaremos la convenci\'{o}n de signos de Misner, Thorne, y Wheeler 
 \input{Chapters/Chapter01/Phase_Space_ADM.tex}
 
 %-------------------------------------------------------------
-% THE NEW VARIABLES
+% THE NEW VARIABLESº
 %-------------------------------------------------------------
 
 \chapter{Relatividad General en Variables de Conexi\'{o}n}
@@ -134,7 +140,7 @@ En esta tesis usaremos la convenci\'{o}n de signos de Misner, Thorne, y Wheeler 
 % ISOTROPIC MODEL
 %-------------------------------------------------------------
 
-\chapter{Variables de Ashtekar para modelos homog\'{e}neos y modelos isotr\'{o}picos}
+\chapter{Variables de Conexi\'{o}n para modelos homog\'{e}neos y modelos isotr\'{o}picos}
 
 \input{Chapters/Chapter03/Background.tex}
 \input{Chapters/Chapter03/Models.tex}
@@ -156,6 +162,7 @@ En esta tesis usaremos la convenci\'{o}n de signos de Misner, Thorne, y Wheeler 
 %---------------------------------------------------------------------------
 
 \newpage
+
 \bibliographystyle{apalike}
 \bibliography{biblist}
 
