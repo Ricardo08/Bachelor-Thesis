@@ -1,29 +1,41 @@
 \section{Antecedentes}
 
-Sea un haz principal $\pi: P \longrightarrow \mathcal{M}$ con grupo compacto de estructura $G$ y sea $S < \mathrm{Aut}(P)$ un grupo compacto actuando en el haz principal $P$, el cual, a trav\'{e}s del mapeo de proyecci\'{o}n $\pi$, induce una S-acci\'{o}n en la base $\mathcal{M}$. Dado que el grupo de simetr\'{i}a es compacto existe una subvariedad densa y abierta $\mathcal{M}_{(J)} \subset \mathcal{M}$, que localmente est\'{a} foliada por las \'{o}rbitas de $S$. Esto es, $\mathcal{M}_{(J)} \cong  \mathcal{M}_{(J)}/S \times S/J$ para un subgrupo compacto $J \subset S$. Con una peque\~{n}a p\'{e}rdida de generalidad, podemos asumir que el espacio base $\mathcal{M}$ se puede descomponer de la siguiente forma, $$\mathcal{M} = \mathcal{\tilde{M}} \times S/J,$$ donde $\mathcal{\tilde{M}} \cong \mathcal{M}/S$ es una variedad conexa, y la acci\'{o}n de $S$ en $\mathcal{M}$ es tal que las \'{o}rbitas est\'{a}n dadas por $S(m) \cong S/J$ para todo $m \in \mathcal{M}$.
+Sea un haz principal $\pi: P \longrightarrow \mathcal{M}$ con un grupo compacto de Lie $G$ actuando por la derecha en $P$, es decir, $G$ es el grupo de estructura. Proponemos un subgrupo de Lie de simetr\'{i}a $S < \mathrm{Aut}(P)$ actuando en el haz principal $P$, el cual, a trav\'{e}s del mapeo de proyecci\'{o}n $\pi$, induce una $S$-acci\'{o}n en la base $\mathcal{M}$. Dado que el grupo de simetr\'{i}a es compacto existe una subvariedad densa y abierta $\mathcal{M}_{(J)} \subset \mathcal{M}$, que al menos localmente est\'{a} foliada por las \'{o}rbitas de $S$. Esto es, $\mathcal{M}_{(J)} \cong  \mathcal{M}_{(J)}/S \times S/J$ para un subgrupo compacto $J \subset S$ del grupo de simetr\'{i}a \cite{Dieck}. Con una peque\~{n}a p\'{e}rdida de generalidad, podemos asumir que el espacio base $\mathcal{M}$ se puede descomponer de la siguiente forma, $$\mathcal{M} = \mathcal{\tilde{M}} \times S/J,$$ donde $\mathcal{\tilde{M}} \cong \mathcal{M}/S$ es una variedad conexa, y la acci\'{o}n de $S$ en $\mathcal{M}$ es tal que las \'{o}rbitas est\'{a}n dadas por $S(m) \cong S/J$ para todo $m \in \mathcal{M}$.
 
-Si la acci\'{o}n inducida de $S$ en $\mathcal{M}$ es transitiva pero no libre, isotrop\'{i}as adicionales ocurren. En cada punto $m \in \mathcal{M}$ se tiene un subgrupo de isotrop\'{i}a no trivial $J_{m}$ que deja fijo a $m$. Para puntos distintos $m$ y $m'$, donde por transitividad existe al menos un $s \in S$ tal que $m' = s(m)$, entonces $J_{m}$ s\'{o}lo difiere por conjugaci\'{o}n de $J_{m'}$,
+Si la acci\'{o}n inducida de $S$ en $\mathcal{M}$ es transitiva pero no libre, isotrop\'{i}as adicionales a la trivial ocurren. En cada punto $m \in \mathcal{M}$ se tiene un subgrupo de isotrop\'{i}a no trivial $J_{m}$ que deja fijo a $m$. Para puntos distintos $m$ y $m'$, donde por transitividad existe al menos un $s \in S$ tal que $m' = s(m)$, entonces $J_{m}$ s\'{o}lo difiere por conjugaci\'{o}n de $J_{m'}$,
 %
 \begin{equation*}
-m' = j'(m') = s ( j ( s^{-1} (m') ) )  \quad \Longrightarrow j' = s \circ j \circ s^{-1} \qquad \forall \; j \in J_{m} \; \land \; \forall \; j' \in J_{m'},
+m' = j'(m') = s ( j ( s^{-1} (m') ) )  \quad \Longrightarrow j' = s \circ j \circ s^{-1} \qquad \forall \; j \in J_{m} \; \mathrm{y} \; \forall \; j' \in J_{m'},
 \end{equation*}
 %
 lo que permite escoger alg\'{u}n $J$ para un punto arbitrario en $\mathcal{M}$. De esta manera se puede identificar a $\mathcal{M}$ con $S/J$.
 
-Aunque la acci\'{o}n de $J$ en $\mathcal{M}$ es trivial no necesariamente lo es en a fibra $\pi^{-1} (m)$, lo que define $J: \pi^{-1} (m) \longrightarrow \pi^{-1} (m)$. Y como la acci\'{o}n derecha de $G$ en el haz es transitiva, a cada punto $p \in \pi^{-1}(m)$ en la fibra es posible asignar un homomorfismo que va del subgrupo de isotrop\'{i}a $J$ al grupo de estructura $G$ definido por $p \cdot j = p \cdot \lambda_{p} (j)$. Dado $p' = p \cdot g$ se tiene
+Aunque la acci\'{o}n de $J$ en $\mathcal{M}$ es trivial no necesariamente lo es en la fibra $\pi^{-1} (m)$, lo que da lugar a un mapeo $J: \pi^{-1} (m) \longrightarrow \pi^{-1} (m)$ que conmuta con la acci\'{o}n de $G$ en el haz. Y como la acci\'{o}n derecha de $G$ en las fibras del haz $P$ es transitiva, a cada punto $p \in \pi^{-1}(m)$ en la fibra es posible asignar un homomorfismo $\lambda_{p}$ que va del subgrupo de isotrop\'{i}a $J$ al grupo de estructura $G$ definido por $j \cdot p = p \cdot \lambda_{p} (j)$. Dado $p' = p \cdot g$ se tiene
 %
 \begin{equation*}
 p' \cdot \lambda_{p'} (j) = j \cdot (p \cdot g) = (j \cdot p) \cdot g = (p \cdot \lambda_{p} (j)) \cdot g = p' \cdot \mathrm{Ad}_{g^{-1}} (\lambda_{p} (j)),
 \end{equation*}
 %
-lo que implica que $\lambda_{p'} (j) = \mathrm{Ad}_{g^{-1}} (\lambda_{p} (j))$. Con esto se muestra la propiedad de homomorfismo,
+lo que implica que
+%
+\begin{equation}
+\label{eq:conj}
+\lambda_{p'} (j) = \mathrm{Ad}_{g^{-1}} (\lambda_{p} (j)).
+\end{equation}
+%
+A continuaci\'{o}n se muestra la propiedad de homomorfismo:
 %
 \begin{equation*}
 p \cdot \lambda_{p} (j_{1} j_{2}) = (j_{1} j_{2}) \cdot p = j_{1} \cdot (p \cdot \lambda_{p} (j_{2})) = (p \cdot \lambda_{p} (j_{2})) \cdot \mathrm{Ad}_{\lambda(j_{2})^{-1}} \lambda_{p} (j_{1}) = p \cdot (\lambda_{p} (j_{1}) \lambda_{p} (j_{2})).
 \end{equation*}
 %
-De esta manera, un elemento que ayuda a la clasificaci\'{o}n del haz principal es una clase de equivalencia $[\lambda]$ de homomorfismos $\lambda: J \longrightarrow G$ sujetos a conjugaci\'{o}n. Donde cambiar $\lambda$ dentro de la clase equivale a un cambio de norma. El homomorfismo del \'{a}lgebra de Lie inducido $\mathfrak{j} \longrightarrow \mathfrak{g}$ tambi\'{e}n ser\'{a} denotado por $\lambda$.
+De esta manera se tiene una clase de equivalencia $[\lambda]$ de homomorfismos $\lambda: J \longrightarrow G$ dada por la conjugaci\'{o}n \eqref{eq:conj}, donde cambiar $\lambda$ dentro de la clase equivale a un cambio de norma. El homomorfismo del \'{a}lgebra de Lie inducido $\mathfrak{j} \longrightarrow \mathfrak{g}$ tambi\'{e}n ser\'{a} denotado por $\lambda$.
 
+Ahora bien, escogiendo un homorfismo $\lambda: J \longrightarrow G$, se contruye el sub-haz principal reducido $$\tilde{Q}(\tilde{\mathcal{M}}, Z_{\lambda}, \tilde{\pi}) = \{p \in P \vert_{\tilde{\mathcal{M}}} \; \vert \; \lambda_{p} = \lambda\},$$ con grupo de estructura $Z_{\lambda}$ el centralizador de $\lambda(J) \subset G$, esto es: $Z_{\lambda} = \{g \in G \; \vert \; gh = hg \; \forall \; h \in \lambda(J)\}.$ Y $P \vert_{\tilde{\mathcal{M}}}$ es el haz restringido a $\tilde{\mathcal{M}}$.
+
+Los elementos $[\lambda]$ y $\tilde{Q}$ clasifican de manera \'{u}nica al haz $P$ \cite{Brodbeck}. Esto es importante porque el par $([\lambda], \tilde{Q})$ y los siguientes teoremas \cite{Kobayashi} nos ayudar\'{a}n a reconstruir las conexiones invariantes bajo la acci\'{o}n de $S$ \cite{Bojowald2005}.
+
+\begin{pro}
 Sea $\omega$ una conexi\'{o}n invariante en el haz principal $P$ bajo la acci\'{o}n de $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$. Definimos un mapeo lineal $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$ por
 %
 \begin{equation}
@@ -31,20 +43,21 @@ Sea $\omega$ una conexi\'{o}n invariante en el haz principal $P$ bajo la acci\'{
 \Lambda (X) = \omega (\tilde{X}), \qquad X \in \mathfrak{s},
 \end{equation}
 %
-donde $\tilde{X}$ es el campo vectorial en $P$ inducido por $X$. As\'{i},
+donde $\tilde{X}$ es el campo vectorial en $P$ inducido por $X$, i.e. $\tilde{X}(f) = d(\exp(t X) \cdot f)/dt \vert_{t=0}$ donde $f$ es una función diferenciable en $P$. As\'{i},
 %
 \begin{align}
 \label{eq:LambdaCond1}
 & \Lambda (X) = \lambda (X) & \mathrm{para} \; X\in \mathfrak{j}; \\
 \label{eq:LambdaCond2}
-& \Lambda (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda (X)) \qquad & \mathrm{para} \; j \in J \; \land X \in \mathfrak{s},
+& \Lambda (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda (X)) \qquad & \mathrm{para} \; j \in J \; \mathrm{y} X \in \mathfrak{s},
 \end{align}
 %
 donde $\mathrm{ad}_{j}$ es la representaci\'{o}n adjunta de $J$ en $\mathfrak{s}$ y $\mathrm{ad}_{\lambda (j)}$ la representaci\'{o}n adjunta de $G$ en $\mathfrak{g}$.
+\end{pro}
 
 \begin{thm}
 \label{thm:theorem1}
-Si el grupo de Lie $S < \mathrm{Aut} (P)$ es transitivo y si $J$ es el grupo de isotrop\'{i}a de $S$ en $m = \pi(p)$, entonces existe una correspondencia 1:1 entre el conjunto de conexiones invariantes en $P$ bajo la acci\'{o}n de $S$ y el conjunto de mapeos lineales $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$, el cual satisface las condiciones \eqref{eq:LambdaCond1} y \eqref{eq:LambdaCond2}. La correspondecia est\'{a} dada por \eqref{eq:correspondence}.
+Si el subgrupo de Lie $S < \mathrm{Aut} (P)$ es transitivo y si $J$ es el grupo de isotrop\'{i}a de $S$ en $m = \pi(p)$, entonces existe una correspondencia 1:1 entre el conjunto de conexiones invariantes en $P$ bajo la acci\'{o}n de $S$ y el conjunto de mapeos lineales $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$, el cual satisface las condiciones \eqref{eq:LambdaCond1} y \eqref{eq:LambdaCond2}. La correspondecia est\'{a} dada por \eqref{eq:correspondence}.
 \end{thm}
 
 \begin{thm}
@@ -73,7 +86,9 @@ De la descomposici\'{o}n $\mathcal{M} = \mathcal{\tilde{M}} \times S/J$ se tiene
 \omega = \tilde{\omega} + \omega_{S/J},
 \end{equation}
 %
-donde $\tilde{\omega}$ es una conexi\'{o}n en el subhaz principal reducido $\tilde{Q}(\tilde{\mathcal{M}}, Z_{\lambda}, \tilde{\pi}) = \{p \in P \vert_{\tilde{\mathcal{M}}} \vert \lambda_{p} = \lambda\}$, con $Z_{\lambda}$ el centralizador de $\lambda(J) \subset G$, y $\omega_{S/J}$ es una uno-forma invariante en $S/J$. Sin embargo, en este trabajo $\tilde{\omega}$ no nos concierne pues al fijar un punto $m \in \mathcal{M}$, adem\'{a}s de fijar un grupo de isotrop\'{i}a $J$ (sujeto a conjugaci\'{o}n) y una clase de equivalencia $\lambda$, tambi\'{e}n ocurre que el espacio base $\tilde{\mathcal{M}} \cong \{[m]\}$ por lo que en realidad no existe una definici\'{o}n de $\tilde{\omega}$ as\'{i} que toda la informaci\'{o}n de $\omega$ est\'{a} contenida en $\omega_{S/J}$. Por otro lado, $S/J$ no necesariamente es un grupo, por lo que no hay una forma de Maurer-Cartan definida para usar para conexiones invariantes, pero se puede obtener $\omega_{S/J}$ usando la forma de Maurer-Cartan $\theta_{(\mathrm{MC})}$ en $S$ y escogiendo un encaje $\iota: S/J \hookrightarrow S$, expl\'{i}citamente:
+donde $\tilde{\omega}$ es una conexi\'{o}n en el sub-haz principal reducido $\tilde{Q}(\tilde{\mathcal{M}}, Z_{\lambda}, \tilde{\pi})$ y $\omega_{S/J}$ es una uno-forma invariante en $S/J$. Sin embargo, en este trabajo $\tilde{\omega}$ no nos concierne pues al fijar un grupo de isotrop\'{i}a $J$ (sujeto a conjugaci\'{o}n) y una clase de equivalencia $\lambda$ tambi\'{e}n fijamos un punto $m \in \mathcal{M}$ entonces el espacio base $\tilde{\mathcal{M}} \cong \{[m]\}$ por lo que en realidad no existe una definici\'{o}n de $\tilde{\omega}$ as\'{i} que toda la informaci\'{o}n de $\omega$ est\'{a} contenida en $\omega_{S/J}$.
+
+$S/J$ no necesariamente es un grupo, por lo que no hay una forma de Maurer-Cartan definida para usar para conexiones invariantes, pero se puede obtener $\omega_{S/J}$ usando la forma de Maurer-Cartan $\theta_{(\mathrm{MC})}$ en $S$ y escogiendo un encaje $\iota: S/J \hookrightarrow S$, expl\'{i}citamente:
 %
 \begin{equation*}
 \omega_{S/J} (\tilde{X}) = \Lambda (X) = \Lambda (\iota^{*} \theta_{\mathrm{MC}} (\tilde{X})) = \Lambda \circ \iota^{*} \theta_{\mathrm{MC}} (\tilde{X})
