@@ -35,15 +35,9 @@ Ahora bien, escogiendo un homorfismo $\lambda: J \longrightarrow G$, se contruye
 
 Los elementos $[\lambda]$ y $\tilde{Q}$ clasifican de manera \'{u}nica al haz $P$ \cite{Brodbeck}. Esto es importante porque el par $([\lambda], \tilde{Q})$ y los siguientes teoremas \cite{Kobayashi} nos ayudar\'{a}n a reconstruir las conexiones invariantes bajo la acci\'{o}n de $S$ \cite{Bojowald2005}.
 
-\begin{pro}
-Sea $\omega$ una conexi\'{o}n invariante en el haz principal $P$ bajo la acci\'{o}n de $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$. Definimos un mapeo lineal $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$ por
-%
-\begin{equation}
-\label{eq:correspondence}
-\Lambda (X) = \omega (\tilde{X}), \qquad X \in \mathfrak{s},
-\end{equation}
-%
-donde $\tilde{X}$ es el campo vectorial en $P$ inducido por $X$, i.e. $\tilde{X}(f) = d(\exp(t X) \cdot f)/dt \vert_{t=0}$ donde $f$ es una función diferenciable en $P$. As\'{i},
+\begin{thm}
+\label{thm:theorem1}
+Si el subgrupo de Lie $S < \mathrm{Aut} (P)$ es transitivo y si $J$ es el grupo de isotrop\'{i}a de $S$ en $m = \pi(p)$, entonces existe una correspondencia 1:1 entre el conjunto de conexiones invariantes $\omega$ en $P$ bajo la acci\'{o}n de $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$, y el conjunto de mapeos lineales $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$, el cual satisface las condiciones
 %
 \begin{align}
 \label{eq:LambdaCond1}
@@ -52,12 +46,14 @@ donde $\tilde{X}$ es el campo vectorial en $P$ inducido por $X$, i.e. $\tilde{X}
 & \Lambda (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda (X)) \qquad & \mathrm{para} \; j \in J \; \mathrm{y} X \in \mathfrak{s},
 \end{align}
 %
-donde $\mathrm{ad}_{j}$ es la representaci\'{o}n adjunta de $J$ en $\mathfrak{s}$ y $\mathrm{ad}_{\lambda (j)}$ la representaci\'{o}n adjunta de $G$ en $\mathfrak{g}$.
-\end{pro}
-
-\begin{thm}
-\label{thm:theorem1}
-Si el subgrupo de Lie $S < \mathrm{Aut} (P)$ es transitivo y si $J$ es el grupo de isotrop\'{i}a de $S$ en $m = \pi(p)$, entonces existe una correspondencia 1:1 entre el conjunto de conexiones invariantes en $P$ bajo la acci\'{o}n de $S$ y el conjunto de mapeos lineales $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$, el cual satisface las condiciones \eqref{eq:LambdaCond1} y \eqref{eq:LambdaCond2}. La correspondecia est\'{a} dada por \eqref{eq:correspondence}.
+donde $\mathrm{ad}_{j}$ es la representaci\'{o}n adjunta de $J$ en $\mathfrak{s}$ y $\mathrm{ad}_{\lambda (j)}$ la representaci\'{o}n adjunta de $G$ en $\mathfrak{g}$. La correspondecia est\'{a} dada por
+%
+\begin{equation}
+\label{eq:correspondence}
+\Lambda (X) = \omega (\tilde{X}), \qquad X \in \mathfrak{s},
+\end{equation}
+%
+donde $\tilde{X}$ es el campo vectorial en $P$ inducido por $X$, i.e. $\tilde{X}(f) = d(\exp(t X) \cdot f)/dt \vert_{t=0}$ donde $f$ es una funci\'{o}n diferenciable en $P$.
 \end{thm}
 
 \begin{thm}
@@ -68,7 +64,7 @@ Si $S$, en el teorema \ref{thm:theorem1}, admite un subespacio $\mathfrak{j}_{\p
 \Lambda_{\mathfrak{j}_{\perp}} (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda_{\mathfrak{j}_{\perp}} (X)),
 \end{equation}
 %
-para $j \in J$ y $X \in \mathfrak{j}_{\perp}$. Con la correspondencia dada por \eqref{eq:correspondence}.
+para $j \in J$ y $X \in \mathfrak{j}_{\perp}$. Con la correspondencia dada via \eqref{eq:correspondence} por
 %
 $$
 \Lambda (X) = 
@@ -88,13 +84,13 @@ De la descomposici\'{o}n $\mathcal{M} = \mathcal{\tilde{M}} \times S/J$ se tiene
 %
 donde $\tilde{\omega}$ es una conexi\'{o}n en el sub-haz principal reducido $\tilde{Q}(\tilde{\mathcal{M}}, Z_{\lambda}, \tilde{\pi})$ y $\omega_{S/J}$ es una uno-forma invariante en $S/J$. Sin embargo, en este trabajo $\tilde{\omega}$ no nos concierne pues al fijar un grupo de isotrop\'{i}a $J$ (sujeto a conjugaci\'{o}n) y una clase de equivalencia $\lambda$ tambi\'{e}n fijamos un punto $m \in \mathcal{M}$ entonces el espacio base $\tilde{\mathcal{M}} \cong \{[m]\}$ por lo que en realidad no existe una definici\'{o}n de $\tilde{\omega}$ as\'{i} que toda la informaci\'{o}n de $\omega$ est\'{a} contenida en $\omega_{S/J}$.
 
-$S/J$ no necesariamente es un grupo, por lo que no hay una forma de Maurer-Cartan definida para usar para conexiones invariantes, pero se puede obtener $\omega_{S/J}$ usando la forma de Maurer-Cartan $\theta_{(\mathrm{MC})}$ en $S$ y escogiendo un encaje $\iota: S/J \hookrightarrow S$, expl\'{i}citamente:
+Utilizando la forma de Maurer-Cartan $\theta_{(\mathrm{MC})}$ en $S$ y escogiendo un encaje $\iota: S/J \hookrightarrow S$, la forma de una conexi\'{o}n invariante, dada la clasificaci\'{o}n por $[\lambda]$ del haz principal $P$ sim\'{e}trico bajo la acci\'{o}n de $S$, se sigue de la relaci\'{o}n \eqref{eq:correspondence}:
 %
 \begin{equation*}
 \omega_{S/J} (\tilde{X}) = \Lambda (X) = \Lambda (\iota^{*} \theta_{\mathrm{MC}} (\tilde{X})) = \Lambda \circ \iota^{*} \theta_{\mathrm{MC}} (\tilde{X})
 \end{equation*}
 %
-de este modo se puede escribir:
+que $\omega_{S/J}$ se puede escribir como:
 %
 \begin{equation}
 \omega_{S/J} = \Lambda \circ \iota^{*} \theta_{\mathrm{MC}}.
