@@ -15,10 +15,12 @@
 \let\counterwithout\relax
 \let\counterwithin\relax
 \usepackage{chngcntr}
-%
+%Math
 \usepackage{amsthm, amssymb, amsmath, latexsym}
+%Hyperlinks and colors
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
+%
 \usepackage{float}
 % Figures and Draws
 \usepackage{tikz,pgf}
@@ -65,6 +67,7 @@
 \newtheorem{pro}[mydef]{Proposici\'{o}n}
 \theoremstyle{remark}
 \newtheorem{ex}{Ejemplo}
+\newtheorem{obs}{Observaci\'{o}n}
 \newtheoremstyle{break}
  {\topsep}{\topsep}
  {\normalfont}{}
@@ -100,7 +103,7 @@ La Relatividad General es la teor\'{i}a moderna de la gravedad, postulada por Al
 
 En \'{e}sta tesis supondremos que el lector est\'{a} familiarizado con la teor\'{i}a de Relatividad General y conceptos b\'{a}sicos de Geometr\'{i}a Diferencial.
 
-El prop\'{o}sito de esta tesis es encontrar la forma que toman las variables de Ashtekar para los casos de cosmolog\'{i}as homogeneas e isotr\'{o}picas. Para ello, es importante entender las distintas formulaciones de la Relatividad General, principalmente en la formulaci\'{o}n de variables de conexi\'{o}n hecha por A. Ashtekar \cite{Ashtekar86, Ashtekar87}. En el primer cap\'{i}tulo se presentar\'{a} la formulaci\'{o}n Lagrangiana y Hamiltoniana de la Relatividad General (siguiendo de cerca la discusi\'{o}n que se lleva acabo en \cite{Poisson}). En el segundo veremos la formulaci\'{o}n en variables de conexi\'{o}n de la Relatividad General, tomando como principales referencias el libro de Baez \cite{Baez}, el art\'{i}culo de Barbero \cite{Barbero} y la tesis de J. Vega \cite{Vega}. Y en el tercer capítulo presentamos como obtener la forma de las variables de conexi\'{o}n para espacios homog\'{e}neos e isotr\'{o}picos.
+El prop\'{o}sito de esta tesis es encontrar la forma que toman las Variables de Conexi\'{o}n para los casos de cosmolog\'{i}as homogeneas e isotr\'{o}picas. Para ello, es importante entender las distintas formulaciones de la Relatividad General, principalmente en la formulaci\'{o}n de variables de conexi\'{o}n hecha por A. Ashtekar \cite{Ashtekar86, Ashtekar87}. En el primer cap\'{i}tulo se presentar\'{a} la formulaci\'{o}n Lagrangiana y Hamiltoniana de la Relatividad General (siguiendo de cerca la discusi\'{o}n que se lleva acabo en \cite{Poisson}). En el segundo veremos la formulaci\'{o}n en variables de conexi\'{o}n de la Relatividad General, tomando como principales referencias el libro de J. C. Baez \cite{Baez}, el art\'{i}culo de J. Barbero \cite{Barbero} y la tesis de J. Vega \cite{Vega}. Y en el tercer cap\'{i}tulo presentamos como obtener la forma de las variables de conexi\'{o}n para espacios homog\'{e}neos e isotr\'{o}picos tomando como base el art\'{i}culo de Bojowald \cite{Bojowald2005}, pero apoy\'{a}ndonos en gran parte en el trabajo hecho por S. Kobayashi y K. Nomizu en su libro \cite{Kobayashi} y el art\'{i}culo sobre clasificaci\'{o}n de haces sim\'{e}trico y conexiones de O. Brodbeck \cite{Brodbeck}.
 
 En esta tesis usaremos la convenci\'{o}n de signos de Misner, Thorne, y Wheeler con una m\'{e}trica de signatura $(-,+,+,+)$. Los \'{i}ndices griegos $\alpha$, $\beta...$ ser\'{a}n utilizados para las componentes espacio-temporales, es decir, corren de 0 a 3; los \'{i}ndices latinos $a$, $b$, $c...$ corren de 1 a 3, est\'{a}n asignados para las componentes espaciales; las letras latinas may\'{u}sculas $I$, $J$, $K$..., ser\'{a}n usadas para los \'{i}ndices internos.
 
@@ -150,6 +153,12 @@ En esta tesis usaremos la convenci\'{o}n de signos de Misner, Thorne, y Wheeler 
 %-------------------------------------------------------------
 
 \appendix
+
+\chapter{Grupos de Lie y su acci\'{o}n en variedades}
+\input{Chapters/Appendices/LieGroups.tex}
+
+\chapter{Haces Fibrados}
+\input{Chapters/Appendices/Bundles.tex}
 
 \chapter{Conexiones y Curvatura en Haces Vectoriales}
 \input{Chapters/Appendices/BundleConnections.tex}
