@@ -1,0 +1,343 @@
+%----------------------------------------------------------------------------------------
+% LIE GROUPS
+%----------------------------------------------------------------------------------------
+
+\section{Grupos de Lie}
+
+\begin{mydef}[Grupo]
+Un \emph{grupo} $G$ es un conjunto de elementos $\{g_{1}, g_{2}, ...\}$ dotados de una ley de composici\'{o}n, llamada multiplicaci\'{o}n. Esta multiplicaci\'{o}n a cada par ordenado (los \emph{factores}) $g_{i}, g_{j} \in G$  le asigna un tercer elemento $g_{i} \cdot g_{j} \in G$ (el \emph{producto}). Adem\'{a}s, se cumplen las siguientes propiedades,
+%
+\begin{itemize}
+\item{Asociatividad: $(g_{i} \cdot g_{j}) \cdot g_{k} = g_{i} \cdot (g_{j} \cdot g_{k}) \quad \forall \; g_{i}, g_{j}, g_{k} \in G$.}
+\item{Identidad: $\exists! \, 1 \in G \, \vert \, 1 \cdot g = g \cdot 1 = g \quad \forall g \in G$.}
+\item{Inverso: Para cada elemento $g \in G$ existe otro elemento en el grupo $g^{-1}$ tal que $g \cdot g^{-1} = g^{-1} \cdot g = 1$.}
+\end{itemize}
+%
+\end{mydef}
+
+\begin{mydef}[Grupo de Lie]
+Un \emph{grupo de Lie} $G$, es un grupo que al mismo tiempo es una variedad diferenciable tal que el mapeo $G \times G \rightarrow G$ definido por $(a, b) \mapsto a b^{-1}$ es diferenciable, es decir, la operaci\'{o}n de grupo es suave.
+\end{mydef}
+
+\begin{mydef}[Homomorfismo, Endomorfismo, Isomorfismo, Automorfismo]
+Sean $(G, \cdot)$, $(G', \ast)$ dos grupos y un mapeo $\varphi: G \longrightarrow G'$, tal que $$\varphi(g_{i} \cdot g_{j}) = \varphi(g_{i}) \ast \varphi(g_{j}).$$
+%
+\begin{enumerate}
+\item{Entonces se dice que $\varphi$ es un \emph{homomorfismo}.}
+\item{Adem\'{a}s, si $G = G'$, entonces $\varphi$ es un \emph{endomorfismo}.}
+\item{Y si existe $\varphi^{-1}$, entonces el mapeo es un \emph{isomorfismo}.}
+\item{Si $\varphi$ es un isomorfismo y $G=G'$, se dice que el mapeo es un \emph{automorfismo}.}
+\end{enumerate}
+%
+\end{mydef}
+
+\begin{mydef}[\'{A}lgebra de Lie]
+Un \emph{\'{a}lgebra de Lie} $\mathfrak{g}$ sobre $\mathbb{R}$ es un espacio vectorial real $\mathfrak{g}$ equipado con un operador bilineal $[\;, \;]: \mathfrak{g} \times \mathfrak{g} \rightarrow \mathfrak{g}$ (usualmente llamado \emph{conmutador}) tal que
+%
+\begin{itemize}
+\item{$[x, y] = -[y, z]$ (anticonmutatividad).}
+\item{$[[x, y], z] + [[y, z], x] + [[z, x], y] = 0$ (identidad de Jacobi).}
+\end{itemize}
+%
+para todo $x, y, z \in \mathfrak{g}$.
+\end{mydef}
+
+\begin{mydef}[Traslaci\'{o}n izquierda y traslaci\'{o}n derecha]
+Sea $g \in G$, definimos los difeomorfismos \emph{traslaci\'{o}n izquierda} y \emph{traslaci\'{o}n derecha}, denotados por $l_{g}$ y $r_{g}$, respectivamente, como
+%
+\begin{align*}
+l_{g} (x) = & x g, \\
+r_{g} (x) = & g x,
+\end{align*}
+%
+para todo $x \in G$.
+\end{mydef}
+
+\begin{obs}
+Notemos que  $(l_{a} \circ l_{b}) (x) = l_{a} (l_{b} (x)) = l_{a} (bx) = abx = l_{ab} (x)$ y $(r_{a} \circ r_{b}) (x) = r_{a} (r_{b} (x)) = r_{a} (xb) = xba = r_{ba}$, es decir, $l_{a} \circ l_{b} = l_{ab}$ y $r_{a} \circ r_{b} = r_{ba}$ para todo $a, b \in G$ y $x \in G$.
+\end{obs}
+
+\begin{mydef}
+Un campo vectorial $X$ en $G$ se dice que es \emph{invariante por la izquierda} si es invariante bajo la acci\'{o}n de $l_{g}$ para todo $g \in G$; esto es, $g_{*} (X) = X$. De manera equivalente, se dice que $X$ es \emph{invariante por la derecha} si $(X)g_{*} = X$ $\; \forall \, g \in G$.
+\end{mydef}
+
+\begin{thm}
+El conjunto de campos vectoriales invariantes por la izquierda (derecha) es cerrado bajo la operaci\'{o}n del par\'{e}ntesis de Lie.
+\end{thm}
+%
+\begin{dem}
+$$g_{*} ([X, Y]) = [g_{*} (X), g_{*} (Y)] = [X, Y].$$ (El mismo argumento se sigue para campos vectoriales invariantes por la derecha). \qed
+\end{dem}
+
+\begin{pro}
+\label{pro:LeftInvariantLieAlgebra}
+El conjunto de campos vectoriales invariantes por la izquierda de un grupo de Lie $G$ lo denotaremos como $\mathfrak{g}$ dado que bajo la operaci\'{o}n del par\'{e}ntesis de Lie forma un \'{a}lgebra de Lie.
+\end{pro}
+
+\begin{pro}
+Sea $G$ un grupo de Lie y $\mathfrak{g}$ su conjunto de campos vectoriales invariantes por la izquierda.
+%
+\begin{enumerate}
+\item{$\mathfrak{g}$ es un espacio vectorial real isomorfo al espacio tangente de $G$ en la identidad. Es decir, existe un isomorfismo $\varphi: \mathfrak{g} \rightarrow T_{1} G$ definido por $\varphi(X) = X(1) = X_{1}$. Lo cual implica que $\mathrm{dim} (\mathfrak{g}) = \mathrm{dim} (T_{1} G) = \mathrm{dim} (G)$.}
+\item{Los campos vectoriales invariantes por la izquierda son diferenciables.}
+\end{enumerate}
+%
+\end{pro}
+
+\begin{mydef}[Subgrupo de un-par\'{a}metros]
+Un \emph{subgrupo de un-par\'{a}metros} de un grupo de Lie $G$ es una curva diferenciable $g: \mathbb{R} \rightarrow G$ por $t \mapsto g (t)$ tal que
+%
+\begin{enumerate}
+\item{$g (t) g (s) = g (t + s)$,}
+\item{$g (0) = 1$.}
+\end{enumerate}
+%
+\end{mydef}
+
+\begin{thm}
+El subgrupo de un-par\'{a}metros de un grupo de Lie $G$ son las curvas integrales, que pasan por la identidad, de los campos invariantes izquierdos (derechos).
+\end{thm}
+
+\begin{dem}
+Sea $g: \mathbb{R} \rightarrow G$ un subgrupo de un-par\'{a}metros, $$l_{g(t)} g(s) = g(t + s);$$ as\'{i} $$(l_{g(t)})_{*} \frac{d g(s)}{d s} = \frac{d g(t +s )}{d s} = \frac{d g(t + s)}{d t}.$$ Ajustando $s = 0$ $$(l_{g(t)})_{*} \beta = \frac{d g(t)}{d t},$$ donde $\beta$ es el vector tangente a $g (0) = 1$ a la curva $t \mapsto g (t)$. Esta ecuaci\'{o}n nos dice que $g (t)$ es la curva integral de los campos vectoriales invariantes por la izquierda iguales a $\beta$ en la identidad (de igual modo para campos vectoriales invariantes por la derecha). Por otro lado, para cada $\beta \in T_{1} G$ existe una \'{u}nica soluci\'{o}n $g (t)$, que pasa por la identidad, de la ecuaci\'{o}n diferencial para cada campo vectorial invariante por la izquierda (o derecha). Esta soluci\'{o}n obedece la propiedad de grupo $g (t) g (s) = g (t + s)$. \qed
+\end{dem}
+
+\begin{mydef}[Vectores generadores o generadores infinitesimales]
+Un \emph{vector generador} de un grupo de Lie (matricial) $G$, es el vector tangente en la identidad de un subgrupo de un-par\'{a}metros $g (t)$ definido como
+%
+\begin{equation}
+\frac{d g (t)}{dt} \bigg\vert_{t=0}.
+\end{equation}
+%
+Tambi\'{e}n, se le conoce como \emph{generador infinitesimal}, pues podemos expandir $g (t)$ alrededor de $t=0$, $$g (t) = 1 + t \frac{d g (t)}{dt} \bigg\vert_{t=0} + \frac{1}{2}  t^{2} \frac{d^{2} g (t)}{dt^{2}} \bigg\vert_{t=0} + \frac{1}{3 !} t^{3} \frac{d^{3} g (t)}{dt^{3}} \bigg\vert_{t=0} + \mathcal{O} (t^{4}).$$ De este modo, cualquier elemento en la vecindad de la identidad puede obtenerse a partir de conocer al vector generador.
+\end{mydef}
+
+\begin{mydef}[Mapeo exponencial]
+El \emph{mapeo exponencial} mapea la linea $t \beta$, en el espacio tangente $T_{1} G$ en la identidad de un grupo de Lie $G$, en el subgrupo de un-par\'{a}metros $g (t)$ de $G$ tangente a $\beta$ en la identidad de $G$, acorde a
+%
+\begin{align*}
+\exp: T_{1} G & \longrightarrow G \\
+\beta & \longmapsto \exp (\beta) = g (1)
+\end{align*}
+%
+donde se sigue que $\exp (t \beta) = g (t)$ para toda $t$.
+\end{mydef}
+
+\begin{obs}
+Dado que $\mathfrak{g}$ y $T_{1} G$ son isomorfos, el mapeo exponencial a veces es definido como el mapeo de $\mathfrak{g}$ a $G$, de modo que para $X \in \mathfrak{g}$ se tiene $X \mapsto \exp(tX)$.
+\end{obs}
+
+\begin{pro}
+\label{pro:ExpConmutative}
+Sea $X, Y \in \mathfrak{g}$, entonces
+%
+\begin{itemize}
+\item{$\exp (t X) \exp (s X) = \exp ((t + s) X)$ para todo $t, s \in \mathbb{R}$.}
+\item{$\exp (-t X) = (\exp (X))^{-1}$.}
+\item{$\exp (t X) \exp (t Y) = \exp (t (X + Y))$ si $[X, Y] = 0$.}
+\end{itemize}
+%
+\end{pro}
+
+Se puede mostrar que la serie de Taylor de $\exp (t X) \exp (t Y)$ es
+%
+\begin{equation*}
+\exp \left( t (X + Y) + \frac{1}{2} t^{2} [X, Y] + \frac{1}{12} t^{3} [X, [X, Y]] + \frac{1}{12} t^{3} [[X, Y], Y] +\mathcal{O}(t^{4}) \right),
+\end{equation*}
+%
+de donde se ve claramente que si $X$ y $Y$ conmutan, la \'{u}ltima proposici\'{o}n de \ref{pro:ExpConmutative} se satisface.
+
+\begin{ex}
+Sea $g$ un elemento en el grupo de Lie $\mathrm{SO}(2)$. El \'{a}lgebra de Lie $\mathfrak{so}(2)$ est\'{a} generada por matrices reales antisim\'{e}tricas, esto es $L^{i}_{j} = -L^{j}_{i}$ en t\'{e}rminos de sus componentes, y es unidimensional. Por lo tanto podemos tomar la matriz
+%
+\[L = 
+ \begin{pmatrix}
+  0 & 1 \\
+  -1 & 0
+ \end{pmatrix},
+\]
+%
+como base de $\mathfrak{so}(2)$. Es decir, cualquier elemento de $\mathfrak{so}(2)$ puede escribirse como $\phi L$, para $\phi \in [0, 2 \pi)$. Entonces para alg\'{u}n elemento en $\mathrm{SO}(2)$  tenemos
+%
+\begin{align*}
+g (\phi) = & \exp (\phi L) \\
+= & 1 + \phi L + \frac{1}{2} \phi^{2} L^{2} + \frac{1}{3 !} \phi^{3} L^{3} + \frac{1}{4 !} \phi^{4} L^{4} + ... \\
+= & \cos (\phi) 1 + \sin (\phi) L \\
+= & \begin{pmatrix} \cos (\phi) & \sin (\phi) \\ -\sin (\phi) & \cos (\phi) \end{pmatrix}.
+\end{align*}
+%
+Observemos que $L$ definido as\'{i} es un vector generador.
+\end{ex}
+
+\begin{obs}
+Notemos entonces que un vector generador (o generador infinitesimal) lo podemos obtener calculando $$\frac{d (\exp (t \beta))}{dt} \bigg\vert_{t=0}.$$
+\end{obs}
+
+\begin{mydef}[Representaci\'{o}n adjunta]
+Sea $G$ un grupo de Lie, entonces cada $g \in G$ define un mapeo suave $\mathrm{Ad}_{g}: G \rightarrow G$ por la composici\'{o}n $\mathrm{Ad}_{g} = l_{g} \circ r_{g^{-1}}$; esto es,
+%
+\begin{equation}
+\mathrm{Ad}_{g} = g x g^{-1}, \qquad \forall \; x \in G.
+\end{equation}
+%
+Este mapeo preserva la identidad de ah\'{i} que su derivada define una representaci\'{o}n lineal del grupo en el \'{a}lgebra de Lie $\mathfrak{g}$ conocida como \emph{representaci\'{o}n adjunta} $\mathrm{ad}_{g} := (\mathrm{Ad}_{g})_{*} : \mathfrak{g} \rightarrow \mathfrak{g}$, definida expl\'{i}citamente por
+%
+\begin{equation}
+\mathrm{ad}_{g} X = \frac{d}{dt} \left(g \exp (t X) g^{-1} \right) \bigg\vert_{t=0}, \qquad \forall \; X \in \mathfrak{g}.
+\end{equation}
+%
+\end{mydef}
+
+Para grupos matriciales $\mathrm{ad}_{g} (X) = g X g^{-1}$.
+
+\begin{mydef}
+As\'{i} como se tienen campos vectoriales invariantes por la izquierda, es natural que exista su dual de uno-formas invariantes por la izquierda. Se dice que una uno-forma $w$ es invariante por la izquierda si $g^{*} (\omega) = \omega$ para todo $g \in G$. El espacio vectorial $\mathfrak{g}^{*}$ formado por todas las uno-formas es el espacio dual del \'{a}lgebra de Lie $\mathfrak{g}$: si $X \in \mathfrak{g}$ y $\omega \in \mathfrak{g}^{*}$, entonces $\omega (X)$ es constante en $G$.
+\end{mydef}
+
+\begin{mydef}[Forma de Maurer-Cartan]
+La uno-forma can\'{o}nica en $G$, generalmente denotado como $\theta_{\mathrm{MC}}$ y conocida como \emph{forma de Maurer-Cartan}, es la uno-forma $\mathfrak{g}$-valuada definida por
+%
+\begin{equation*}
+\theta_{\mathrm{MC}}: T_{g} G \longrightarrow T_{1} G \cong \mathfrak{g} \qquad \mathrm{para} \; g \in G.
+\end{equation*}
+%
+Si $X$ es un campo vectorial invariante por la izquierda, entonces $\theta_{\mathrm{MC}} (X) = X_{1}$, por lo que $\theta_{\mathrm{MC}}$ es la identificaci\'{o}n natural entre $T_{1} G$ y $\mathfrak{g}$. 
+\end{mydef}
+
+Sea $\{e_{\mu}\}$ una base de $\mathfrak{g}$ y escribimos a la forma de Maurer-Cartan como $$\theta_{\mathrm{MC}} = \omega^{\mu} e_{\mu}.$$ Entonces $\{ \omega^{\mu} \}$ forma una base para el espacio de uno-formas invariantes por la izquierda en $G$.
+
+\begin{mydef}[Constantes de estructura]
+Dada una base $\{e_{\mu}\}$ de un \'{a}lgebra de Lie $\mathfrak{g}$; \'{e}sta viene espec\'{i}ficada por un conjunto de n\'{u}meros $C^{\mu}_{\nu \tau}$ denominados \emph{constantes de estructura} que se definen seg\'{u}n la siguiente expresi\'{o}n $$[e_{\nu}, e_{\tau}] = C^{\mu}_{\nu \tau} e_{\mu}.$$ Estos n\'{u}meros satisfacen las siguientes propiedades,
+%
+\begin{itemize}
+\item{$C^{\mu}_{\nu \tau} = -C^{\mu}_{\tau \nu}$.}
+\item{$C^{\mu}_{\nu \lambda} C^{\lambda}_{\kappa \tau} + C^{\mu}_{\kappa \lambda} C^{\lambda}_{\tau \nu} + C^{\mu}_{\tau \lambda} C^{\lambda}_{\nu \kappa} = 0$.}
+\end{itemize}
+%
+\end{mydef}
+
+%----------------------------------------------------------------------------------------
+% LIE GROUP ACTION ON A MANIFOLD
+%----------------------------------------------------------------------------------------
+
+\section{Acci\'{o}n de grupos de Lie en una variedad}
+
+\begin{mydef}[$G$-acci\'{o}n izquierda]
+Sea $G$ un grupo de Lie y $\mathcal{M}$ una variedad suave, entonces
+%
+\begin{align*}
+\cdot: G \times \mathcal{M} & \longrightarrow \mathcal{M} \\
+(g, m) & \longmapsto g \cdot m,
+\end{align*}
+%
+que satisface:
+%
+\begin{itemize}
+\item{$1 (m) = m$.}
+\item{$g_{2} \cdot (g_{1} \cdot m) = (g_{2} \cdot g_{1}) \cdot m$.}
+\end{itemize}
+es llamada una \emph{$G$-acci\'{o}n izquierda} en la variedad $\mathcal{M}$.
+%
+\end{mydef}
+
+\begin{mydef}[$G$-acci\'{o}n derecha]
+De manera similar, una \emph{$G$-acci\'{o}n derecha} es aquella que
+\begin{align*}
+\cdot: G \times \mathcal{M} & \longrightarrow \mathcal{M}\\
+(g, m) & \longmapsto m \cdot g,
+\end{align*}
+%
+y satisface
+%
+\begin{itemize}
+\item{$m \cdot 1 = m$.}
+\item{$(m \cdot g_{1}) \cdot g_{2}= m \cdot (g_{1} \cdot g_{2})$.}
+\end{itemize}
+%
+\end{mydef}
+
+\begin{mydef}
+Sean $G$ y $H$ dos grupos de Lie y $\varphi$ un homomorfismo de grupos de Lie tal que $\varphi: G \rightarrow H$ y sean $\mathcal{M}$ y $\mathcal{N}$ dos variedades. Definimos,
+%
+\begin{align*}
+\cdot : G \times \mathcal{M} & \longrightarrow \mathcal{M}, \\
+* : H \times \mathcal{N} & \longrightarrow \mathcal{N}.
+\end{align*}
+%
+y un mapeo suave $\phi: \mathcal{M} \rightarrow \mathcal{N}$.
+Entonces $\phi$ se dice que es $\varphi$-equivariante si $$\phi(g \cdot m) = \varphi (g) * \phi(m),$$ es decir, si el siguiente diagrama conmuta,
+%
+\begin{center}
+\begin{tikzpicture}[node distance=2.0cm,auto]
+\node (A) {$G \times \mathcal{M}$};
+\node (B) [right=of A] {$H \times \mathcal{N}$};
+\node (C) [below=of A] {$\mathcal{M}$};
+\node (D) [below=of B] {$\mathcal{N}$};
+
+\path[->, >=stealth] (A) edge node {$\varphi \times \phi$} (B);
+\path[->, >=stealth] (A) edge node {$\cdot$} (C);
+\path[->, >=stealth] (B) edge node {$*$} (D);
+\path[->, >=stealth] (C) edge node {$\phi$} (D);
+\end{tikzpicture}
+\end{center}
+%
+\end{mydef}
+
+\begin{mydef}[\'{O}rbita, Relaci\'{o}n de equivalencia, Grupo de Isotrop\'{i}a]
+Sea $\mathcal{M}$ una variedad diferenciable y $G$ un grupo de Lie actuando por la izquierda en $\mathcal{M}$.
+%
+\begin{enumerate}
+\item{Para cualquier $m \in \mathcal{M}$ definimos su \emph{\'{o}rbita} bajo la acci\'{o}n como el conjunto $$\mathcal{O}_{m} = \{m' \in \mathcal{M} \; \vert \; \exists \, g \in G : g \cdot m = m'\}.$$}
+\item{Sea $m \backsim m' \Leftrightarrow \exists \, g \in G$ tal que $m' = g \cdot m$, es decir, se dice que $m$ y $m'$ son equivalentes, o hay una \emph{relaci\'{o}n de equivalencia} entre ellos, si est\'{a}n en la misma \'{o}rbita. Propiedades:
+%
+\begin{itemize}
+\item{Reflexiva.}
+\item{Sim\'{e}trica, $g^{-1} \cdot m' = m$.}
+\item{Transitiva, i.e. $m \backsim m'$ y $m' \backsim m'' \Rightarrow m \backsim m''$.}
+\end{itemize}
+%
+entonces, tenemos que $M/\backsim \equiv M/G$ se le conoce como el espacio de \'{o}rbitas.}
+\item{Para cualquier $m \in \mathcal{M}$ definimos el \emph{grupo de isotrop\'{i}a} como $$J_{m} = \{g \in G \; \vert \; g \cdot m = m\}.$$}
+\end{enumerate}
+%
+\end{mydef}
+
+\begin{ex}
+Sea $\mathcal{M}=\mathbb{R}^{2}$ y $G=\mathrm{SO}(2)$, entonces
+%
+\begin{equation*}
+g \cdot m =
+\begin{pmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{pmatrix}
+\begin{pmatrix} m_{1} \\ m_{2} \end{pmatrix}
+\end{equation*}
+
+\begin{center}
+\begin{tikzpicture}[line/.style={->}]
+\draw [->, >=stealth] (-2.2, 0) -- (2.2, 0); 
+\draw [->, >=stealth] (0, -2.2) -- (0, 2.2); 
+\draw (0,0) circle [radius=1.5];
+\filldraw (1.06, 1.06) circle (2pt) node[align=left, right] {$m$};
+\draw (-1.06, 1.06) node(a) {};
+\draw (-2.4, 2) node(b) {$\mathcal{O}_{m}$};
+\path [line, bend right] (a) edge (b);
+\end{tikzpicture}
+\end{center}
+
+De esta manera podemos ver que la \'{o}rbita $\mathcal{O}_{m}$ de $m$ son todos los puntos del circulo donde se encuentra $m$ y su grupo de isotrop\'{i}a es $J_{m} = \{1\}$, mientras que para el origen $(0,0)$ el grupo de isotrop\'{i}a es todo $\mathrm{SO}(2)$.
+\end{ex}
+
+\begin{obs}
+La \'{o}rbita de un elemento $m \in \mathcal{M}$ es subvariedad de la variedad, i.e. $\mathcal{O}_{m} \subseteq \mathcal{M}$ mientras que el grupo de isotrop\'{i}a es subgrupo del grupo $G$ que act\'{u}a en la variedad, i.e. $J_{m} \leq G$.
+\end{obs}
+
+\begin{mydef}[Acci\'{o}n libre]
+Se dice que una acci\'{o}n es \emph{libre} si para todo elemento $m$ de la variedad $\mathcal{M}$, su estabilizador es \'{u}nicamente la identidad en $G$, esto es $\forall \, m \in \mathcal{M}$, $J_{m} = \{1\}$.
+\end{mydef}
+
+\begin{obs}
+Si la acci\'{o}n de $G$ es libre en $\mathcal{M}$, entonces cada \'{o}rbita es isomorfa a $G$, i.e. $\mathcal{O}_{m} \approx G$.
+%
+\begin{ex}
+Si $\mathcal{M} = \mathbb{R}^{2}/\{(0,0)\}$ y $\mathrm{SO}(2) \times \mathcal{M} \rightarrow \mathcal{M}$, entonces la acci\'{o}n de $G$ es libre y $\mathcal{O}_{m} \approx S^{1}$, donde $S^{1}$ es la base del grupo de Lie $\mathrm{SO}(2)$.
+\end{ex}
+\end{obs}
