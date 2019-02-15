@@ -1,8 +1,8 @@
 \section{Conexiones}
 
-Una conexión en un haz fibrado es el modo de definir la noción de transporte paralelo en el haz; esto es, una manera de conectar o identificar fibras sobre puntos cercanos. Aquí, se discutirá la conexión sobre un haz vectorial y la conexión sobre un G-haz principal.
+Una conexi\'{o}n en un haz fibrado es el modo de definir la noci\'{o}n de transporte paralelo en el haz; esto es, una manera de conectar o identificar fibras sobre puntos cercanos.
 
-Sea $\pi:E \rightarrow \mathcal{M}$ un haz vectorial suave sobre una variedad diferenciable $\mathcal{M}$. Denotemos el espacio de secciones (suaves) de $E$ por $\Gamma (E)$. Una \emph{conexión} en $E$ es un objeto que asigna un campo vectorial $X \in \mathcal{X(M)}$ ($\mathcal{X(M)}$ denota el conjunto de campos vectoriales en $\mathcal{M}$) una función
+Sea $\pi:E \rightarrow \mathcal{M}$ un haz vectorial suave sobre una variedad diferenciable $\mathcal{M}$. Denotemos el espacio de secciones (suaves) de $E$ por $\Gamma (E)$. Una \emph{conexi\'{o}n} en $E$ es un objeto que asigna un campo vectorial $X \in \mathcal{X(M)}$ ($\mathcal{X(M)}$ denota el conjunto de campos vectoriales en $\mathcal{M}$) una funci\'{o}n
 %
 \begin{equation}
 D: \Gamma (E) \rightarrow \Gamma(E),
@@ -17,11 +17,11 @@ D_{X} (fs) & = f D_{X} (s) + X[f] s, \\
 D_{fX} (s) & = f D_{X} (s),
 \end{align*}
 para todo: $s \in \Gamma(E)$, $X \in \mathcal{X(M)}$, $f \in C^{\infty}(\mathcal{M})$ y escalar\footnotemark $\alpha$.
-\footnotetext{Aquí escalar puede ser real o complejo dependerá si el haz es real o complejo.}
+\footnotetext{Aqu\'{i} escalar puede ser real o complejo depender\'{a} si el haz es real o complejo.}
 
-En particular, la tercer propiedad, la regla de Leibniz, es lo que hace a $D_{X}$ actuar como diferenciación. Dada cualquier sección $s$ y cualquier campo vectorial $X$, a $D_{X} (s)$ se le llama \emph{derivada covariante} de $s$ en la dirección de $X$.
+En particular, la tercer propiedad, la regla de Leibniz, es lo que hace a $D_{X}$ actuar como diferenciaci\'{o}n. Dada cualquier secci\'{o}n $s$ y cualquier campo vectorial $X$, a $D_{X} (s)$ se le llama \emph{derivada covariante} de $s$ en la direcci\'{o}n de $X$.
 
-Consideremos un sistema de coordenadas local $\{x^{\mu}\}$ en un abierto $U \subseteq \mathcal{M}$, con la correspondiente base $\{\partial_{\mu}\}$ de los campos vectoriales coordenados y una base local de secciones $\{e_{I}\}$ del haz sobre $U$. Denotamos la derivada covariante en dirección $\partial_{\mu}$ como $D_{\partial_{\mu}} = D_{\mu}$. De esta manera
+Consideremos un sistema de coordenadas local $\{x^{\mu}\}$ en un abierto $U \subseteq \mathcal{M}$, con la correspondiente base $\{\partial_{\mu}\}$ de los campos vectoriales coordenados y una base local de secciones $\{e_{I}\}$ del haz sobre $U$. Denotamos la derivada covariante en direcci\'{o}n $\partial_{\mu}$ como $D_{\partial_{\mu}} = D_{\mu}$. De esta manera
 
 \begin{align}
 \label{eq:nabla}
@@ -33,65 +33,65 @@ D_{X}(s) & = X[s^{I}] e_{I} + s^{I} D_{X} (e_{I}) \nonumber \\
 & = x^{\mu} D_{\mu} (s^{I}) e_{I},
 \end{align}
 %
-donde $D_{X}(s)$ queda totalmente definido por $A^{I}_{\mu J}$. Pues para cuales quiera $\mu$ y $I$, se puede expresar $D_{\mu} (e_{I})$ de manera única como una combinación lineal de secciones $e_{I}$, con funciones $A^{I}_{\mu J}$ en $U$ como coeficientes,
+donde $D_{X}(s)$ queda totalmente definido por $A^{I}_{\mu J}$. Pues para cuales quiera $\mu$ y $I$, se puede expresar $D_{\mu} (e_{I})$ de manera \'{u}nica como una combinaci\'{o}n lineal de secciones $e_{I}$, con funciones $A^{I}_{\mu J}$ en $U$ como coeficientes,
 %
 \begin{equation}
 D_{\mu} (e_{I}) = A^{J}_{\mu I} e_{J}.
 \end{equation}
 %
-Además, en \eqref{eq:nabla} definimos $D_{\mu} (s^{I}) := \partial_{\mu} (s^{I}) + A^{I}_{\mu J} s^{J}$ que es la componente $I$ de la derivada covariante de $s$ en la base $\{e_{J}\}$.
+Adem\'{a}s, en \eqref{eq:nabla} definimos $D_{\mu} (s^{I}) := \partial_{\mu} (s^{I}) + A^{I}_{\mu J} s^{J}$ que es la componente $I$ de la derivada covariante de $s$ en la base $\{e_{J}\}$.
 
-Nótese que el potencial vectorial $A^{J}_{\mu I}$ no es solamente una función etiquetada por los índices $\mu$, $I$, $J$ sino que es una sección. Al calcular $D_{X} (s)$ se obtiene el término
+N\'{o}tese que el potencial vectorial $A^{J}_{\mu I}$ no es solamente una funci\'{o}n etiquetada por los \'{i}ndices $\mu$, $I$, $J$ sino que es una secci\'{o}n. Al calcular $D_{X} (s)$ se obtiene el t\'{e}rmino
 %
 \begin{equation*}
 A^{I}_{\mu J} x^{\mu} s^{J} e_{I}
 \end{equation*}
 %
-el cual es una nueva sección de $E$ sobre $U$. Si se multiplica $x^{\mu}$ o $s^{J}$ por una función $f \in C^{\infty}(U)$, se tendrá que toda la expresión anterior estará multiplicada por $f$ ya que no aparecen derivadas; por lo que la expresión es $C^{\infty}(U)$-lineal. Así que, el verdadero sentido del potencial vectorial $A^{I}_{\mu J}$ es operar sobre un campo vectorial y una sección de $E$ sobre $U$ y dar como resultado una nueva sección de $E$ sobre $U$ en una manera $C^{\infty}(U)$-lineal.
+el cual es una nueva secci\'{o}n de $E$ sobre $U$. Si se multiplica $x^{\mu}$ o $s^{J}$ por una funci\'{o}n $f \in C^{\infty}(U)$, se tendr\'{a} que toda la expresi\'{o}n anterior estar\'{a} multiplicada por $f$ ya que no aparecen derivadas; por lo que la expresi\'{o}n es $C^{\infty}(U)$-lineal. As\'{i} que, el verdadero sentido del potencial vectorial $A^{I}_{\mu J}$ es operar sobre un campo vectorial y una secci\'{o}n de $E$ sobre $U$ y dar como resultado una nueva secci\'{o}n de $E$ sobre $U$ en una manera $C^{\infty}(U)$-lineal.
 
-Ahora bien, se puede pensar al potencial vectorial como una 1-\emph{forma} valuada en el \emph{haz de endomorfismos} $E \otimes E^{*} = \mathrm{End}(E)$ sobre $U$, es decir, como una sección del haz $$\mathrm{End}(E|_{U}) \otimes T^{*}U.$$ La razón es que si definimos el potencial vectorial $A$ de la siguiente forma
+Ahora bien, se puede pensar al potencial vectorial como una 1-\emph{forma} valuada en el \emph{haz de endomorfismos} $E \otimes E^{*} = \mathrm{End}(E)$ sobre $U$, es decir, como una secci\'{o}n del haz $$\mathrm{End}(E|_{U}) \otimes T^{*}U.$$ La raz\'{o}n es que si definimos el potencial vectorial $A$ de la siguiente forma
 %
 \begin{equation}
 A = A^{I}_{\mu J} (e_{I} \otimes e^{J} \otimes dx^{\mu}),
 \end{equation}
 %
-la parte de la 1-\emph{forma} al actuar sobre cualquier campo vectorial $X$ en $U$ $$A(X) = A^{I}_{\mu J} e_{I} \otimes e^{J} \otimes dx^{\mu}(X) = A^{I}_{\mu J} x^{\mu} (e_{I} \otimes e^{J})$$ da como resultado una sección de $\mathrm{End}(E)$ sobre $U$. Si ahora actúa sobre una sección $s$ de $E$, se tiene $$A(X)s = A^{I}_{\mu J} x^{\mu} (e_{I} \otimes e^{J}) s = A^{I}_{\mu J} x^{\mu} s^{J} e_{I}$$ que es una sección de $E$ sobre $U$ con componentes $s'^{I} = A^{I}_{\mu J} x^{\mu} s^{J} e_{I}$.
+la parte de la 1-\emph{forma} al actuar sobre cualquier campo vectorial $X$ en $U$ $$A(X) = A^{I}_{\mu J} e_{I} \otimes e^{J} \otimes dx^{\mu}(X) = A^{I}_{\mu J} x^{\mu} (e_{I} \otimes e^{J})$$ da como resultado una secci\'{o}n de $\mathrm{End}(E)$ sobre $U$. Si ahora act\'{u}a sobre una secci\'{o}n $s$ de $E$, se tiene $$A(X)s = A^{I}_{\mu J} x^{\mu} (e_{I} \otimes e^{J}) s = A^{I}_{\mu J} x^{\mu} s^{J} e_{I}$$ que es una secci\'{o}n de $E$ sobre $U$ con componentes $s'^{I} = A^{I}_{\mu J} x^{\mu} s^{J} e_{I}$.
 
-Cuando el haz vectorial $E$ tiene una más estructura, las conexiones que son compatibles con esta estructura son con las que se desea trabajar. Por ejemplo, en los $G$-haces, donde $G$ es el grupo de norma de la teoría; aquí las conexiones más importantes son aquellas donde su potencial vectorial se vea localmente como una 1-\emph{forma} valuada en el álgebra de Lie de $G$.
+Cuando el haz vectorial $E$ tiene una m\'{a}s estructura, las conexiones que son compatibles con esta estructura son con las que se desea trabajar. Por ejemplo, en los $G$-haces, donde $G$ es el grupo de norma de la teor\'{i}a; aqu\'{i} las conexiones m\'{a}s importantes son aquellas donde su potencial vectorial se vea localmente como una 1-\emph{forma} valuada en el \'{a}lgebra de Lie de $G$.
 
-Sea $\pi: P \rightarrow \mathcal{M}$ un $G$-haz principal suave sobre una variedad diferenciable $\mathcal{M}$. Entonces, una \emph{$G$-conexión principal} sobre $P$ es una 1-\emph{forma} diferencial en $P$ con valores en el álgebra de Lie de $G$ la cual es $G$-equivariante y reproduce los generadores del álgebra de Lie de los campos vectoriales fundamentales en $P$.
+Sea $\pi: P \rightarrow \mathcal{M}$ un $G$-haz principal suave sobre una variedad diferenciable $\mathcal{M}$. Entonces, una \emph{$G$-conexi\'{o}n principal} sobre $P$ es una 1-\emph{forma} diferencial en $P$ con valores en el \'{a}lgebra de Lie de $G$ la cual es $G$-equivariante y reproduce los generadores del \'{a}lgebra de Lie de los campos vectoriales fundamentales en $P$.
 
-Decimos que $D$ es una $G$-conexión, si en coordenadas locales las componentes $A_{\mu} \in \mathrm{End}(E)$ están en el álgebra de Lie de $G$. Aunque están definición parece depender de las coordenadas locales $\{x^{\mu}\}$ usadas para definir las componentes de $\mathrm{End}(E)$, en realidad no: si se hace un cambio de coordenadas $\{x'^{\nu}\}$, se obtienen nuevas componentes $A'_{\nu}$ dadas por
+Decimos que $D$ es una $G$-conexi\'{o}n, si en coordenadas locales las componentes $A_{\mu} \in \mathrm{End}(E)$ est\'{a}n en el \'{a}lgebra de Lie de $G$. Aunque est\'{a}n definici\'{o}n parece depender de las coordenadas locales $\{x^{\mu}\}$ usadas para definir las componentes de $\mathrm{End}(E)$, en realidad no: si se hace un cambio de coordenadas $\{x'^{\nu}\}$, se obtienen nuevas componentes $A'_{\nu}$ dadas por
 %
 \begin{equation*}
 A'_{\nu} = \frac{\partial x'^{\mu}}{\partial x^{\nu}} A_{\mu},
 \end{equation*}
 %
-las cuales viven en el álgebra de Lie de $G$ si $A_{\mu}$ lo hace.
+las cuales viven en el \'{a}lgebra de Lie de $G$ si $A_{\mu}$ lo hace.
 
 \section{Curvatura}
 
-Consideremos un haz vectorial $E$ sobre $\mathcal{M}$ con una conexión $D$. Sean $X, \, Y \in \mathcal{X(M)}$, entonces definimos la \emph{curvatura} $F(X,Y)$ como el operador sobre secciones de $E$ tal que
+Consideremos un haz vectorial $E$ sobre $\mathcal{M}$ con una conexi\'{o}n $D$. Sean $X, \, Y \in \mathcal{X(M)}$, entonces definimos la \emph{curvatura} $F(X,Y)$ como el operador sobre secciones de $E$ tal que
 %
 \begin{equation}
 F(X,Y)s = [D_{X}, D_{Y}]s - D_{[X,Y]}s.
 \end{equation}
 
-El primer término mide la falla de las derivadas covariantes de conmutar, mientras que el segundo es una corrección. Esta corrección es para cuando se tenga una conexión plana, la curvatura sea idénticamente cero. Por ejemplo, en el caso de la conexión plana estándar en un haz trivial con fibra $V$, donde una sección es sólo una función $f:\mathcal{M} \rightarrow V$, se tiene
+El primer t\'{e}rmino mide la falla de las derivadas covariantes de conmutar, mientras que el segundo es una correcci\'{o}n. Esta correcci\'{o}n es para cuando se tenga una conexi\'{o}n plana, la curvatura sea id\'{e}nticamente cero. Por ejemplo, en el caso de la conexi\'{o}n plana est\'{a}ndar en un haz trivial con fibra $V$, donde una secci\'{o}n es s\'{o}lo una funci\'{o}n $f:\mathcal{M} \rightarrow V$, se tiene
 %
 \begin{equation}
 F(X,Y)s = XYf - YXf - [X,Y]f = 0.
 \end{equation}
 % 
-Así, cuando una conexión tenga curvatura nula, i.e. $F(X,Y)s = 0$, para todos los campos vectoriales $X$ y $Y$ y todas las secciones $s$, se dirá que es \emph{plana}.
+As\'{i}, cuando una conexi\'{o}n tenga curvatura nula, i.e. $F(X,Y)s = 0$, para todos los campos vectoriales $X$ y $Y$ y todas las secciones $s$, se dir\'{a} que es \emph{plana}.
 
-Una de las propiedades de $F(X,Y)$ es que es antisimétrica, $$F(X,Y) = -F(Y,X).$$ Además, debido a las propiedades de $D$ y que el paréntesis de Lie de campos vectoriales satisface $$[X,fY] = f[X,Y] + X[f]Y,$$ para todas las funciones $f$. Entonces, la curvatura es lineal sobre $C^{\infty}(\mathcal{M})$ en cada uno de los argumentos, esto es
+Una de las propiedades de $F(X,Y)$ es que es antisim\'{e}trica, $$F(X,Y) = -F(Y,X).$$ Adem\'{a}s, debido a las propiedades de $D$ y que el par\'{e}ntesis de Lie de campos vectoriales satisface $$[X,fY] = f[X,Y] + X[f]Y,$$ para todas las funciones $f$. Entonces, la curvatura es lineal sobre $C^{\infty}(\mathcal{M})$ en cada uno de los argumentos, esto es
 %
 \begin{equation*}
 F(fX,Y)s = F(X, fY)s = F(X,Y)fs = fF(X,Y)s.
 \end{equation*}
 %
-Y por la definición de $D$, $F(X,Y)$ también define un mapeo $C^{\infty}(\mathcal{M})$-lineal $\Gamma(E) \rightarrow \Gamma(E)$. De modo que $F(X,Y)$ corresponde a una sección de $\mathrm{End}(E)$.
+Y por la definici\'{o}n de $D$, $F(X,Y)$ tambi\'{e}n define un mapeo $C^{\infty}(\mathcal{M})$-lineal $\Gamma(E) \rightarrow \Gamma(E)$. De modo que $F(X,Y)$ corresponde a una secci\'{o}n de $\mathrm{End}(E)$.
 
 En coordenadas locales $\{x^{\mu}\}$ para un abierto $U \subseteq \mathcal{M}$ las componentes de la curvatura son
 %
@@ -99,7 +99,7 @@ En coordenadas locales $\{x^{\mu}\}$ para un abierto $U \subseteq \mathcal{M}$ l
 F_{\mu \nu} = F(\partial_{\mu}, \partial_{\nu}).
 \end{equation}
 %
-Notémos, como $[\partial_{\mu}, \partial_{\nu}] = 0$ entonces
+Not\'{e}mos, como $[\partial_{\mu}, \partial_{\nu}] = 0$ entonces
 %
 \begin{equation}
 F_{\mu \nu} = [D_{\mu}, D_{\nu}].
@@ -111,7 +111,7 @@ De esta manera, se puede escribir la curvatura para cuales quiera campos vectori
 F(X,Y) = x^{\mu} x^{\nu} F_{\mu \nu}.
 \end{equation}
 
-Si también consideramos sobre una base local $\{e_{I}\}$ de secciones para $E$ sobre $U$, entonces tenemos definidas las componentes del potencial vectorial en esa base, i.e. $A^{I}_{\mu J}$. Por lo tanto, la acción de $F_{\mu \nu}$ sobre $e_{I}$ es
+Si tambi\'{e}n consideramos sobre una base local $\{e_{I}\}$ de secciones para $E$ sobre $U$, entonces tenemos definidas las componentes del potencial vectorial en esa base, i.e. $A^{I}_{\mu J}$. Por lo tanto, la acci\'{o}n de $F_{\mu \nu}$ sobre $e_{I}$ es
 %
 \begin{align*}
 F_{\mu \nu} e_{I} & = [D_{\mu}, D_{\nu}] e_{I} \\
@@ -120,27 +120,27 @@ F_{\mu \nu} e_{I} & = [D_{\mu}, D_{\nu}] e_{I} \\
 & = (\partial_{\mu} A^{J}_{\nu I}) e_{J} + A^{K}_{\mu J} A^{J}_{\nu I} e_{K} - (\partial_{\nu} A^{J}_{\mu I}) e_{J} - A^{K}_{\nu J} A^{J}_{\mu I} e_{K}
 \end{align*}
 %
-Renombrando índices,
+Renombrando \'{i}ndices,
 %
 \begin{equation}
 \label{eq:FmneI}
 F_{\mu \nu} e_{I} = (\partial_{\mu} A^{J}_{\nu I} - \partial_{\nu} A^{J}_{\mu I} + A^{J}_{\mu K} A^{K}_{\nu I} - A^{J}_{\nu K} A^{K}_{\mu I}) e_{J}
 \end{equation}
 
-Ahora, como se ha mencionado $F(X,Y)$ es una sección en $\mathrm{End}(E)$, así que $F_{\mu \nu}$ corresponde a una sección en $\mathrm{End}(E)$. Y dado que $e_{J} \otimes e^{I}$ forman una base local para las secciones de $\mathrm{End}(E)$, entonces se puede escribir
+Ahora, como se ha mencionado $F(X,Y)$ es una secci\'{o}n en $\mathrm{End}(E)$, as\'{i} que $F_{\mu \nu}$ corresponde a una secci\'{o}n en $\mathrm{End}(E)$. Y dado que $e_{J} \otimes e^{I}$ forman una base local para las secciones de $\mathrm{End}(E)$, entonces se puede escribir
 %
 \begin{equation}
 F_{\mu \nu} = F^{J}_{I \mu \nu} e_{J} \otimes e^{I},
 \end{equation}
 %
-donde $F^{J}_{I \mu \nu}$ son las componentes de la sección en la base considerada. Dichas componentes son las componentes de la curvatura. Claramente,
+donde $F^{J}_{I \mu \nu}$ son las componentes de la secci\'{o}n en la base considerada. Dichas componentes son las componentes de la curvatura. Claramente,
 %
 \begin{equation}
 \label{eq:FmneI2}
 F_{\mu \nu} e_{I} = F^{J}_{I \mu \nu} e_{J}.
 \end{equation}
 %
-Entonces de \eqref{eq:FmneI} y esta última ecuación, \eqref{eq:FmneI2}, se obtiene que las componentes de la curvatura son
+Entonces de \eqref{eq:FmneI} y esta \'{u}ltima ecuaci\'{o}n, \eqref{eq:FmneI2}, se obtiene que las componentes de la curvatura son
 %
 \begin{equation}
 F^{J}_{I \mu \nu} = \partial_{\mu} A^{J}_{\nu I} - \partial_{\nu} A^{J}_{\mu I} + A^{J}_{\mu K} A^{K}_{\nu I} - A^{J}_{\nu K} A^{K}_{\mu I}.
