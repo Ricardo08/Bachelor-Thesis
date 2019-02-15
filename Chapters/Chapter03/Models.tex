@@ -1,6 +1,6 @@
 \section{Modelos Homog\'{e}neos}
 
-Los modelos de Bianchi clase A describen todos los posibles espacios homogeneos \cite{Wald}, en estos modelos el grupo de simetr\'{i}a $S$ act\'{u}a libre y transitivamente en el espacio base $\mathcal{M}$, por lo que $\mathcal{M}$ puede ser identificado con $S$ de manera local. Por otro lado, tenemos que una conexi\'{o}n invariante $A$ es una uno-forma que toma valores en el \'{a}lgebra de Lie $\mathfrak{g}$ del grupo de estructura $G$, el cual para las Variables de Conexi\'{o}n es $G=\mathrm{SU}(2)$.
+Los modelos de Bianchi clase A describen todos los posibles espacios homogeneos \cite{Wald}, en estos modelos el grupo de simetr\'{i}a $S$ act\'{u}a libre y transitivamente en el espacio base $\Sigma$, por lo que $\Sigma$ puede ser identificado con $S$ de manera local. Por otro lado, tenemos que una conexi\'{o}n invariante $A$ es una uno-forma que toma valores en el \'{a}lgebra de Lie $\mathfrak{g}$ del grupo de estructura $G$, el cual para las Variables de Conexi\'{o}n es $G=\mathrm{SU}(2)$.
 
 Denotamos a los tres generadores de $\mathfrak{s}$ como $T_{\hat{I}}$, $\hat{I}=1,2,3$, tal que $\left[ T_{\hat{I}}, T_{\hat{J}} \right] = C^{\hat{K}}_{\hat{I}\hat{J}} T_{\hat{K}}$, donde $C^{\hat{K}}_{\hat{I}\hat{J}}$ son las constantes de estructura de $\mathfrak{s}$ que satisfacen $C^{\hat{K}}_{\hat{I}\hat{K}} = 0$ (para modelos clase A por definici\'{o}n). Por otro lado, ya existe un sentido general de invariancia con la forma de Maurer-Cartan en $S$ dada por $\theta_{\mathrm{MC}} = \omega^{\hat{I}} \otimes T_{\hat{I}}$ con $\omega^{\hat{I}} = \omega^{\hat{I}}_{a} dx^{a}$ uno-formas invariantes por la izquierda en $S$ que cumplen las ecuaciones de Maurer-Cartan
 %
@@ -21,16 +21,16 @@ A = \Lambda \circ \theta_{\mathrm{MC}} = \Lambda^{I}_{\hat{J}} \tau_{I} \omega^{
 con $\tau_{I} = -i \sigma_{I}/2$ generando $\mathfrak{su}(2)$ ($\sigma_{I}$ son las matrices de Pauli). Para $J=\{1\}$ la condici\'{o}n \eqref{eq:HiggsField} est\'{a} vac\'{i}a, entonces el mapeo lineal est\'{a} dado por $\Lambda: \mathfrak{j}_{\perp} = \mathfrak{s} \longrightarrow \mathfrak{su}(2)$, $T_{\hat{I}} \longmapsto \Lambda(T_{\hat{I}}) =: \Lambda^{J}_{\hat{I}} \tau_{J}$. Las componentes del momento can\'{o}nicamente conjugado a $A^{I}_{a} = \Lambda^{I}_{\hat{K}} \omega^{\hat{K}}_{a}$ son
 %
 \begin{equation}
-E^{a}_{I} = \sqrt{g_{0}} \tilde{p}^{\hat{K}}_{I} X^{a}_{\hat{K}},
+E^{a}_{I} = \sqrt{h_{0}} \tilde{p}^{\hat{K}}_{I} X^{a}_{\hat{K}},
 \end{equation}
 %
-con $\tilde{p}^{\hat{K}}_{I}$ can\'{o}nicamente conjugado a $\Lambda^{I}_{\hat{K}}$, $g_{0} = \det(\omega^{\hat{K}}_{a})^{2}$ es el determinante de la m\'{e}trica invariante por la izquierda\footnotemark que densitiza a $E^{a}_{I}$, y $X_{\hat{I}}$ campos vectoriales invariantes por la izquierda tal que $\omega^{\hat{I}}(X_{\hat{J}}) = \delta^{\hat{I}}_{\hat{J}}$ y con $[X_{\hat{I}}, X_{\hat{J}}] = C^{\hat{K}}_{\hat{I} \hat{J}} X_{\hat{K}}$.
-\footnotetext{$(g_{0})_{ab} := \sum\limits_{\hat{K}} \omega^{\hat{K}}_{a} \omega^{\hat{K}}_{b}.$}
+con $\tilde{p}^{\hat{K}}_{I}$ can\'{o}nicamente conjugado a $\Lambda^{I}_{\hat{K}}$, $h_{0} = \det(\omega^{\hat{K}}_{a})^{2}$ es el determinante de la m\'{e}trica invariante por la izquierda\footnotemark que densitiza a $E^{a}_{I}$, y $X_{\hat{I}}$ campos vectoriales invariantes por la izquierda tal que $\omega^{\hat{I}}(X_{\hat{J}}) = \delta^{\hat{I}}_{\hat{J}}$ y con $[X_{\hat{I}}, X_{\hat{J}}] = C^{\hat{K}}_{\hat{I} \hat{J}} X_{\hat{K}}$.
+\footnotetext{$(h_{0})_{ab} := \sum\limits_{\hat{K}} \omega^{\hat{K}}_{a} \omega^{\hat{K}}_{b}.$}
 
 La estructura simpl\'{e}ctica se calcula de
 %
 \begin{equation}
-\frac{1}{8 \pi \gamma \kappa} \int\limits_{\mathcal{M}} d^{3} x \dot{A}^{I}_{a} E^{a}_{I} = \frac{1}{8 \pi \gamma \kappa} \int\limits_{\mathcal{M}} d^{3} x \sqrt{g_{0}} \dot{\Lambda}^{I}_{\hat{K}} \tilde{p}^{\hat{J}}_{I} \omega^{\hat{K}} (X_{\hat{J}}) = \frac{V_{0}}{8 \pi \gamma \kappa} \dot{\Lambda}^{I}_{\hat{J}} \tilde{p}^{\hat{J}}_{I},
+\frac{1}{8 \pi \gamma \kappa} \int\limits_{\Sigma} d^{3} x \dot{A}^{I}_{a} E^{a}_{I} = \frac{1}{8 \pi \gamma \kappa} \int\limits_{\Sigma} d^{3} x \sqrt{h_{0}} \dot{\Lambda}^{I}_{\hat{K}} \tilde{p}^{\hat{J}}_{I} \omega^{\hat{K}} (X_{\hat{J}}) = \frac{V_{0}}{8 \pi \gamma \kappa} \dot{\Lambda}^{I}_{\hat{J}} \tilde{p}^{\hat{J}}_{I},
 \end{equation}
 %
 y se obtiene
@@ -39,7 +39,7 @@ y se obtiene
 \{\Lambda^{I}_{\hat{K}}, \tilde{p}^{\hat{J}}_{L} \} = 8 \pi \gamma \kappa V_{0} \delta^{I}_{L} \delta^{\hat{J}}_{\hat{K}},
 \end{equation}
 %
-con $\kappa$ la constante gravitacional, $\gamma$ como el par\'{a}metro de Immirzi y volumen $V_{0} := \int\limits_{\mathcal{M}} d^{3} x  \sqrt{g_{0}}$. Es conveniente definir $\phi^{I}_{\hat{J}} := V_{0}^{1/3} \Lambda^{I}_{\hat{J}}$ y $p^{\hat{I}}_{J} := V_{0}^{2/3} \tilde{p}^{\hat{I}}_{J}$ para hacer la estructura simpl\'{e}ctica independiente de $V_{0}$ y as\'{i} respetar la independencia de fondo.
+con $\kappa$ la constante gravitacional, $\gamma$ como el par\'{a}metro de Immirzi y volumen $V_{0} := \int\limits_{\Sigma} d^{3} x  \sqrt{h_{0}}$. Es conveniente definir $\phi^{I}_{\hat{J}} := V_{0}^{1/3} \Lambda^{I}_{\hat{J}}$ y $p^{\hat{I}}_{J} := V_{0}^{2/3} \tilde{p}^{\hat{I}}_{J}$ para hacer la estructura simpl\'{e}ctica independiente de $V_{0}$ y as\'{i} respetar la independencia de fondo.
 
 \section{Modelos Isotr\'{o}picos}
 
