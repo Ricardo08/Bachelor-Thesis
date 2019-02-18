@@ -1,8 +1,8 @@
-\section{Transformación Canónica}
+\section{Transformaci\'{o}n Can\'{o}nica}
 
-Como ya se mencionó, al extender el espacio fase se ganan más grados de libertad pero para conservar el número de grados físicos de libertad también aparecieron más constricciones. El propósito a continuación es escribir estas constricciones (ecuación \eqref{eq:GJI0}) como una ley de Gauss, análogamente a como es en electromagnetismo y la teoría de Yang-Mills, que es justo lo que se desea al formular la Relatividad General en términos de \emph{variables de conexión}. Esto es escribir $G_{IJ} = 0$ como $(\partial_{a} E^{a} + [A_{a}, E^{a}])_{IJ}$ donde $A$ es alguna conexión con valores en el álgebra de Lie de $\mathrm{SO}(3)$. Para ello se realiza una transformación canónica en el espacio fase $(K^{I}_{a}, E^{b}_{J})$.
+Como ya se mencion\'{o}, al extender el espacio fase se ganan m\'{a}s grados de libertad pero para conservar el n\'{u}mero de grados f\'{i}sicos de libertad tambi\'{e}n aparecieron m\'{a}s constricciones. El prop\'{o}sito a continuaci\'{o}n es escribir estas constricciones (ecuaci\'{o}n \eqref{eq:GJI0}) como una ley de Gauss, an\'{a}logamente a como es en electromagnetismo y la teor\'{i}a de Yang-Mills, que es justo lo que se desea al formular la Relatividad General en t\'{e}rminos de Variables de Conexi\'{o}n. Esto es escribir $\mathcal{G}_{IJ} = 0$ como $(\partial_{a} E^{a} + [A_{a}, E^{a}])_{IJ}$ donde $A$ es alguna conexi\'{o}n con valores en el \'{a}lgebra de Lie de $\mathrm{SO}(3)$. Para ello se realiza una transformaci\'{o}n can\'{o}nica en el espacio fase $(K^{I}_{a}, E^{b}_{J})$.
 
-Antes de continuar se introducirán unos conceptos que serán de ayuda.
+Antes de continuar se introducir\'{a}n unos conceptos que ser\'{a}n de ayuda.
 
 Se define la derivada covariente $D_{a}$ en la hipersuperficie $\Sigma_{t}$ sobre un objeto $v_{I}$ como
 %
@@ -10,14 +10,14 @@ Se define la derivada covariente $D_{a}$ en la hipersuperficie $\Sigma_{t}$ sobr
 D_{a} v_{I} = \partial_{a} v_{I} + w_{aI}\,^{K} v_{K}
 \end{equation}
 %
-donde $w_{aI}\,^{K}$ son las componentes de la \emph{conexión de espín} $w$ del álgebra de Lie de $\mathrm{SO}(3)$. Así se tiene que la acción sobre las triadas está dada por
+donde $w_{aI}\,^{K}$ son las componentes de la \emph{conexi\'{o}n de esp\'{i}n} $w$ del \'{a}lgebra de Lie de $\mathrm{SO}(3)$. As\'{i} se tiene que la acci\'{o}n sobre las triadas est\'{a} dada por
 %
 \begin{equation}
 \label{eq:DaebI}
 D_{a} e^{b}_{I} = \partial_{a} e^{b}_{I} + \Gamma^{b}_{ac} e^{c}_{I} + w_{aI}\,^{K} e^{b}_{K}.
 \end{equation}
 %
-Observando que $w_{aI}\,^{K} y^{a} \in \mathrm{SO}(3)$, el potencial $w_{aI}\,^{K}$ es una 1-forma de conexión valuada en el álgebra de Lie de $\mathrm{SO}(3)$, lo que implica que $w_{a(I}\,^{K)} = 0$.
+Observando que $w_{aI}\,^{K} y^{a} \in \mathrm{SO}(3)$, el potencial $w_{aI}\,^{K}$ es una 1-forma de conexi\'{o}n valuada en el \'{a}lgebra de Lie de $\mathrm{SO}(3)$, lo que implica que $w_{a(I}\,^{K)} = 0$.
 
 Ahora, a partir de la identidad $e^{a}_{I} e^{J}_{b} = \delta^{J}_{I}$ se tiene que
 %
@@ -26,7 +26,7 @@ Ahora, a partir de la identidad $e^{a}_{I} e^{J}_{b} = \delta^{J}_{I}$ se tiene 
 & \Longrightarrow e^{b}_{I} (D_{a} e^{J}_{b}) = -(D_{a} e^{b}_{I}) e^{J}_{b}
 \end{align*}
 %
-Contrayendo con $e^{I}_{c}$ y tomando en cuenta la ecuación \eqref{eq:DaebI} se llega a que
+Contrayendo con $e^{I}_{c}$ y tomando en cuenta la ecuaci\'{o}n \eqref{eq:DaebI} se llega a que
 %
 \begin{align*}
 D_{a} e^{J}_{c} & = -(D_{a} e^{b}_{I}) e^{I}_{c} e^{J}_{b} \\
@@ -46,19 +46,19 @@ Finalmente, esto lleva a que la derivada covariante espacial sobre un objeto $v^
 D_{a} v^{I} = \partial_{a} v^{I} - w_{aK}\,^{I} v^{K} = \partial_{a} v^{I} + w_{a}\,^{I}\,_{K} v^{K}.
 \end{equation}
 
-Ahora bien, la transformación canónica a realizar consiste de un rescalamiento y una transformación afín. Considerando el rescalamiento
+Ahora bien, la transformaci\'{o}n can\'{o}nica a realizar consiste de un rescalamiento y una transformaci\'{o}n af\'{i}n. Considerando el rescalamiento
 %
 \begin{equation}
 (K^{I}_{a}, E^{b}_{J}) \longmapsto (\tilde{K}^{I}_{a}, \tilde{E}^{b}_{I}) = (\beta K^{I}_{a}, \beta^{-1} E^{b}_{J}),
 \end{equation}
 %
-donde $\beta \in \mathbb{R}/\{0\}$ es el parámetro de Barbero-Immirzi, las tres constricciones $G_{IJ} = 0$, que conviene reescribirlas como $G_{K} = \epsilon_{KIJ} \delta^{JL} K^{I}_{a} E^{a}_{L}$, se mantienen invariantes bajo el rescalamiento,
+donde $\beta \in \mathbb{R}/\{0\}$ es el par\'{a}metro de Barbero-Immirzi, las tres constricciones $\mathcal{G}_{IJ} = 0$, que conviene reescribirlas como $\mathcal{G}_{K} = \epsilon_{KIJ} \delta^{JL} K^{I}_{a} E^{a}_{L}$, se mantienen invariantes bajo el rescalamiento,
 %
 \begin{equation}
-G_{K} = \epsilon_{KI}\,^{J} \tilde{K}^{I}_{a} \tilde{E}^{a}_{J}.
+\mathcal{G}_{K} = \epsilon_{KI}\,^{J} \tilde{K}^{I}_{a} \tilde{E}^{a}_{J}.
 \end{equation}
 
-Continuemos con la transformación afín. Recurriendo a la ecuación \eqref{eq:DaebI} pero \emph{densitizada} y dado que $D_{a}$ debe ser compatible con $h_{ab}$ por lo que $D_{a} e^{b}_{I} = 0$ y $D_{a} \sqrt{h} = 0$; tenemos que la divergencia de $E^{a}_{I}$ es
+Continuemos con la transformaci\'{o}n af\'{i}n. Recurriendo a la ecuaci\'{o}n \eqref{eq:DaebI} pero \emph{densitizada} y dado que $D_{a}$ debe ser compatible con $h_{ab}$ por lo que $D_{a} e^{b}_{I} = 0$ y $D_{a} \sqrt{h} = 0$; tenemos que la divergencia de $E^{a}_{I}$ es
 %
 \begin{align*}
 D_{a} E^{a}_{I} & = \sqrt{h} \partial_{a} e^{a}_{I} + \Gamma^{a}_{ac} E^{c}_{I} + w_{aJ}\,^{K} E^{a}_{K} \\
@@ -66,14 +66,14 @@ D_{a} E^{a}_{I} & = \sqrt{h} \partial_{a} e^{a}_{I} + \Gamma^{a}_{ac} E^{c}_{I} 
 & = \partial_{a} E^{a}_{I} + w_{aI}\,^{K} E^{a}_{K}.
 \end{align*}
 
-Por otro lado, de $D_{a} e^{I}_{b} = 0$, la conexión de espín se puede escribir como
+Por otro lado, de $D_{a} e^{I}_{b} = 0$, la conexi\'{o}n de esp\'{i}n se puede escribir como
 %
 \begin{equation}
 \label{eq:waKI1}
 w_{aK}\,^{I} = e^{b}_{K} (\partial_{a} e^{I}_{b} - \Gamma^{c}_{ab} e^{I}_{c}),
 \end{equation}
 %
-pero recordando que $\Gamma^{c}_{ab} = 1/2 h^{cd} (\partial_{a} h_{bd} + \partial_{b} h_{da} - \partial_{d} h_{ab})$, $h_{ab} = \delta_{IJ} e^{I}_{a} e^{J}_{b}$ y $h^{ab} = \delta^{IJ} e^{a}_{I} e^{b}_{J}$, después de varias cuentas, la expresión \eqref{eq:waKI1} se reescribe como
+pero recordando que $\Gamma^{c}_{ab} = 1/2 h^{cd} (\partial_{a} h_{bd} + \partial_{b} h_{da} - \partial_{d} h_{ab})$, $h_{ab} = \delta_{IJ} e^{I}_{a} e^{J}_{b}$ y $h^{ab} = \delta^{IJ} e^{a}_{I} e^{b}_{J}$, despu\'{e}s de varias cuentas, la expresi\'{o}n \eqref{eq:waKI1} se reescribe como
 %
 \begin{align}
 \label{eq:waKI2}
@@ -81,7 +81,7 @@ w_{aK}\,^{I} & = 2 e^{d}_{[K} \partial_{[a} e^{I]}_{d]} + e^{J}_{a} e^{d}_{K} e^
 & = e^{d[I} \partial_{d} e_{aK]} - e^{d[I} \partial_{a} e_{dK]} + e^{J}_{a} e^{d}_{[K} e^{bI]} \partial_{b} e_{dJ}.
 \end{align}
 %
-La cual puede reducirse bajando el índice $I$ y usando las identidades
+La cual puede reducirse bajando el \'{i}ndice $I$ y usando las identidades
 %
 \begin{align*}
 %e^{b[I} \partial_{b} e_{c}^{J]} & = \frac{1}{2} \epsilon_{KMN} \epsilon^{KJI} e^{bN} \partial_{b} e^{M}_{c} \\
@@ -102,7 +102,7 @@ Luego si se define
 w^{J}_{a} := -\frac{1}{2} \epsilon^{JMN} e^{d}_{N} (\partial_{d} e_{aM} - \partial_{a} e_{dM} + e^{b}_{M} e_{aR} \partial_{d} e^{R}_{b}),
 \end{equation}
 %
-la conexíon de espín es
+la conex\'{i}on de esp\'{i}n es
 %
 \begin{equation}
 \label{eq:waKI}
@@ -116,7 +116,7 @@ Substituyendo \eqref{eq:waKI} en en la divergencia de $E^{a}_{I}$ se tiene que
 D_{a} E^{a}_{I} = \partial_{a} E^{a}_{I} - \epsilon_{JI}\,^{K} w^{J}_{a} E^{a}_{K} = \partial_{a} E^{a}_{I} + \epsilon_{IJ}\,^{K} w^{J}_{a} E^{a}_{K}.
 \end{equation}
 
-Dando seguimiento a la transformación canónica, ahora se expresa a $w^{J}_{a}$ en términos de las triadas y cotriadas densitizadas ($E$'s) ya que hasta ahora está en función de las triadas y cotriadas ($e$'s).
+Dando seguimiento a la transformaci\'{o}n can\'{o}nica, ahora se expresa a $w^{J}_{a}$ en t\'{e}rminos de las triadas y cotriadas densitizadas ($E$'s) ya que hasta ahora est\'{a} en funci\'{o}n de las triadas y cotriadas ($e$'s).
 %
 \begin{align}
 \label{eq:wEs}
@@ -124,39 +124,39 @@ w^{J}_{a} & = -\frac{1}{2} \epsilon^{JIK} E^{b}_{K} [\partial_{b} E_{aI} - \part
 & \quad - \frac{1}{4 |\det(E)|} \epsilon^{JIK} E^{b}_{K} [2 E_{aI} \partial_{b} (|\det(E)|) - E_{bI} \partial_{a} (|\det(E)|)].
 \end{align}
 %
-De \eqref{eq:wEs}, se debe notar que $w^{J}_{a}$ es invariante bajo el rescalamiento, así que
+De \eqref{eq:wEs}, se debe notar que $w^{J}_{a}$ es invariante bajo el rescalamiento, as\'{i} que
 %
 \begin{equation}
 \tilde{w}^{J}_{a} = w^{J}_{a} (\tilde{E}) = w^{J}_{a} (E).
 \end{equation}
 
-Retomando que la derivada covariante espacial debe ser compatible con la métrica de $\Sigma_{t}$, implica $D_{a}(E^{b}_{I}) = 0$. Entonces $D_{a}(\tilde{E}^{a}_{I}) = 0$, pues $\beta$ es un escalar. Por lo tanto de la divergencia \eqref{eq:DaEaI} se sigue que
+Retomando que la derivada covariante espacial debe ser compatible con la m\'{e}trica de $\Sigma_{t}$, implica $D_{a}(E^{b}_{I}) = 0$. Entonces $D_{a}(\tilde{E}^{a}_{I}) = 0$, pues $\beta$ es un escalar. Por lo tanto de la divergencia \eqref{eq:DaEaI} se sigue que
 %
 \begin{equation}
 D_{a} \tilde{E}^{a}_{I} = \partial_{a} \tilde{E}^{a}_{I} + \epsilon_{IJ}\,^{K} w^{J}_{a} \tilde{E}^{a}_{K} = 0
 \end{equation}
 
-Con esto se escribe la constricción $G_{I} = 0$ como
+Con esto se escribe la constricci\'{o}n $\mathcal{G}_{I} = 0$ como
 %
 \begin{align}
 \label{eq:GI0}
-G_{I} & = \partial_{a} \tilde{E}^{a}_{I} + \epsilon_{IJ}\,^{K} (w^{J}_{a} + \tilde{K}^{J}_{a} )\tilde{E}^{a}_{K} \nonumber \\
+\mathcal{G}_{I} & = \partial_{a} \tilde{E}^{a}_{I} + \epsilon_{IJ}\,^{K} (w^{J}_{a} + \tilde{K}^{J}_{a} )\tilde{E}^{a}_{K} \nonumber \\
 & \equiv \partial_{a} \tilde{E}^{a}_{I} + \epsilon_{IJ}\,^{K} \tilde{A}^{J}_{a} \tilde{E}^{a}_{K}.
 \end{align}
 %
-El término $\tilde{A}^{J}_{a}$ es la conexión de Ashtekar-Barbero y \eqref{eq:GI0} es justamente la forma que se buscaba, que es análoga a una constricción de Gauss de una teoría de norma $\mathrm{SU}(2)$. Explícitamente
+El t\'{e}rmino $\tilde{A}^{J}_{a}$ es la conexi\'{o}n de Ashtekar-Barbero y \eqref{eq:GI0} es justamente la forma que se buscaba, que es an\'{a}loga a una constricci\'{o}n de Gauss de una teor\'{i}a de norma $\mathrm{SU}(2)$. Expl\'{i}citamente
 %
 \begin{equation}
-G_{I} = \tilde{D}_{a} \tilde{E}^{a}_{I} = \partial_{a} \tilde{E}^{a}_{I} + \epsilon_{IJ}\,^{K} \tilde{A}^{J}_{a} \tilde{E}^{a}_{K} = 0.
+\mathcal{G}_{I} = \tilde{D}_{a} \tilde{E}^{a}_{I} = \partial_{a} \tilde{E}^{a}_{I} + \epsilon_{IJ}\,^{K} \tilde{A}^{J}_{a} \tilde{E}^{a}_{K} = 0.
 \end{equation}
 
-Es sencillo verificar que después de la transformación
+Es sencillo verificar que despu\'{e}s de la transformaci\'{o}n
 %
 \begin{equation}
 (K^{I}_{a}, E^{b}_{J}) \longmapsto (\tilde{A}^{I}_{a}, \tilde{E}^{b}_{J}),
 \end{equation}
 %
-los paréntesis de Poisson son
+los par\'{e}ntesis de Poisson son
 %
 \begin{equation}
 \label{eq:PoissonEA}
@@ -167,7 +167,7 @@ los paréntesis de Poisson son
 \{\tilde{E}^{a}_{I}(y), \tilde{E}^{b}_{J}(y')\} = \{\tilde{A}^{I}_{a}(y), \tilde{A}^{J}_{b}(y')\} = 0.
 \end{equation}
 
-Por último, nos queda expresar las constricciones \eqref{eq:CEE} y \eqref{eq:CaEE} en términos de las nuevas variables $(\tilde{A}^{I}_{a}, \tilde{E}^{b}_{J})$ para concluir con la formulación de la Relatividad General en variables de conexión.
+Por \'{u}ltimo, nos queda expresar las constricciones \eqref{eq:CEE} y \eqref{eq:CaEE} en t\'{e}rminos de las nuevas variables $(\tilde{A}^{I}_{a}, \tilde{E}^{b}_{J})$ para concluir con la formulaci\'{o}n de la Relatividad General en variables de conexi\'{o}n.
 
 Introduciendo las curvaturas asociadas a $w^{J}_{b}$ y a $A^{I}_{b}$ respectivamente
 %
@@ -179,7 +179,7 @@ R^{J}_{ab} = 2 \partial_{[a} w^{J}_{b]} + \epsilon^{J}\,_{KL} w^{K}_{a} w^{L}_{b
 \tilde{F}^{I}_{ab} = 2 \partial_{[a} \tilde{A}^{I}_{b]} + \epsilon^{I}\,_{KL} \tilde{A}^{K}_{a} \tilde{A}^{L}_{b}.
 \end{equation}
 %
-Y escribiendo $\tilde{F}^{J}_{ab}$ en términos de $w^{J}_{b}$ y $\beta K^{J}_{b}$ se obtiene una expresión que es posible relacionar más facilmente con las constricciones \eqref{eq:CEE} y \eqref{eq:CaEE}. Ésta es de la forma
+Y escribiendo $\tilde{F}^{J}_{ab}$ en t\'{e}rminos de $w^{J}_{b}$ y $\beta K^{J}_{b}$ se obtiene una expresi\'{o}n que es posible relacionar m\'{a}s facilmente con las constricciones \eqref{eq:CEE} y \eqref{eq:CaEE}. \'{E}sta es de la forma
 %
 \begin{equation*}
 \tilde{F}^{J}_{ab} = R^{J}_{ab} + 2 \beta D_{[a} K^{J}_{b]} + \beta^{2} \epsilon^{J}\,_{IK} K^{I}_{a} K^{K}_{b}.
@@ -192,7 +192,7 @@ Si se contrae con $\tilde{E}^{b}_{J}$ se obtiene
 & = R^{J}_{ab} \tilde{E}^{b}_{J} + 2 \beta D_{[a} K^{J}_{b]} \tilde{E}^{b}_{J} + \beta K^{K}_{a} G_{K}.
 \end{align*}
 %
-Es posible mostrar que el primer término se anula; mientras que si se cumple la constricción de Gauss el tercer término también se anula, entonces
+Es posible mostrar que el primer t\'{e}rmino se anula; mientras que si se cumple la constricci\'{o}n de Gauss el tercer t\'{e}rmino tambi\'{e}n se anula, entonces
 %
 \begin{equation*}
 \tilde{F}^{J}_{ab} \tilde{E}^{b}_{J} = 2 \beta D_{[a} K^{J}_{b]} \tilde{E}^{b}_{J}.
@@ -205,17 +205,17 @@ Que es simplemente una manera de reescribir \eqref{eq:CaEE}, por lo tanto
 \mathcal{C}_{a} = \tilde{F}^{J}_{ab} \tilde{E}^{b}_{J}.
 \end{equation}
 
-Análogamente, haciendo la contracción $\tilde{F}^{J}_{ab} \epsilon_{J}\,^{IK} \tilde{E}^{a}_{I} \tilde{E}^{b}_{K}$ y recurriendo al hecho de que $G_{I} = 0$, se obtiene
+An\'{a}logamente, haciendo la contracci\'{o}n $\tilde{F}^{J}_{ab} \epsilon_{J}\,^{IK} \tilde{E}^{a}_{I} \tilde{E}^{b}_{K}$ y recurriendo al hecho de que $\mathcal{G}_{I} = 0$, se obtiene
 %
 \begin{equation}
 \label{eq:CEA}
 \mathcal{C} = \frac{\epsilon_{J}\,^{IK} \tilde{E}^{a}_{I} \tilde{E}^{b}_{K}}{\sqrt{|\det(\beta \tilde{E})|}} \left[\beta^{2} \tilde{F}^{J}_{ab} - (\beta^{2} - 1) \epsilon^{J}\,_{IK} \tilde{K}^{I}_{a} \tilde{K}^{K}_{b} \right].
 \end{equation}
 
-Viendo \eqref{eq:PoissonEA}, es decir, el par $(\tilde{A}^{I}_{a}, \tilde{E}^{b}_{J})$ son efectivamente variables canónicamente conjugadas y considerando como se reescribieron las constricciones \eqref{eq:GI0}, \eqref{eq:CaEA} y \eqref{eq:CEA}; la acción de Relatividad General en variables de conexión queda como
+Viendo \eqref{eq:PoissonEA}, es decir, el par $(\tilde{A}^{I}_{a}, \tilde{E}^{b}_{J})$ son efectivamente variables can\'{o}nicamente conjugadas y considerando como se reescribieron las constricciones \eqref{eq:GI0}, \eqref{eq:CaEA} y \eqref{eq:CEA}; la acci\'{o}n de Relatividad General en variables de conexi\'{o}n queda como
 %
 \begin{equation}
-S_{EH} = \frac{1}{16 \pi} \int\limits^{t_{2}}_{t_{1}} dt \int\limits_{\Sigma_{t}} \left[2 \dot{\tilde{A}}^{I}_{a} \tilde{E}^{a}_{I} - (\Lambda^{J} G_{J} + N^{a} \mathcal{C}_{a} + N \mathcal{C}) \right] d^{3} y.
+S_{EH} = \frac{1}{16 \pi} \int\limits^{t_{2}}_{t_{1}} dt \int\limits_{\Sigma_{t}} \left[2 \dot{\tilde{A}}^{I}_{a} \tilde{E}^{a}_{I} - (\Lambda^{J} \mathcal{G}_{J} + N^{a} \mathcal{C}_{a} + N \mathcal{C}) \right] d^{3} y.
 \end{equation}
 
-La gran ventaja de esta formulación se muestra en el aspecto cuántico, ya que es \emph{independiente de fondo}. Esto, la ha llevado a ser considerada como el punto de partida para una teoría cuántica de la gravedad independiente de la métrica.
+La gran ventaja de esta formulaci\'{o}n se muestra en el aspecto cu\'{a}ntico, ya que es \emph{independiente de fondo}. Esto, la ha llevado a ser considerada como el punto de partida para una teor\'{i}a cu\'{a}ntica de la gravedad independiente de la m\'{e}trica.
