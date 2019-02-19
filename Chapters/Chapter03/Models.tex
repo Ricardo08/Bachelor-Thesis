@@ -12,13 +12,21 @@ As\'{i} que cada $\omega^{\hat{I}}$ obtenida de esta manera es una uno-forma en 
 
 Ahora bien, tenemos que $\theta_{\mathrm{MC}}$ toma valores en el \'{a}lgebra de Lie $\mathfrak{s}$. Sin embargo, la conexi\'{o}n invariante $A$ debe tomar valores en el \'{a}lgebra de Lie del grupo de estructura $G$, es decir, en $\mathfrak{g}$ y obedecer la misma condici\'{o}n de invariancia que $\theta_{\mathrm{MC}}$. Aplicando el mapeo lineal $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$ podemos obtener la conexi\'{o}n invariante $A$ en $\mathfrak{g}$.
 
-Por la acci\'{o}n libre el grupo de isotrop\'{i}a se tiene $J=\{1\}$, lo que implica que todos los homomorfismos $\lambda: J \rightarrow G$ est\'{a}n dados por $1^{(J)} \longmapsto 1^{(G)}$, y es conveniente usar el encaje $\iota = \mathrm{id}: S/J \hookrightarrow S$. De este modo, la conexi\'{o}n invariante toma la forma
+Por la acci\'{o}n libre el grupo de isotrop\'{i}a es $J=\{1\}$, lo que implica que todos los homomorfismos $\lambda: J \rightarrow G$ est\'{a}n dados por $1^{(J)} \longmapsto 1^{(G)}$, y es conveniente usar el encaje $\iota = \mathrm{id}: S/J \hookrightarrow S$. De este modo, la conexi\'{o}n invariante toma la forma
 %
 \begin{equation}
 A = \Lambda \circ \theta_{\mathrm{MC}} = \Lambda^{I}_{\hat{J}} \tau_{I} \omega^{\hat{J}} =  \Lambda^{I}_{\hat{J}} \omega^{\hat{J}}_{a} \tau_{I} dx^{a}=A^{I}_{a} \tau_{I} dx^{a},
 \end{equation}
 %
-con $\tau_{I} = -i \sigma_{I}/2$ generando $\mathfrak{su}(2)$ ($\sigma_{I}$ son las matrices de Pauli). Para $J=\{1\}$ la condici\'{o}n \eqref{eq:HiggsField} est\'{a} vac\'{i}a, entonces el mapeo lineal est\'{a} dado por $\Lambda: \mathfrak{j}_{\perp} = \mathfrak{s} \longrightarrow \mathfrak{su}(2)$, $T_{\hat{I}} \longmapsto \Lambda(T_{\hat{I}}) =: \Lambda^{J}_{\hat{I}} \tau_{J}$. Las componentes del momento can\'{o}nicamente conjugado a $A^{I}_{a} = \Lambda^{I}_{\hat{K}} \omega^{\hat{K}}_{a}$ son
+con $\tau_{I} = -i \sigma_{I}/2$ generando $\mathfrak{su}(2)$ ($\sigma_{I}$ son las matrices de Pauli).
+
+Para $J=\{1\}$ la condici\'{o}n \eqref{eq:HiggsField} est\'{a} vac\'{i}a, entonces el mapeo lineal est\'{a} dado por $\Lambda: \mathfrak{j}_{\perp} = \mathfrak{s} \longrightarrow \mathfrak{su}(2)$, $T_{\hat{I}} \longmapsto \Lambda(T_{\hat{I}}) =: \Lambda^{J}_{\hat{I}} \tau_{J}$. De esta manera tenemos que las componentes de $A$ tienen la forma
+%
+\begin{equation}
+A^{I}_{a} = \Lambda^{I}_{\hat{K}} \omega^{\hat{K}}_{a},
+\end{equation}
+%
+y las componentes de su momento can\'{o}nicamente conjugado, i.e. la triada densitizada $E$, son
 %
 \begin{equation}
 E^{a}_{I} = \sqrt{h_{0}} \tilde{p}^{\hat{K}}_{I} X^{a}_{\hat{K}},
@@ -30,22 +38,23 @@ con $\tilde{p}^{\hat{K}}_{I}$ can\'{o}nicamente conjugado a $\Lambda^{I}_{\hat{K
 La estructura simpl\'{e}ctica se calcula de
 %
 \begin{equation}
-\frac{1}{8 \pi \gamma G} \int\limits_{\Sigma} d^{3} x \dot{A}^{I}_{a} E^{a}_{I} = \frac{1}{8 \pi \gamma G} \int\limits_{\Sigma} d^{3} x \sqrt{h_{0}} \dot{\Lambda}^{I}_{\hat{K}} \tilde{p}^{\hat{J}}_{I} \omega^{\hat{K}} (X_{\hat{J}}) = \frac{V_{0}}{8 \pi \gamma G} \dot{\Lambda}^{I}_{\hat{J}} \tilde{p}^{\hat{J}}_{I},
+\frac{1}{8 \pi \beta G_{0}} \int\limits_{\Sigma} d^{3} x \dot{A}^{I}_{a} E^{a}_{I} = \frac{1}{8 \pi \beta G_{0}} \int\limits_{\Sigma} d^{3} x \sqrt{h_{0}} \dot{\Lambda}^{I}_{\hat{K}} \tilde{p}^{\hat{J}}_{I} \omega^{\hat{K}} (X_{\hat{J}}) = \frac{V_{0}}{8 \pi \beta G_{0}} \dot{\Lambda}^{I}_{\hat{J}} \tilde{p}^{\hat{J}}_{I},
 \end{equation}
 %
 y se obtiene
 %
 \begin{equation}
-\{\Lambda^{I}_{\hat{K}}, \tilde{p}^{\hat{J}}_{L} \} = 8 \pi \gamma G V_{0} \delta^{I}_{L} \delta^{\hat{J}}_{\hat{K}},
+\{\Lambda^{I}_{\hat{K}}, \tilde{p}^{\hat{J}}_{L} \} = 8 \pi \beta G_{0} V_{0} \delta^{I}_{L} \delta^{\hat{J}}_{\hat{K}},
 \end{equation}
 %
-con $G$ la constante gravitacional, $\gamma$ como el par\'{a}metro de Immirzi y volumen $V_{0} := \int\limits_{\Sigma} d^{3} x  \sqrt{h_{0}}$. Es conveniente definir $\phi^{I}_{\hat{J}} := V_{0}^{1/3} \Lambda^{I}_{\hat{J}}$ y $p^{\hat{I}}_{J} := V_{0}^{2/3} \tilde{p}^{\hat{I}}_{J}$ para hacer la estructura simpl\'{e}ctica independiente de $V_{0}$ y as\'{i} respetar la independencia de fondo.
+con $G_{0}$ como la constante gravitacional, $\beta$ como el par\'{a}metro de Immirzi y con volumen $V_{0} := \int\limits_{\Sigma} d^{3} x  \sqrt{h_{0}}$. Es conveniente definir $\phi^{I}_{\hat{J}} := V_{0}^{1/3} \Lambda^{I}_{\hat{J}}$ y $p^{\hat{I}}_{J} := V_{0}^{2/3} \tilde{p}^{\hat{I}}_{J}$ para hacer la estructura simpl\'{e}ctica independiente de $V_{0}$ y as\'{i} respetar la independencia de fondo.
 
 \section{Modelos Isotr\'{o}picos}
 
-Al imponer m\'{a}s condiciones de simetr\'{i}a se introducen subgrupos de isotrop\'{i}a no triviales, $J \cong \mathrm{U}(1)$ para modelos sim\'{e}tricos rotacionalmente de manera local (LRS por sus siglas en ingl\'{e}s) y $J \cong \mathrm{SU}(2)$ para modelos de Bianchi tipo I y IX restringidos a m\'{e}tricas isotr\'{o}picas. Sin embargo, escribiendo al grupo de simetr\'{i}a como un producto semi-directo $S = J \rtimes_{\rho} N$, con el grupo de isotro\'{i}a $J$ y el subgrupo de traslaciones $N$, se puede utilizar la t\'{e}cnica ya discutida para encontrar la forma de la conexi\'{o}n invariante. La composici\'{o}n en este grupo est\'{a} definida como $(n_{1}, j_{1})(n_{2}, j_{2}) := (n_{1} \rho(j_{1}) (n_{2}), j_{1} j_{2} )$ que depende del homomorfismo $\rho: J \longrightarrow \mathrm{Aut}(N)$, mientras que el inverso est\'{a} dado por $(n, j)^{-1} = (\rho(j^{-1}) n^{-1}, j^{-1})$.
+Al imponer m\'{a}s condiciones de simetr\'{i}a se introducen subgrupos de isotrop\'{i}a no triviales, $J \cong \mathrm{U}(1)$ para modelos isotr\'{o}picos respecto a un eje, llamados sim\'{e}tricos rotacionalmente de manera local (LRS por sus siglas en ingl\'{e}s), y $J \cong \mathrm{SU}(2)$ para modelos de Bianchi tipo I y IX restringidos a m\'{e}tricas isotr\'{o}picas, es decir, que son totalmente isotr\'{o}picos. Escribiendo al grupo de simetr\'{i}a como un producto semi-directo $S = J \rtimes_{\rho} N$, con el grupo de isotro\'{i}a $J$ y el subgrupo de traslaciones $N$, se puede utilizar la t\'{e}cnica ya discutida para encontrar la forma de la conexi\'{o}n invariante. La composici\'{o}n en este grupo est\'{a} definida como $(n_{1}, j_{1})(n_{2}, j_{2}) := (n_{1} \rho(j_{1}) (n_{2}), j_{1} j_{2} )$ que depende del homomorfismo\footnotemark $\rho: J \longrightarrow \mathrm{Aut}(N)$, mientras que el inverso est\'{a} dado por $(n, j)^{-1} = (\rho(j^{-1}) n^{-1}, j^{-1})$.
+\footnotetext{Esto es $\rho(j): N \longrightarrow N$ es un isomorfismo para todo $j \in J$.}
 
-Ahora bien, la forma de Maurer-Cartan en $S$ est\'{a} dada por
+Ahora bien, para determinar la forma de conexiones invariantes vemos que la forma de Maurer-Cartan en $S$ est\'{a} dada por
 %
 \begin{align*}
 \label{eq:MC-S}
@@ -54,29 +63,29 @@ Ahora bien, la forma de Maurer-Cartan en $S$ est\'{a} dada por
 = & \left(\rho(j^{-1}) \theta^{(N)}_{\mathrm{MC}} (n), \theta^{(J)}_{\mathrm{MC}} (j) \right),
 \end{align*}
 %
-aqu\'{i} $\theta^{(N)}_{\mathrm{MC}}$ y $\theta^{(J)}_{\mathrm{MC}}$ denotan las forma de Maurer-Cartan en $N$ y $J$ respectivamente. El encaje $\iota: S/J = N \hookrightarrow S$, que se escoge es $\iota(n) = (n, 1)$, as\'{i}: $\iota^{*} \theta^{(S)}_{\mathrm{MC}} = \theta^{(N)}_{\mathrm{MC}}$. Usando los generadores $T_{\hat{I}}$ de $\mathfrak{n} = \mathfrak{j}_{\perp}$ y uno-formas invarinates $\omega^{\hat{I}}$ en $N$, se puede escribir $\theta^{(N)}_{\mathrm{MC}} = \omega^{\hat{I}} \otimes T_{\hat{I}}$ y de esta manera, la conexi\'{o}n toma la forma
+aqu\'{i} $\theta^{(N)}_{\mathrm{MC}}$ y $\theta^{(J)}_{\mathrm{MC}}$ denotan las forma de Maurer-Cartan en $N$ y $J$ respectivamente. Si el encaje $\iota: S/J = N \hookrightarrow S$ se escoge como $\iota(n) = (n, 1)$, tenemos: $\iota^{*} \theta^{(S)}_{\mathrm{MC}} = \theta^{(N)}_{\mathrm{MC}}$. Usando los generadores $T_{\hat{I}}$ de $\mathfrak{n} = \mathfrak{j}_{\perp}$ y uno-formas invarinates $\omega^{\hat{I}}$ en $N$, se puede escribir $\theta^{(N)}_{\mathrm{MC}} = \omega^{\hat{I}} \otimes T_{\hat{I}}$, con $\omega^{\hat{I}} = \omega^{\hat{I}}_{a} dx^{a}$ uno-formas invariantes por la izquierda en $N$. De esta manera, la conexi\'{o}n toma la forma
 %
 \begin{equation}
 \label{eq:wN}
-A = \Lambda \circ \iota^{*} \theta^{(S)}_{\mathrm{MC}} = \Lambda^{I}_{\hat{J}} \omega^{\hat{J}} \tau_{I},
+A = \Lambda \circ \iota^{*} \theta^{(S)}_{\mathrm{MC}} = \Lambda^{I}_{\hat{J}} \omega^{\hat{J}} \tau_{I} =  \Lambda^{I}_{\hat{J}} \omega^{\hat{J}}_{a} \tau_{I} dx^{a} = A^{I}_{a} \tau_{I} dx^{a},
 \end{equation}
 %
-donde las componentes $\Lambda^{I}_{\hat{J}}$ est\'{a}n definidas por $\Lambda(T_{\hat{J}}) = \Lambda^{I}_{\hat{J}} \tau_{I}$; $\tau_{I}$ son los generadores de $\mathfrak{su} (2)$ que est\'{a}n dados en t\'{e}rminos de las matrices da Pauli: $\tau_{I} = -i \sigma_{I}/2$ (y adem\'{a}s forman una base en $\mathfrak{s}$). N\'{o}tese que \eqref{eq:wN} tiene la misma forma que el modelo anterior, pero en este caso la condici\'{o}n \eqref{eq:HiggsField} no est\'{a} vac\'{i}a, por lo que se obtiene un subconjunto de conexiones isotr\'{o}picas. Para encontrar la soluci\'{o}n a est\'{a} condici\'{o}n se debe trata al modelo LRS y al modelo isotr\'{o}pico por separado. En el modelo LRS se toma como sistema generador a $\mathfrak{j} = \langle \tau_{3} \rangle$ mientras que en el modelo isotr\'{o}pico, el sistema generador es $\mathfrak{j} = \langle \tau_{1}, \tau_{2}, \tau_{3} \rangle$. La ecuaci\'{o}n \eqref{eq:HiggsField} se puede escribir de forma infinitesimal como
+donde las componentes $\Lambda^{I}_{\hat{J}}$ est\'{a}n definidas por $\Lambda(T_{\hat{J}}) = \Lambda^{I}_{\hat{J}} \tau_{I}$; $\tau_{I}$ son los generadores de $\mathfrak{su} (2)$ que est\'{a}n dados en t\'{e}rminos de las matrices da Pauli: $\tau_{I} = -i \sigma_{I}/2$ (y adem\'{a}s forman una base en $\mathfrak{s}$). N\'{o}tese que \eqref{eq:wN} tiene la misma forma que el modelo anterior, pero en este caso la condici\'{o}n \eqref{eq:HiggsField} no est\'{a} vac\'{i}a, por lo que se obtiene un subconjunto de conexiones isotr\'{o}picas. Para encontrar la soluci\'{o}n a est\'{a} condici\'{o}n se debe trata al modelo LRS y al modelo totalmente isotr\'{o}pico por separado. En el modelo LRS se toma como sistema generador a $\mathfrak{j} = \langle \tau_{3} \rangle$ mientras que en el modelo totalmente isotr\'{o}pico, el sistema generador es $\mathfrak{j} = \langle \tau_{1}, \tau_{2}, \tau_{3} \rangle$. La ecuaci\'{o}n \eqref{eq:HiggsField} se puede escribir de forma infinitesimal como
 %
 \begin{equation*}
 \Lambda (\mathrm{ad}_{\tau_{\hat{I}}} (T_{\hat{J}})) = \mathrm{ad}_{d \lambda (\tau_{\hat{I}})} \Lambda (T_{\hat{J}}) = [d \lambda (\tau_{\hat{I}}), \Lambda (T_{\hat{J}})]
 \end{equation*}
 %
-($\hat{I} = 3$ para LRS, $\hat{I} = 1,2,3$ para isotrop\'{i}a). El grupo de isotrop\'{i}a $J$ rota los generadores $T_{\hat{I}}$ \cite{Bojowald2000, Bojowald2005}, entonces $\mathrm{ad}_{\tau_{I}} (T_{\hat{J}}) = \epsilon_{I \hat{J} \hat{K}} T_{\hat{K}}$.
+($\hat{I} = 3$ para los modelos LRS, $\hat{I} = 1,2,3$ para los modelos totalmente isotr\'{o}picos). El grupo de isotrop\'{i}a $J$ rota los generadores $T_{\hat{I}}$, entonces $\mathrm{ad}_{\tau_{I}} (T_{\hat{J}}) = \epsilon_{I \hat{J} \hat{K}} T_{\hat{K}}$.
 
-De los posibles homomorfismos $\lambda: J \longrightarrow G$, se tiene que para LRS
+De los posibles homomorfismos $\lambda: J \longrightarrow G$, se tiene que para los modelos LRS
 %
 \begin{align*}
 \lambda_{k}: & \mathrm{U}(1) \longrightarrow \mathrm{SU}(2) \\
 & \exp(t \tau_{3}) \longmapsto \exp(k t \tau_{3}),
 \end{align*}
 %
-para $k \in \mathbb{N}$. Entonces \eqref{eq:HiggsField} toma la forma $\epsilon_{3 \hat{I} \hat{K}} \tilde{\phi}^{J}_{\hat{K}} = k \epsilon_{3LJ} \Lambda^{L}_{\hat{I}}$, la cual s\'{o}lo tiene soluci\'{o}n no trivial para $k = 1$, que lleva a que las componentes de $\Lambda$ se pueden escribir como
+para $k \in \mathbb{N}$. Entonces \eqref{eq:HiggsField} toma la forma $\epsilon_{3 \hat{I} \hat{K}} \tilde{\phi}^{J}_{\hat{K}} = k \epsilon_{3LJ} \Lambda^{L}_{\hat{I}}$, la cual s\'{o}lo tiene soluci\'{o}n no trivial para $k = 1$, que lleva a que las componentes de $\Lambda$ se puedan escribir como
 %
 \begin{equation}
 \Lambda_{1} = \frac{1}{\sqrt{2}} \left(\tilde{a} \tau_{1} + \tilde{b} \tau_{2} \right), \qquad
@@ -95,12 +104,12 @@ con $\tilde{a}, \, \tilde{b}, \, \tilde{c}$ n\'{u}meros arbitrarios. Las compone
 (los factores $1/\sqrt{2}$ son constantes de normalizaci\'{o}n). Y la estructura simpl\'{e}ctica est\'{a} dada por
 %
 \begin{equation}
-\{\tilde{a}, \tilde{p}_{a}\} = \{\tilde{b}, \tilde{p}_{b}\} = \{\tilde{c}, \tilde{p}_{c}\} = \frac{8 \pi}{3} \gamma G V_{0},
+\{\tilde{a}, \tilde{p}_{a}\} = \{\tilde{b}, \tilde{p}_{b}\} = \{\tilde{c}, \tilde{p}_{c}\} = \frac{8 \pi}{3} \beta G_{0} V_{0},
 \end{equation}
 %
 y cero en cualquiera otro caso.
 
-Para los modelos isotr\'{o}picos hay dos posibles homomorfismos $\lambda: \mathrm{SU}(2) \longrightarrow \mathrm{SU}(2)$, se tienen a $\lambda_{0}$ mapeando cualquier elemento del grupo de isotrop\'{i}a $J$ a la identidad en $G$, i.e. $j \longmapsto 1$, y a $\lambda_{1} = \mathrm{id}$. Para el caso $\lambda_{0}$, la ecuaci\'{o}n \eqref{eq:HiggsField} toma la forma $\epsilon_{I \hat{I} \hat{K}} \Lambda^{J}_{K} = 0$ y para $\lambda_{1}$ toma la forma $\epsilon_{I \hat{I} \hat{K}} \Lambda^{J}_{K} = \epsilon_{ILJ} \Lambda^{L}_{\hat{I}}$, cuya soluci\'{o}n es
+Para los modelos totalmente isotr\'{o}picos hay dos posibles homomorfismos $\lambda: \mathrm{SU}(2) \longrightarrow \mathrm{SU}(2)$, se tienen a $\lambda_{0}$ mapeando cualquier elemento del grupo de isotrop\'{i}a $J$ a la identidad en $G$, i.e. $j \longmapsto 1^{(G)}$, y a $\lambda_{1} = \mathrm{id}$. Para el caso $\lambda_{0}$, la ecuaci\'{o}n \eqref{eq:HiggsField} toma la forma $\epsilon_{I \hat{I} \hat{K}} \Lambda^{J}_{K} = 0$ y para $\lambda_{1}$ toma la forma $\epsilon_{I \hat{I} \hat{K}} \Lambda^{J}_{\hat{K}} = \epsilon_{ILJ} \Lambda^{L}_{\hat{I}}$, cuya soluci\'{o}n es
 %
 \begin{equation}
 \Lambda^{J}_{\hat{I}} = \tilde{c} \delta^{J}_{\hat{I}},
@@ -108,16 +117,22 @@ Para los modelos isotr\'{o}picos hay dos posibles homomorfismos $\lambda: \mathr
 %
 con $\tilde{c}$ un n\'{u}mero arbitrario. El momento can\'{o}nicamente conjugado se puede escribir como
 %
-\begin{equation*}
-\tilde{p}^{\hat{I}}_{J} = \tilde{p} \delta^{\hat{I}}_{J}
-\end{equation*}
-%
-tal que la estructura simpl\'{e}tica es
-%
 \begin{equation}
-\{\tilde{c}, \tilde{p}\} = \frac{8 \pi}{3} \gamma G V_{0}.
+\tilde{p}^{\hat{I}}_{J} = \tilde{p} \delta^{\hat{I}}_{J}.
 \end{equation}
 
+Por lo tanto, la conexi\'{o}n isotr\'{o}pica $A$ y la triada densitizada $E$, est\'{a}n determinadas por las componentes
+%
+\begin{equation}
+A^{I}_{a} = \tilde{c} \delta^{I}_{a} \quad \mathrm{y} \quad E^{a}_{I} = \tilde{p} \delta^{a}_{I},
+\end{equation}
+%
+respectivamente. Tal que la estructura simpl\'{e}tica es
+%
+\begin{equation}
+\{A^{I}_{a}, E^{a}_{I}\} = \{\tilde{c}, \tilde{p}\} = \frac{8 \pi}{3} \beta G_{0} V_{0}.
+\end{equation}
+%
 Nuevamente, redefiniendo $a := V_{0}^{1/3} \tilde{a}$, $b := V_{0}^{1/3} \tilde{b}$, $c := V_{0}^{1/3} \tilde{c}$ y $p_{a} := V_{0}^{2/3} \tilde{p}_{a}$, $p_{b} := V_{0}^{2/3} \tilde{p}_{b}$, $p_{c} := V_{0}^{2/3} \tilde{p}_{c}$, $p := V_{0}^{2/3} \tilde{p}$, la estructura simpl\'{e}ctica es independiente de $V_{0}$.
 
-Como se puede observar, tanto en los modelos LRS como en los modelos isotr\'{o}picos existe una \'{u}nica soluci\'{o}n no trivial.
+Como se puede observar, tanto en los modelos LRS como en los modelos totalmente isotr\'{o}picos existe una \'{u}nica soluci\'{o}n no trivial.
