@@ -1,6 +1,6 @@
 Muchos de los fen\'{o}menos pronosticados por la relatividad general se entienden y analizan mejor mediante reducciones f\'{i}sicamente motivadas a situaciones m\'{a}s simples. Una de las principales t\'{e}cnicas es la reducci\'{o}n de simetr\'{i}a, es decir, las soluciones que presentan ciertas propiedades de simetr\'{i}a espacio-temporal. Los ejemplos que nosotros estudiaremos son las geometr\'{i}as espacialmente homog\'{e}neas e isotr\'{o}picas para modelos cosmol\'{o}gicos.
 
-En cada uno de los modelos sim\'{e}tricos, homog\'{e}neos e isotr\'{o}picos, existe cierto grupo de simetr\'{i}a $S$ que act\'{u}a sobre el espacio-tiempo junto con una funci\'{o}n de tiempo $t$ tal que $S$ act\'{u}a transitivamente sobre cada corte espacial $\Sigma_{t}$, esto es, para cualquier par $(y, y')$ de puntos en $\Sigma_{t}$, i.e. existe un elemento de grupo $s \in S$ tal que $s(y) = y'$. Adem\'{a}s, en $\Sigma_{t}$  la m\'{e}trica inducida $h_{ab}$ y la curvatura extr\'{i}nseca $K_{ab}$ se preservan bajo la acci\'{o}n de $S$, es decir, $s^{*}(h_{ab}) = h_{ab}$ y $s^{*}(K_{ab}) = K_{ab}$ para todo $s \in S$. Con el formalismo presentado por Ashtekar \cite{Ashtekar86, Ashtekar87} y los estudios hechos por Kobayashi, Nomizu y Brodbeck sobre la clasificaci\'{o}n de haces principales sim\'{e}tricos y conexiones invariantes \cite{Kobayashi, Brodbeck} podemos encontrar la forma de las Variables de Conexi\'{o}n para estos modelos cosmol\'{o}gicos. Esto nos da un esquema general de clasificaci\'{o}n de todas las posibles formas invariantes para estos tipos de simetr\'{i}as ya que a partir de conexiones invariantes se puede encontrar la forma de m\'{e}tricas invariantes (ver ap\'{e}ndice \ref{app:FrameField}).
+En cada uno de los modelos sim\'{e}tricos, homog\'{e}neos e isotr\'{o}picos, existe cierto grupo de simetr\'{i}a $S$ que act\'{u}a sobre el espacio-tiempo junto con una funci\'{o}n de tiempo $t$ tal que $S$ act\'{u}a transitivamente sobre cada corte espacial $\Sigma_{t}$, esto es, para cualquier par $(y, y')$ de puntos en $\Sigma_{t}$, i.e. existe un elemento de grupo $s \in S$ tal que $s(y) = y'$. Adem\'{a}s, en $\Sigma_{t}$  la m\'{e}trica inducida $h_{ab}$ y la curvatura extr\'{i}nseca $K_{ab}$ se preservan bajo la acci\'{o}n de $S$, es decir, $s^{*}(h_{ab}) = h_{ab}$ y $s^{*}(K_{ab}) = K_{ab}$ para todo $s \in S$. Con el formalismo presentado por Ashtekar \cite{Ashtekar86, Ashtekar87} y los estudios hechos por Kobayashi, Nomizu y Brodbeck sobre la clasificaci\'{o}n de haces principales sim\'{e}tricos y conexiones invariantes \cite{Kobayashi, Brodbeck} podemos encontrar la forma de las Variables de Conexi\'{o}n para estos modelos cosmol\'{o}gicos. Esto nos da un esquema general de clasificaci\'{o}n de todas las posibles formas invariantes para estos tipos de simetr\'{i}as ya que a partir de conexiones invariantes se puede encontrar la forma de m\'{e}tricas invariantes (ver \autoref{app:FrameField}).
 
 A continuaci\'{o}n se presentar\'{a} c\'{o}mo con los estudios de clasificaci\'{o}n podemos encontrar la forma de las Variables de Conexi\'{o}n para los modelos cosmol\'{o}gicos homog\'{e}neos e isotr\'{o}picos.
 
@@ -37,7 +37,7 @@ p \cdot \lambda_{p} (j_{1} j_{2}) = (j_{1} j_{2}) \cdot p = j_{1} \cdot (p \cdot
 %
 De esta manera se tiene una clase de equivalencia $[\lambda]$ de homomorfismos $\lambda: J \longrightarrow G$ dada por la conjugaci\'{o}n \eqref{eq:conj}, donde cambiar $\lambda$ dentro de la clase equivale a un cambio de norma. El homomorfismo del \'{a}lgebra de Lie inducido $\mathfrak{j} \longrightarrow \mathfrak{g}$ tambi\'{e}n ser\'{a} denotado por $\lambda$.
 
-Ahora bien, escogiendo un homorfismo $\lambda: J \longrightarrow G$, se contruye el sub-haz principal reducido
+Ahora bien, escogiendo un homomorfismo $\lambda: J \longrightarrow G$, se contruye el sub-haz principal reducido
 %
 \begin{equation}
 \label{eq:ReduceBundleQ}
@@ -46,39 +46,58 @@ Ahora bien, escogiendo un homorfismo $\lambda: J \longrightarrow G$, se contruye
 %
 con grupo de estructura $Z_{\lambda}$ el centralizador de $\lambda(J) < G$, esto es: $Z_{\lambda} = \{g \in G \; \vert \; gh = hg \; \forall \; h \in \lambda(J)\}.$ Y $P \vert_{\tilde{\Sigma}}$ es el haz restringido a $\tilde{\Sigma}$.
 
-Los elementos $[\lambda]$ y $\tilde{Q}$ clasifican de manera \'{u}nica al haz $P$ \cite{Brodbeck}. Esto es importante porque el par $([\lambda], \tilde{Q})$ y los siguientes teoremas \cite{Kobayashi} nos ayudar\'{a}n a reconstruir las conexiones invariantes bajo la acci\'{o}n de $S$.
+Los elementos $[\lambda]$ y $\tilde{Q}$ clasifican de manera \'{u}nica al haz $P$ \cite{Brodbeck}. Esto es importante porque el par $([\lambda], \tilde{Q})$ y el Teorema \autoref{thm:reductive} enunciado m\'{a}s adelante nos ayudar\'{a}n a reconstruir las conexiones invariantes bajo la acci\'{o}n de $S$.
 
-\begin{thm}
-\label{thm:theorem1}
-Si el subgrupo de Lie $S < \mathrm{Aut} (P)$ es transitivo y si $J$ es el grupo de isotrop\'{i}a de $S$ en $y = \pi(p)$, entonces existe una correspondencia 1:1 entre el conjunto de conexiones invariantes $\omega$ en $P$ bajo la acci\'{o}n de $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$, y el conjunto de mapeos lineales $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$, el cual satisface las condiciones
+Antes de continuar, es importante hacer unas observaciones. Por un lado se tiene que un elemento $X$ en $\mathfrak{s}$ induce un campo vectorial $\tilde{X}$ en $P$ mediante $\tilde{X}(f) = d(\exp(t X) \cdot f)/dt \vert_{t=0}$, donde $f$ es una funci\'{o}n diferenciable en $P$. Y por otro lado, para una conexi\'{o}n $\omega'$ en $P$ valuada en el \'{a}lgebra de Lie $\mathfrak{g}$, se tiene que $\omega'(\tilde{X}) = A$ con $A \in \mathfrak{g}$. Esto nos permite construir un mapeo $\Lambda'$ que vaya directamente de $\mathfrak{s}$ a $\mathfrak{g}$ como se muestra a continuaci\'{o}n en el diagrama:
+%
+\begin{center}
+\begin{tikzpicture}[node distance=2.0cm,auto]
+\node (A) {$X \in \mathfrak{s}$};
+\node (B) [right=of A] {$\tilde{X} \in TP$};
+\node (C) [below=of B] {$A \in \mathfrak{g}$};
+
+\path[->, >=stealth] (A) edge node {$\exp$} (B);
+\path[->, >=stealth] (A) edge node {$\Lambda'$} (C);
+\path[->, >=stealth] (B) edge node {$\omega'$} (C);
+\end{tikzpicture}
+\end{center}
+
+\begin{pro}
+\label{pro:LinMapAndConnCorrespondence}
+Sea el grupo de Lie $S < \mathrm{Aut} (P)$ transitivo, sea $J$ el subgrupo de isotrop\'{i}a de $S$ en $y = \pi(p)$ y sea $\omega$ una conexi\'{o}n en $P$ invariante bajo $S$, i.e. $s^{*}(\omega) = \omega$ para todo $s \in S$. Definimos un mapeo lineal $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$ por
+%
+\begin{equation}
+\label{eq:correspondence}
+\Lambda (X) = \omega (\tilde{X}),
+\end{equation}
+%
+con $X \in \mathfrak{s}$ y $\tilde{X}$ el campo vectorial en $P$ inducido por $X$. Entonces,
 %
 \begin{align}
 \label{eq:LambdaCond1}
-& \Lambda (X) = \lambda (X) & \mathrm{para} \; X\in \mathfrak{j}; \\
+& \Lambda (X) = \lambda (X) & \mathrm{para} \; X \in \mathfrak{j}; \\
 \label{eq:LambdaCond2}
 & \Lambda (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda (X)) \qquad & \mathrm{para} \; j \in J \; \mathrm{y} X \in \mathfrak{s},
 \end{align}
 %
-donde $\mathrm{ad}_{j}$ es la representaci\'{o}n adjunta de $J$ en $\mathfrak{s}$ y $\mathrm{ad}_{\lambda (j)}$ la representaci\'{o}n adjunta de $G$ en $\mathfrak{g}$. La correspondecia est\'{a} dada por
-%
-\begin{equation}
-\label{eq:correspondence}
-\Lambda (X) = \omega (\tilde{X}), \qquad X \in \mathfrak{s},
-\end{equation}
-%
-donde $\tilde{X}$ es el campo vectorial en $P$ inducido por $X$, i.e. $\tilde{X}(f) = d(\exp(t X) \cdot f)/dt \vert_{t=0}$ donde $f$ es una funci\'{o}n diferenciable en $P$.
-\end{thm}
+donde $\mathrm{ad}_{j}$ es la representaci\'{o}n adjunta de $J$ en $\mathfrak{s}$ y $\mathrm{ad}_{\lambda (j)}$ la representaci\'{o}n adjunta de $G$ en $\mathfrak{g}$.
+\end{pro}
+
+%\begin{thm}
+%\label{thm:theorem1}
+%Si el subgrupo de Lie $S < \mathrm{Aut} (P)$ es transitivo y si $J$ es el grupo de isotrop\'{i}a de $S$ en $y = \pi(p)$, entonces existe una correspondencia 1:1 entre el conjunto de conexiones invariantes $\omega$ en $P$ bajo la acci\'{o}n de $S$ y el conjunto de mapeos lineales $\Lambda: \mathfrak{s} \longrightarrow \mathfrak{g}$, el cual satisface las condiciones \eqref{eq:LambdaCond1} y  \eqref{eq:LambdaCond2}. La correspondecia est\'{a} dada por \eqref{eq:correspondence}.
+%\end{thm}
 
 \begin{thm}
 \label{thm:reductive}
-Si $S$, en el teorema \ref{thm:theorem1}, admite un subespacio $\mathfrak{j}_{\perp}$ tal que $\mathfrak{s} = \mathfrak{j} \oplus \mathfrak{j}_{\perp}$ y (abusando un poco de la notaci\'{o}n) $\mathrm{ad}_{J} (\mathfrak{j}_{\perp}) = \mathfrak{j}_{\perp}$. Entonces existe una correspondecia 1:1 entre el conjunto de conexiones invariantes en $P$ bajo la acci\'{o}n de $S$ y el conjunto de mapeos lineales $\Lambda_{\mathfrak{j}_{\perp}}: \mathfrak{j}_{\perp} \longrightarrow \mathfrak{g}$ tal que
+Si $\mathfrak{s}$, en la Proposici\'{o}n \autoref{pro:LinMapAndConnCorrespondence}, admite un subespacio $\mathfrak{j}_{\perp}$ tal que $\mathfrak{s} = \mathfrak{j} \oplus \mathfrak{j}_{\perp}$ y $\mathrm{ad}_{J} (\mathfrak{j}_{\perp}) = \mathfrak{j}_{\perp}$. Entonces existe una correspondecia 1:1 entre el conjunto de conexiones invariantes $\omega$ en $P$ bajo la acci\'{o}n de $S$ y el conjunto de mapeos lineales $\Lambda_{\mathfrak{j}_{\perp}}: \mathfrak{j}_{\perp} \longrightarrow \mathfrak{g}$ tal que
 %
 \begin{equation}
 \label{eq:HiggsField}
-\Lambda_{\mathfrak{j}_{\perp}} (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda_{\mathfrak{j}_{\perp}} (X)),
+\Lambda_{\mathfrak{j}_{\perp}} (\mathrm{ad}_{j} (X)) = \mathrm{ad}_{\lambda (j)} (\Lambda_{\mathfrak{j}_{\perp}} (X)) \qquad \mathrm{para} \; j \in J \; \mathrm{y} X \in \mathfrak{j}_{\perp},
 \end{equation}
 %
-para $j \in J$ y $X \in \mathfrak{j}_{\perp}$. Con la correspondencia dada via \eqref{eq:correspondence} por
+con la correspondencia dada por \eqref{eq:correspondence} via
 %
 $$
 \Lambda (X) = 
@@ -90,7 +109,9 @@ $$
 %
 \end{thm}
 
-Para los modelos homogeneos e isotr\'{o}picos que estudiaremos m\'{a}s adelante necesitamos asumir que el grupo cociente $S/J$ es reducible, i.e. que el \'{a}lgebra de Lie de $S$ se puede descomponer como la suma directa $\mathfrak{s} = \mathfrak{j} \oplus \mathfrak{j}_{\perp}$ con $\mathrm{ad}_{J}(\mathfrak{j_{\perp}}) = \mathfrak{j_{\perp}}$, pues estos casos proporcionan los casos de simetr\'{i}a de acci\'{o}n libre donde tenemos $J =\{1\}$ y el producto semi-directo $S = J \rtimes N$, donde $\mathfrak{j_{\perp}} = \mathfrak{n}$. Por esto y del teorema \ref{thm:reductive} se tiene que $\Lambda (X) = \Lambda_{\mathfrak{j}_{\perp}} (X)$ sujeto a la condici\'{o}n \eqref{eq:HiggsField} con $X \in \mathfrak{j}_{\perp}$.
+Ver la demostraci\'{o}n de la Proposici\'{o}n \autoref{pro:LinMapAndConnCorrespondence} y del Teorema \autoref{thm:reductive} en \cite{Kobayashi}.
+
+Para los modelos homogeneos e isotr\'{o}picos que estudiaremos m\'{a}s adelante necesitamos asumir que el grupo $cociente $S/J$$S$ es semi-simple, i.e. que el \'{a}lgebra de Lie de $S$ se puede descomponer como la suma directa $\mathfrak{s} = \mathfrak{j} \oplus \mathfrak{j}_{\perp}$ con $\mathrm{ad}_{J}(\mathfrak{j_{\perp}}) = \mathfrak{j_{\perp}}$.
 
 De la descomposici\'{o}n $\Sigma = \tilde{\Sigma} \times S/J$ se tiene
 %
