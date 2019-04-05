@@ -42,6 +42,23 @@ Un \emph{\'{a}lgebra de Lie} $\mathfrak{g}$ sobre $\mathbb{R}$ es un espacio vec
 para todo $x, y, z \in \mathfrak{g}$.
 \end{mydef}
 
+\begin{mydef}[Sub-\'{a}lgebra de Lie, Ideal]
+Un subespacio $\mathfrak{h} \subseteq \mathfrak{g}$ que es cerrado bajo el par\'{e}ntesis de Lie es llamado un \emph{sub-\'{a}lgebra} de Lie de $\mathfrak{g}$. Si un subespacio $\mathfrak {i} \subseteq \mathfrak {g}$ satisface una condici\'{o}n m\'{a}s fuerte:
+%
+\begin{equation*}
+\left[ \mathfrak{g}, \mathfrak{i} \right] \subseteq \mathfrak{i},
+\end{equation*}
+%
+entonces a $\mathfrak{i}$ se le conoce como un \emph{ideal} en el \'{a}lgebra de Lie $\mathfrak{g}$.
+\end{mydef}
+
+\begin{mydef}[\'{A}lgebra de Lie simple y semi-simple]
+Se dice que un \'{a}lgebra de Lie $\mathfrak{g}$ es \emph{simple} cuando $\mathfrak{g}$ es no abeliana y cuyos \'{u}nicos ideales son $0$ y $\mathfrak{g}$. Y un \'{a}lgebra de Lie es \emph{semi-simple} si es una suma directa de \'{a}lgebras de Lie simples.\end{mydef}
+
+\begin{obs}
+Un grupo de Lie $G$ se dice que es un \emph{grupo semi-simple} si su álgebra de Lie $\mathfrak{g}$ es semi-simple.
+\end{obs}
+
 \begin{mydef}[Traslaci\'{o}n izquierda y traslaci\'{o}n derecha]
 Sea $g \in G$, definimos los difeomorfismos \emph{traslaci\'{o}n izquierda} y \emph{traslaci\'{o}n derecha}, denotados por $l_{g}$ y $r_{g}$, respectivamente, como
 %
@@ -297,10 +314,18 @@ Sea $\mathcal{M}$ una variedad diferenciable y $G$ un grupo de Lie actuando por 
 \end{itemize}
 %
 entonces, tenemos que $M/\backsim \equiv M/G$ se le conoce como el espacio de \'{o}rbitas.}
-\item{Para cualquier $m \in \mathcal{M}$ definimos el \emph{grupo de isotrop\'{i}a} como $$J_{m} = \{g \in G \; \vert \; g \cdot m = m\}.$$}
+\item{Para un punto $m \in \mathcal{M}$ definimos el \emph{grupo de isotrop\'{i}a} de $m$ como $$J_{m} = \{g \in G \; \vert \; g \cdot m = m\}.$$}
 \end{enumerate}
 %
 \end{mydef}
+
+En particular, es importante mencionar que los cosets del subgrupo de isotrop\'{i}a de un punto $m$ en $\mathcal{M}$ es isomorfo a la \'{o}rbita $\mathcal{O}_{m}$ de ese mismo punto, i.e.
+%
+\begin{equation*}
+\mathcal{O}_{m} \approx G/J_{m},
+\end{equation*}
+%
+donde $J_{m}$ denota el grupo de isotrop\'{i}a de $m$.
 
 \begin{ex}
 Sea $\mathcal{M}=\mathbb{R}^{2}$ y $G=\mathrm{SO}(2)$, entonces
@@ -330,8 +355,13 @@ De esta manera podemos ver que la \'{o}rbita $\mathcal{O}_{m}$ de $m$ son todos 
 La \'{o}rbita de un elemento $m \in \mathcal{M}$ es subvariedad de la variedad, i.e. $\mathcal{O}_{m} \subseteq \mathcal{M}$ mientras que el grupo de isotrop\'{i}a es subgrupo del grupo $G$ que act\'{u}a en la variedad, i.e. $J_{m} \leq G$.
 \end{obs}
 
+\begin{obs}
+\label{obs:IsotropyGroupConj}
+Cuando dos puntos $m$ y $m'$ est\'{a}n en la misma \'{o}rbita, digamos $m' = g \cdot m$, entonces los grupos de isotrop\'{i}a son subgrupos conjugados. Excpl\'{i}citamente,  $J_{m'} = g \cdot J_{m} \cdot g^{-1}$.
+\end{obs}
+
 \begin{mydef}[Acci\'{o}n libre]
-Se dice que una acci\'{o}n es \emph{libre} si para todo elemento $m$ de la variedad $\mathcal{M}$, su estabilizador es \'{u}nicamente la identidad en $G$, esto es $\forall \, m \in \mathcal{M}$, $J_{m} = \{1\}$.
+Se dice que una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ es \emph{libre}, si para todo $m \in \mathcal{M}$, $g \cdot m = m$ implica $g = 1$, es decir, s\'{o}lo el elemento identidad deja fijo cualquier $m$.
 \end{mydef}
 
 \begin{obs}
@@ -340,4 +370,41 @@ Si la acci\'{o}n de $G$ es libre en $\mathcal{M}$, entonces cada \'{o}rbita es i
 \begin{ex}
 Si $\mathcal{M} = \mathbb{R}^{2}/\{(0,0)\}$ y $\mathrm{SO}(2) \times \mathcal{M} \rightarrow \mathcal{M}$, entonces la acci\'{o}n de $G$ es libre y $\mathcal{O}_{m} \approx S^{1}$, donde $S^{1}$ es la base del grupo de Lie $\mathrm{SO}(2)$.
 \end{ex}
+\end{obs}
+
+\begin{mydef}[Acci\'{o}n efectiva]
+Se dice que una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ es \emph{efectiva} si no hay elemento en el grupo, adem\'{a}s de la identidad, que deje fijo cualquier punto $m \in \mathcal{M}$, i.e. $\bigcap\limits_{m \in \mathcal{M}} J_{m} = \{1\}$, donde $J_{m}$ es el grupo de isotrop\'{i}a en $m$.
+\end{mydef}
+
+\begin{mydef}[Acci\'{o}n transitiva]
+Una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ se llama \emph{transitiva}, o se dice que el grupo act\'{u}a transitivamente sobre $\mathcal{M}$, si dados dos puntos $m$ y $m'$ cualesquiera en $\mathcal{M}$, siempre existe un elemento $g \in G$ tal que $m' = g \cdot m$.
+\end{mydef}
+
+\begin{obs}
+\label{obs:TransitiveAction}
+Una acci\'{o}n transitiva implica que solamente hay una \'{o}rbita, $\mathcal{M}$ es isomorfa al espacio cociente $G/J$ donde $J$ es el grupo de isotrop\'{i}a $J_{m}$. La elecci\'{o}n de $m \in \mathcal{M}$ no afecta el isomorfismo pues todos los grupos de isotrop\'{i}a est\'{a}n sujetos a conjugaci\'{o}n (Observaci\'{o}n \ref{obs:IsotropyGroupConj}).
+\end{obs}
+
+\begin{mydef}[Espacio homog\'{e}neo]
+Una variedad diferenciable $\mathcal{M}$ es \emph{homog\'{e}nea} si un grupo de Lie $G$ act\'{u}a transitivamente en $\mathcal{M}$. Y por la Observaci\'{o}n \ref{obs:TransitiveAction} se tiene que $\mathcal{M} \approx G/J$.
+\end{mydef}
+
+\begin{mydef}[Espacio reductivo]
+\label{def:reductive}
+Un espacio homog\'{e}neo $\mathcal{M} = G/J$ es \emph{reductivo} si el \'{a}gebra de Lie $\mathfrak{g}$ de $G$ se puede descomponer en una suma directa del \'{a}lgebra de Lie $\mathfrak{j}$ de $J$ y un espacio $\mathfrak{n}$ $\mathrm{ad}_{J}$-invariante, i.e.
+%
+\begin{align*}
+& \mathfrak{g} = \mathfrak{j} \oplus \mathfrak{n}, \quad  \mathfrak{j} \cap \mathfrak{n} = 0; \\
+& \mathrm{ad}_{J}(\mathfrak{m}) \leq \mathfrak{n}
+\end{align*}
+%
+la segunda condici\'{o}n implica que $[\mathfrak{j}, \mathfrak{n}] \leq \mathfrak{n}$. De manera inversa, si $J$ es conexo, entonces \'{e}sta \'{u}ltima relaci\'{o}n implica la segunda condici\'{o}n.
+\end{mydef}
+
+\begin{obs}
+Si $\mathfrak{g}$ tiene un producto interno $\mathrm{ad}_{J}$-invariante, entonces el complemento ortogonal $\mathfrak{n} := \mathfrak{j}_{\perp}$ satisface las propiedades de la Definici\'{o}n \ref{def:reductive}.
+\end{obs}
+
+\begin{obs}
+Si $G$ es semi-simple, entonces $\mathfrak{n} = \mathfrak{j}_{\perp}$ es el complemento ortogonal de $\mathfrak{j}$ respecto a la forma de Cartan-Killing en $G$.
 \end{obs}
