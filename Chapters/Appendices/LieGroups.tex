@@ -15,11 +15,11 @@ Un \emph{grupo} $G$ es un conjunto de elementos $\{g_{1}, g_{2}, ...\}$ dotados 
 %
 \end{mydef}
 
-\begin{mydef}[Grupo de Lie]
+\begin{mydef}[Grupo de Lie]  \cite{Warner}
 Un \emph{grupo de Lie} $G$, es un grupo que al mismo tiempo es una variedad diferenciable tal que el mapeo $G \times G \rightarrow G$ definido por $(a, b) \mapsto a b^{-1}$ es diferenciable, es decir, la operaci\'{o}n de grupo es suave.
 \end{mydef}
 
-\begin{mydef}[Homomorfismo, Endomorfismo, Isomorfismo, Automorfismo]
+\begin{mydef}[Homomorfismo, Endomorfismo, Isomorfismo, Automorfismo] \cite{Warner}
 Sean $(G, \cdot)$, $(G', \ast)$ dos grupos y un mapeo $\varphi: G \longrightarrow G'$, tal que $$\varphi(g_{i} \cdot g_{j}) = \varphi(g_{i}) \ast \varphi(g_{j}).$$
 %
 \begin{enumerate}
@@ -31,7 +31,7 @@ Sean $(G, \cdot)$, $(G', \ast)$ dos grupos y un mapeo $\varphi: G \longrightarro
 %
 \end{mydef}
 
-\begin{mydef}[\'{A}lgebra de Lie]
+\begin{mydef}[\'{A}lgebra de Lie] \cite{Warner}
 Un \emph{\'{a}lgebra de Lie} $\mathfrak{g}$ sobre $\mathbb{R}$ es un espacio vectorial real $\mathfrak{g}$ equipado con un operador bilineal $[\;, \;]: \mathfrak{g} \times \mathfrak{g} \rightarrow \mathfrak{g}$ (usualmente llamado \emph{conmutador}) tal que
 %
 \begin{itemize}
@@ -42,7 +42,7 @@ Un \emph{\'{a}lgebra de Lie} $\mathfrak{g}$ sobre $\mathbb{R}$ es un espacio vec
 para todo $x, y, z \in \mathfrak{g}$.
 \end{mydef}
 
-\begin{mydef}[Sub-\'{a}lgebra de Lie, Ideal]
+\begin{mydef}[Sub-\'{a}lgebra de Lie, Ideal] \cite{Warner}
 Un subespacio $\mathfrak{h} \subseteq \mathfrak{g}$ que es cerrado bajo el par\'{e}ntesis de Lie es llamado un \emph{sub-\'{a}lgebra} de Lie de $\mathfrak{g}$. Si un subespacio $\mathfrak {i} \subseteq \mathfrak {g}$ satisface una condici\'{o}n m\'{a}s fuerte:
 %
 \begin{equation*}
@@ -59,7 +59,7 @@ Se dice que un \'{a}lgebra de Lie $\mathfrak{g}$ es \emph{simple} cuando $\mathf
 Un grupo de Lie $G$ se dice que es un \emph{grupo semi-simple} si su álgebra de Lie $\mathfrak{g}$ es semi-simple.
 \end{obs}
 
-\begin{mydef}[Traslaci\'{o}n izquierda y traslaci\'{o}n derecha]
+\begin{mydef}[Traslaci\'{o}n izquierda y traslaci\'{o}n derecha] \cite{Warner}
 Sea $g \in G$, definimos los difeomorfismos \emph{traslaci\'{o}n izquierda} y \emph{traslaci\'{o}n derecha}, denotados por $l_{g}$ y $r_{g}$, respectivamente, como
 %
 \begin{align*}
@@ -74,11 +74,11 @@ para todo $x \in G$.
 Notemos que  $(l_{a} \circ l_{b}) (x) = l_{a} (l_{b} (x)) = l_{a} (bx) = abx = l_{ab} (x)$ y $(r_{a} \circ r_{b}) (x) = r_{a} (r_{b} (x)) = r_{a} (xb) = xba = r_{ba}$, es decir, $l_{a} \circ l_{b} = l_{ab}$ y $r_{a} \circ r_{b} = r_{ba}$ para todo $a, b \in G$ y $x \in G$.
 \end{obs}
 
-\begin{mydef}
+\begin{mydef} \cite{Warner}
 Un campo vectorial $X$ en $G$ se dice que es \emph{invariante por la izquierda} si es invariante bajo la acci\'{o}n de $l_{g}$ para todo $g \in G$; esto es, $g_{*} (X) = X$. De manera equivalente, se dice que $X$ es \emph{invariante por la derecha} si $(X)g_{*} = X$ $\; \forall \, g \in G$.
 \end{mydef}
 
-\begin{thm}
+\begin{thm} \cite{Warner}
 El conjunto de campos vectoriales invariantes por la izquierda (derecha) es cerrado bajo la operaci\'{o}n del par\'{e}ntesis de Lie.
 \end{thm}
 %
@@ -86,12 +86,12 @@ El conjunto de campos vectoriales invariantes por la izquierda (derecha) es cerr
 $$g_{*} ([X, Y]) = [g_{*} (X), g_{*} (Y)] = [X, Y].$$ (El mismo argumento se sigue para campos vectoriales invariantes por la derecha). \qed
 \end{dem}
 
-\begin{pro}
+\begin{pro} \cite{Warner}
 \label{pro:LeftInvariantLieAlgebra}
 El conjunto de campos vectoriales invariantes por la izquierda de un grupo de Lie $G$ lo denotaremos como $\mathfrak{g}$ dado que bajo la operaci\'{o}n del par\'{e}ntesis de Lie forma un \'{a}lgebra de Lie.
 \end{pro}
 
-\begin{pro}
+\begin{pro} \cite{Warner}
 Sea $G$ un grupo de Lie y $\mathfrak{g}$ su conjunto de campos vectoriales invariantes por la izquierda.
 %
 \begin{enumerate}
@@ -101,7 +101,7 @@ Sea $G$ un grupo de Lie y $\mathfrak{g}$ su conjunto de campos vectoriales invar
 %
 \end{pro}
 
-\begin{mydef}[Subgrupo de un-par\'{a}metros]
+\begin{mydef}[Subgrupo de un-par\'{a}metros]  \cite{Kobayashi}
 Un \emph{subgrupo de un-par\'{a}metros} de un grupo de Lie $G$ es una curva diferenciable $g: \mathbb{R} \rightarrow G$ por $t \mapsto g (t)$ tal que
 %
 \begin{enumerate}
@@ -111,7 +111,7 @@ Un \emph{subgrupo de un-par\'{a}metros} de un grupo de Lie $G$ es una curva dife
 %
 \end{mydef}
 
-\begin{thm}
+\begin{thm} \cite{Kobayashi}
 El subgrupo de un-par\'{a}metros de un grupo de Lie $G$ son las curvas integrales, que pasan por la identidad, de los campos invariantes izquierdos (derechos).
 \end{thm}
 
@@ -129,7 +129,7 @@ Un \emph{vector generador} de un grupo de Lie (matricial) $G$, es el vector tang
 Tambi\'{e}n, se le conoce como \emph{generador infinitesimal}, pues podemos expandir $g (t)$ alrededor de $t=0$, $$g (t) = 1 + t \frac{d g (t)}{dt} \bigg\vert_{t=0} + \frac{1}{2}  t^{2} \frac{d^{2} g (t)}{dt^{2}} \bigg\vert_{t=0} + \frac{1}{3 !} t^{3} \frac{d^{3} g (t)}{dt^{3}} \bigg\vert_{t=0} + \mathcal{O} (t^{4}).$$ De este modo, cualquier elemento en la vecindad de la identidad puede obtenerse a partir de conocer al vector generador.
 \end{mydef}
 
-\begin{mydef}[Mapeo exponencial]
+\begin{mydef}[Mapeo exponencial] \cite{Warner}
 El \emph{mapeo exponencial} mapea la linea $t \beta$, en el espacio tangente $T_{1} G$ en la identidad de un grupo de Lie $G$, en el subgrupo de un-par\'{a}metros $g (t)$ de $G$ tangente a $\beta$ en la identidad de $G$, acorde a
 %
 \begin{align*}
@@ -140,11 +140,11 @@ El \emph{mapeo exponencial} mapea la linea $t \beta$, en el espacio tangente $T_
 donde se sigue que $\exp (t \beta) = g (t)$ para toda $t$.
 \end{mydef}
 
-\begin{obs}
+\begin{obs} \cite{Warner}
 Dado que $\mathfrak{g}$ y $T_{1} G$ son isomorfos, el mapeo exponencial a veces es definido como el mapeo de $\mathfrak{g}$ a $G$, de modo que para $X \in \mathfrak{g}$ se tiene $X \mapsto \exp(tX)$.
 \end{obs}
 
-\begin{pro}
+\begin{pro} \cite{Warner}
 \label{pro:ExpConmutative}
 Sea $X, Y \in \mathfrak{g}$, entonces
 %
@@ -190,7 +190,7 @@ Observemos que $L$ definido as\'{i} es un vector generador.
 Notemos entonces que un vector generador (o generador infinitesimal) lo podemos obtener calculando $$\frac{d (\exp (t \beta))}{dt} \bigg\vert_{t=0}.$$
 \end{obs}
 
-\begin{mydef}[Representaci\'{o}n adjunta]
+\begin{mydef}[Representaci\'{o}n adjunta] \cite{Warner}
 Sea $G$ un grupo de Lie, entonces cada $g \in G$ define un mapeo suave $\mathrm{Ad}_{g}: G \rightarrow G$ por la composici\'{o}n $\mathrm{Ad}_{g} = l_{g} \circ r_{g^{-1}}$; esto es,
 %
 \begin{equation}
@@ -207,11 +207,11 @@ Este mapeo preserva la identidad de ah\'{i} que su derivada define una represent
 
 Para grupos matriciales $\mathrm{ad}_{g} (X) = g X g^{-1}$.
 
-\begin{mydef}
+\begin{mydef} \cite{Warner}
 As\'{i} como se tienen campos vectoriales invariantes por la izquierda, es natural que exista su dual de uno-formas invariantes por la izquierda. Se dice que una uno-forma $w$ es invariante por la izquierda si $g^{*} (\omega) = \omega$ para todo $g \in G$. El espacio vectorial $\mathfrak{g}^{*}$ formado por todas las uno-formas es el espacio dual del \'{a}lgebra de Lie $\mathfrak{g}$: si $X \in \mathfrak{g}$ y $\omega \in \mathfrak{g}^{*}$, entonces $\omega (X)$ es constante en $G$.
 \end{mydef}
 
-\begin{mydef}[Forma de Maurer-Cartan]
+\begin{mydef}[Forma de Maurer-Cartan] \cite{Choquet}
 La uno-forma can\'{o}nica en $G$, generalmente denotado como $\theta_{\mathrm{MC}}$ y conocida como \emph{forma de Maurer-Cartan}, es la uno-forma $\mathfrak{g}$-valuada definida por
 %
 \begin{equation*}
@@ -223,7 +223,7 @@ Si $X$ es un campo vectorial invariante por la izquierda, entonces $\theta_{\mat
 
 Sea $\{e_{\mu}\}$ una base de $\mathfrak{g}$ y escribimos a la forma de Maurer-Cartan como $$\theta_{\mathrm{MC}} = \omega^{\mu} e_{\mu}.$$ Entonces $\{ \omega^{\mu} \}$ forma una base para el espacio de uno-formas invariantes por la izquierda en $G$.
 
-\begin{mydef}[Constantes de estructura]
+\begin{mydef}[Constantes de estructura] \cite{Choquet}
 Dada una base $\{e_{\mu}\}$ de un \'{a}lgebra de Lie $\mathfrak{g}$; \'{e}sta viene espec\'{i}ficada por un conjunto de n\'{u}meros $C^{\mu}_{\nu \tau}$ denominados \emph{constantes de estructura} que se definen seg\'{u}n la siguiente expresi\'{o}n $$[e_{\nu}, e_{\tau}] = C^{\mu}_{\nu \tau} e_{\mu}.$$ Estos n\'{u}meros satisfacen las siguientes propiedades,
 %
 \begin{itemize}
@@ -239,7 +239,7 @@ Dada una base $\{e_{\mu}\}$ de un \'{a}lgebra de Lie $\mathfrak{g}$; \'{e}sta vi
 
 \section{Acci\'{o}n de grupos de Lie en una variedad}
 
-\begin{mydef}[$G$-acci\'{o}n izquierda]
+\begin{mydef}[$G$-acci\'{o}n izquierda]  \cite{Kobayashi}
 Sea $G$ un grupo de Lie y $\mathcal{M}$ una variedad suave, entonces
 %
 \begin{align*}
@@ -257,7 +257,7 @@ es llamada una \emph{$G$-acci\'{o}n izquierda} en la variedad $\mathcal{M}$.
 %
 \end{mydef}
 
-\begin{mydef}[$G$-acci\'{o}n derecha]
+\begin{mydef}[$G$-acci\'{o}n derecha]  \cite{Kobayashi}
 De manera similar, una \emph{$G$-acci\'{o}n derecha} es aquella que
 \begin{align*}
 \cdot: G \times \mathcal{M} & \longrightarrow \mathcal{M}\\
@@ -273,7 +273,7 @@ y satisface
 %
 \end{mydef}
 
-\begin{mydef}
+\begin{mydef}  \cite{Kobayashi}
 Sean $G$ y $H$ dos grupos de Lie y $\varphi$ un homomorfismo de grupos de Lie tal que $\varphi: G \rightarrow H$ y sean $\mathcal{M}$ y $\mathcal{N}$ dos variedades. Definimos,
 %
 \begin{align*}
@@ -300,7 +300,7 @@ Entonces $\phi$ se dice que es $\varphi$-equivariante si $$\phi(g \cdot m) = \va
 %
 \end{mydef}
 
-\begin{mydef}[\'{O}rbita, Relaci\'{o}n de equivalencia, Grupo de Isotrop\'{i}a]
+\begin{mydef}[\'{O}rbita, Relaci\'{o}n de equivalencia, Grupo de Isotrop\'{i}a] \cite{Dieck}
 Sea $\mathcal{M}$ una variedad diferenciable y $G$ un grupo de Lie actuando por la izquierda en $\mathcal{M}$.
 %
 \begin{enumerate}
@@ -360,7 +360,7 @@ La \'{o}rbita de un elemento $m \in \mathcal{M}$ es subvariedad de la variedad, 
 Cuando dos puntos $m$ y $m'$ est\'{a}n en la misma \'{o}rbita, digamos $m' = g \cdot m$, entonces los grupos de isotrop\'{i}a son subgrupos conjugados. Excpl\'{i}citamente,  $J_{m'} = g \cdot J_{m} \cdot g^{-1}$.
 \end{obs}
 
-\begin{mydef}[Acci\'{o}n libre]
+\begin{mydef}[Acci\'{o}n libre]  \cite{Kobayashi}
 Se dice que una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ es \emph{libre}, si para todo $m \in \mathcal{M}$, $g \cdot m = m$ implica $g = 1$, es decir, s\'{o}lo el elemento identidad deja fijo cualquier $m$.
 \end{mydef}
 
@@ -372,11 +372,11 @@ Si $\mathcal{M} = \mathbb{R}^{2}/\{(0,0)\}$ y $\mathrm{SO}(2) \times \mathcal{M}
 \end{ex}
 \end{obs}
 
-\begin{mydef}[Acci\'{o}n efectiva]
+\begin{mydef}[Acci\'{o}n efectiva]  \cite{Kobayashi}
 Se dice que una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ es \emph{efectiva} si no hay elemento en el grupo, adem\'{a}s de la identidad, que deje fijo cualquier punto $m \in \mathcal{M}$, i.e. $\bigcap\limits_{m \in \mathcal{M}} J_{m} = \{1\}$, donde $J_{m}$ es el grupo de isotrop\'{i}a en $m$.
 \end{mydef}
 
-\begin{mydef}[Acci\'{o}n transitiva]
+\begin{mydef}[Acci\'{o}n transitiva]  \cite{Kobayashi2}
 Una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ se llama \emph{transitiva}, o se dice que el grupo act\'{u}a transitivamente sobre $\mathcal{M}$, si dados dos puntos $m$ y $m'$ cualesquiera en $\mathcal{M}$, siempre existe un elemento $g \in G$ tal que $m' = g \cdot m$.
 \end{mydef}
 
@@ -385,17 +385,17 @@ Una acci\'{o}n de grupo $G \times \mathcal{M} \longrightarrow \mathcal{M}$ se ll
 Una acci\'{o}n transitiva implica que solamente hay una \'{o}rbita, $\mathcal{M}$ es isomorfa al espacio cociente $G/J$ donde $J$ es el grupo de isotrop\'{i}a $J_{m}$. La elecci\'{o}n de $m \in \mathcal{M}$ no afecta el isomorfismo pues todos los grupos de isotrop\'{i}a est\'{a}n sujetos a conjugaci\'{o}n (Observaci\'{o}n \ref{obs:IsotropyGroupConj}).
 \end{obs}
 
-\begin{mydef}[Espacio homog\'{e}neo]
+\begin{mydef}[Espacio homog\'{e}neo]  \cite{Kobayashi2}
 Una variedad diferenciable $\mathcal{M}$ es \emph{homog\'{e}nea} si un grupo de Lie $G$ act\'{u}a transitivamente en $\mathcal{M}$. Y por la Observaci\'{o}n \ref{obs:TransitiveAction} se tiene que $\mathcal{M} \approx G/J$.
 \end{mydef}
 
-\begin{mydef}[Espacio reductivo]
+\begin{mydef}[Espacio reductivo] \cite{Borel}
 \label{def:reductive}
 Un espacio homog\'{e}neo $\mathcal{M} = G/J$ es \emph{reductivo} si el \'{a}gebra de Lie $\mathfrak{g}$ de $G$ se puede descomponer en una suma directa del \'{a}lgebra de Lie $\mathfrak{j}$ de $J$ y un espacio $\mathfrak{n}$ $\mathrm{ad}_{J}$-invariante, i.e.
 %
 \begin{align*}
 & \mathfrak{g} = \mathfrak{j} \oplus \mathfrak{n}, \quad  \mathfrak{j} \cap \mathfrak{n} = 0; \\
-& \mathrm{ad}_{J}(\mathfrak{m}) \leq \mathfrak{n}
+& \mathrm{ad}_{J}(\mathfrak{n}) \leq \mathfrak{n}
 \end{align*}
 %
 la segunda condici\'{o}n implica que $[\mathfrak{j}, \mathfrak{n}] \leq \mathfrak{n}$. De manera inversa, si $J$ es conexo, entonces \'{e}sta \'{u}ltima relaci\'{o}n implica la segunda condici\'{o}n.

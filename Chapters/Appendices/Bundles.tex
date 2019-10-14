@@ -2,7 +2,7 @@
 % FIBER BUNDLES
 %----------------------------------------------------------------------------------------
 
-\begin{mydef}[Haz fibrado]
+\begin{mydef}[Haz fibrado] \cite{Baez}
 Un \emph{haz fibrado} es una estructura $(E, \pi, \mathcal{M})$, donde $E$ y $\mathcal{M}$ son variedades, y $\pi: E \longrightarrow \mathcal{M}$ es un mapeo sobreyectivo continuo. Las variedades $E$ y $\mathcal{M}$ son llamadas \emph{espacio total} y \emph{espacio base} respectivamente, mientras que $\pi$ se le conoce como \emph{mapeo de proyecci\'{o}n} o \emph{proyecci\'{o}n de haz}.
 %
 \begin{center}
@@ -34,11 +34,11 @@ Un haz fibrado requiere que el mapa de proyecci\'{o}n $\pi$ para cada punto $m \
 
 Los homeomorfismos $\varphi$ que ``conmutan con la proyecci\'{o}n'' son llamados \emph{trivilizaci\'{o}n local} del haz fibrado. En otras palabras $E$ se ve como el producto cartesiano $\mathcal{M} \times F$ al menos localmente. Y se dice que el mapa de proyecci\'{o}n $\pi$ es \emph{localmente trivial}.
 
-\begin{mydef}[Carta, Atlas]
+\begin{mydef}[Carta, Atlas]  \cite{Baez}
 Al par $(U, \varphi)$ se le llama \emph{carta de la fibra} y es una trivilizaci\'{o}n local. El conjunto de todas ellas $\{(U_{i}, \varphi_{i})\}$ se le conoce como \emph{atlas del haz fibrado}.
 \end{mydef}
 
-\begin{mydef}[Haz trivial]
+\begin{mydef}[Haz trivial]  \cite{Baez}
 Sea $E=\mathcal{M} \times F$, con fibra $F$ y mapeo de proyecci\'{o}n sobre el primer factor, i.e. $\pi = \mathrm{proj}_{1}$, entonces el haz $(\mathcal{M} \times F, \mathrm{proj}_{1}, \mathcal{M})$ es llamado \emph{haz trivial}.
 %
 \begin{align*}
@@ -48,11 +48,11 @@ Sea $E=\mathcal{M} \times F$, con fibra $F$ y mapeo de proyecci\'{o}n sobre el p
 %
 \end{mydef}
 
-\begin{mydef}[Restricci\'{o}n]
+\begin{mydef}[Restricci\'{o}n]  \cite{Baez}
 Dada la subvariedad $\mathcal{N} \subseteq \mathcal{M}$, la \emph{restricci\'{o}n} a $\mathcal{N}$ tiene como espacio total a $E\vert_{\mathcal{N}} = \{p \in E \, \vert \; \pi(p) \in \mathcal{N}\}$, a $\mathcal{N}$ como espacio base y el mapeo de proyecci\'{o}n $\pi$ restringido a $E\vert_{\mathcal{N}}$.
 \end{mydef}
 
-\begin{mydef}[Subhaz fibrado]
+\begin{mydef}[Subhaz fibrado]  \cite{Baez}
 Un haz $(E', \pi', \mathcal{M}')$ es un \emph{subhaz} de $(E, \pi, \mathcal{M})$ siempre que $E'$ sea un subespacio de $E$, $\mathcal{M}'$ sea subespacio de $\mathcal{M}$, y $\pi' = \pi\vert_{E'}$ tal que,
 %
 \begin{center}
@@ -70,7 +70,7 @@ Un haz $(E', \pi', \mathcal{M}')$ es un \emph{subhaz} de $(E, \pi, \mathcal{M})$
 El \emph{haz tangente} de una variedad diferenciable $\mathcal{M}$, es aquel cuyo espacio total es la uni\'{o}n de los espacios tangentes a cada uno de sus puntos, i.e. $E =  \bigcup\limits_{m \in \mathcal{M}} T_{m} \mathcal{M} := T \mathcal{M}$. La proyecci\'{o}n $\pi: T \mathcal{M} \longrightarrow \mathcal{M}$ mapea a cada vector tangente $v \in T_{m} \mathcal{M}$ a $m \in \mathcal{M}$. La fibra en cada $m \in \mathcal{M}$ es el espacio tangente $T_{m} \mathcal{M}$.
 \end{ex}
 
-\begin{mydef}[Haz Vectorial]
+\begin{mydef}[Haz Vectorial]  \cite{Baez}
 Un \emph{haz vectorial}, $n$-dimensional, es un haz $(E, \pi, \mathcal{M})$ cuya fibra $\pi^{-1}(m)$ con $m \in \mathcal{M}$ tiene estructura de un espacio vectorial ($n$-dimensional). Adem\'{a}s, en cada punto $m \in \mathcal{M}$ se requiere que exista una vecindad abierta $U_{m}$ y una trivilizaci\'{o}n $\varphi: E \vert_{U} \longrightarrow U \times \mathbb{R}^{n}$ que mande cada fibra $\pi^{-1}(m)$ a la fibra $\{m\} \times \mathbb{R}^{n}$ linealmente. Esto es equivalente a pedir que la trivilizaci\'{o}n sea lineal en las fibras.
 \end{mydef}
 
@@ -78,7 +78,7 @@ Un \emph{haz vectorial}, $n$-dimensional, es un haz $(E, \pi, \mathcal{M})$ cuya
 % SECTIONS
 %----------------------------------------------------------------------------------------
 
-\begin{mydef}[Secci\'{o}n]
+\begin{mydef}[Secci\'{o}n]  \cite{Baez}
 Sea $(E, \pi, \mathcal{M})$ un haz. Un mapeo $$\sigma: \mathcal{M} \longrightarrow E,$$ es llamado una secci\'{o}n del haz si $\pi \circ \sigma = \mathrm{id}_{\mathcal{M}}$.
 %
 \begin{center}
@@ -158,7 +158,7 @@ Debemos notar que $u: E \longrightarrow E'$ determina un\'{i}vocamente a $f: \ma
 Consideremos el mapeo \emph{pushforward} de vectores tangentes $h_{\ast}: T_{m}\mathcal{M} \longrightarrow T_{h(m)}\mathcal{M}'$, con $h: \mathcal{M} \longrightarrow \mathcal{M}'$ un mapeo suave entre variedades. Ahora, $T_{m}\mathcal{M}$ es la fibra del haz tangente con espacio total $T_{m}\mathcal{M}$ y espacio base $\mathcal{M}$, de manera similar para $T_{h(m)}\mathcal{M}'$. Entonces tenemos que $$h_{\ast}: T \mathcal{M} \longrightarrow T \mathcal{M}',$$ es un morfismo de haces.
 \end{ex}
 
-\begin{mydef}[Endomorfismo]
+\begin{mydef}[Endomorfismo]  \cite{Baez}
 Un \emph{endomorfismo} es un morfismo que va de un haz $(E, \pi, \mathcal{M})$ en s\'{i} mismo.
 \end{mydef}
 
@@ -204,7 +204,7 @@ Tal $(u, f)$ es llamado \emph{isomorfismo de haz}.
 Se dice que $u$ es un \emph{automorfismo} si es un endomorfismo que tambi\'{e}n es un isomorfismo.
 \end{mydef}
 
-\begin{mydef}[Haz Principal]
+\begin{mydef}[Haz Principal]  \cite{Kobayashi}
 Un haz $(P, \pi, \mathcal{M})$ es llamado \emph{haz principal} o \emph{$G$-haz principal} ($G$ especif\'{i}ca el grupo de Lie) si
 \begin{itemize}
 \item{$P$ es un $G$-espacio derecho, es decir, $G$ act\'{u}a por la derecha sobre $P$.}
