@@ -8,7 +8,7 @@ Para obtener las ecuaciones de campo gravitacional en forma Hamiltoniana se hace
 \footnotetext{Por el momento estamos considerando que estamos en vac\'{i}o, i.e. $S_{M} = 0$.}
 %
 \begin{equation}
-S_{G} = \frac{1}{16 \pi} \int^{t_2}_{t_1} dt \left[ \int_{\Sigma_{t}} p^{ab} \dot{h}_{ab} \, d^{3} y - H_{G} \right],
+S_{G} = \int^{t_2}_{t_1} dt \left[ \int_{\Sigma_{t}} p^{ab} \dot{h}_{ab} \, d^{3} y - H_{G} \right],
 \end{equation}
 %
 respecto a las variables independientes $N$, $N^{a}$, $h_{ab}$, y $p^{ab}$, sujetas a las condiciones
@@ -22,7 +22,7 @@ y sin condici\'{o}n sobre $\delta p^{ab}$ de anularse en la frontera $S_{t}$. La
 %
 \begin{equation}
 \label{eq:varSG31}
-\delta S_{G} = \frac{1}{16 \pi} \int^{t_1}_{t_2} dt \left[ \int_{\Sigma_{t}} (p^{ab} \delta \dot{h}_{ab} + \dot{h}_{ab} \delta p^{ab}) \, d^{3} y - \delta H_{G} \right].
+\delta S_{G} = \int^{t_1}_{t_2} dt \left[ \int_{\Sigma_{t}} (p^{ab} \delta \dot{h}_{ab} + \dot{h}_{ab} \delta p^{ab}) \, d^{3} y - \delta H_{G} \right].
 \end{equation}
 
 Comenzaremos calculando la variaci\'{o}n del Hamiltoniano gravitacional $H_{G}$. Iniciamos con la variaci\'{o}n con respecto a las funciones no din\'{a}micas, $N$ y $N^{a}$:
@@ -32,7 +32,7 @@ Comenzaremos calculando la variaci\'{o}n del Hamiltoniano gravitacional $H_{G}$.
 16 \pi \delta_{N} H_{G} = \int_{\Sigma_{t}} (- \hat{\mathcal{C}} \delta N - 2 \hat{\mathcal{C}}_{a} \delta N^{a}) \, d^{3} y,
 \end{equation}
 %
-donde
+(por la condición \eqref{eq:boundcondh} impuesta en $\delta N \Big|_{S_{t}}$ y $\delta N^{a} \Big|_{S_{t}}$ el t\'{e}rmino de frontera se anula) con
 %
 \begin{equation}
 \hat{\mathcal{C}} := (^{(3)}R + K^{2} - K^{ab} K_{ab}) \sqrt{h}, \qquad \hat{\mathcal{C}}_{a} := [D_{b} (K_{a}^{b} - K \delta_{a}^{b})] \sqrt{h}.
